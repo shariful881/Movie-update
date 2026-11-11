@@ -1,0 +1,5190 @@
+[
+ {
+  "qid": "Q21178934",
+  "name": "Surinder Films",
+  "bn": "সুরিন্দর ফিল্মস",
+  "roles": [
+   "company"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q85748217",
+    "title": "Bony",
+    "bn": "",
+    "date": "2021-10-10",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q108559121",
+    "title": "Googly",
+    "bn": "গুগলি",
+    "date": "2019-03-19",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q106900325",
+    "title": "Honeymoon",
+    "bn": "",
+    "date": "2018-02-23",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q27958499",
+    "title": "Jaaneman",
+    "bn": "জানেমন",
+    "date": "2012-05-25",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q7124379",
+    "title": "Paglu",
+    "bn": "পাগলু",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q122346679",
+    "title": "Tarokar Mrityu",
+    "bn": "তারকার মৃত্যু",
+    "date": "2023-09-29",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q106432894",
+    "title": "Tumi Ashbe Bole",
+    "bn": "তুমি আসবে বলে",
+    "date": "2021-01-22",
+    "platform": "addatimes",
+    "role": "company"
+   }
+  ]
+ },
+ {
+  "qid": "Q402203",
+  "name": "Koel Mallick",
+  "bn": "কোয়েল মল্লিক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q17013372",
+    "title": "Arundhati",
+    "bn": "অরুন্ধতী",
+    "date": "2014-05-30",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q85748217",
+    "title": "Bony",
+    "bn": "",
+    "date": "2021-10-10",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q18811603",
+    "title": "Herogiri",
+    "bn": "হিরোগিরি",
+    "date": "2015-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958499",
+    "title": "Jaaneman",
+    "bn": "জানেমন",
+    "date": "2012-05-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q67198759",
+    "title": "Mitin Mashi",
+    "bn": "মিতিন মাসি",
+    "date": "2019-10-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6378956",
+  "name": "Kaushik Sen",
+  "bn": "কৌশিক সেন",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106153107",
+    "title": "Classroom",
+    "bn": "ক্লাসরুম",
+    "date": "2018-07-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q34334172",
+    "title": "Jawker Dhan",
+    "bn": "যকের ধন",
+    "date": "2017-08-04",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q19517712",
+  "name": "Nispal Singh",
+  "bn": "নিসপাল সিং",
+  "roles": [
+   "producer"
+  ],
+  "films": [
+   {
+    "qid": "Q119141008",
+    "title": "Ardhangini",
+    "bn": "অর্ধাঙ্গিনী",
+    "date": "2023-06-02",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q108559121",
+    "title": "Googly",
+    "bn": "গুগলি",
+    "date": "2019-03-19",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q27958499",
+    "title": "Jaaneman",
+    "bn": "জানেমন",
+    "date": "2012-05-25",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "producer"
+   },
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "producer"
+   }
+  ]
+ },
+ {
+  "qid": "Q7503531",
+  "name": "Shree Venkatesh Films",
+  "bn": "শ্রী ভেঙ্কটেশ ফিল্মস",
+  "roles": [
+   "company"
+  ],
+  "films": [
+   {
+    "qid": "Q17013372",
+    "title": "Arundhati",
+    "bn": "অরুন্ধতী",
+    "date": "2014-05-30",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q6692373",
+    "title": "Loveria",
+    "bn": "লাভেরিয়া",
+    "date": "2013-02-15",
+    "platform": "addatimes",
+    "role": "company"
+   },
+   {
+    "qid": "Q56452592",
+    "title": "Villain",
+    "bn": "ভিলেন",
+    "date": "2018-01-01",
+    "platform": "addatimes",
+    "role": "company"
+   }
+  ]
+ },
+ {
+  "qid": "Q6378953",
+  "name": "Kaushik Ganguly",
+  "bn": "কৌশিক গঙ্গোপাধ্যায়",
+  "roles": [
+   "director",
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q119141008",
+    "title": "Ardhangini",
+    "bn": "অর্ধাঙ্গিনী",
+    "date": "2023-06-02",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768569",
+    "title": "Jyeshthoputro",
+    "bn": "জ্যেষ্ঠপুত্র",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7135164",
+  "name": "Parambrata Chatterjee",
+  "bn": "পরমব্রত চট্টোপাধ্যায়",
+  "roles": [
+   "director",
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q85748217",
+    "title": "Bony",
+    "bn": "",
+    "date": "2021-10-10",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q85748217",
+    "title": "Bony",
+    "bn": "",
+    "date": "2021-10-10",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q124619219",
+    "title": "Doctor Bakshi",
+    "bn": "ডক্টর বক্সী",
+    "date": "2023-01-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q34334172",
+    "title": "Jawker Dhan",
+    "bn": "যকের ধন",
+    "date": "2017-08-04",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q17059620",
+    "title": "Jiyo Kaka",
+    "bn": "জিও কাকা",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7808536",
+    "title": "Tintorettor Jishu",
+    "bn": "টিনটোরেটোর যীশু",
+    "date": "2008-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7285877",
+  "name": "Rajatava Dutta",
+  "bn": "রজতাভ দত্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q6692373",
+    "title": "Loveria",
+    "bn": "লাভেরিয়া",
+    "date": "2013-02-15",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q138006872",
+    "title": "Khacha",
+    "bn": "খাঁচা",
+    "date": "2026-02-06",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7554641",
+  "name": "Soham Chakraborty",
+  "bn": "সোহম চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q108559121",
+    "title": "Googly",
+    "bn": "গুগলি",
+    "date": "2019-03-19",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106900325",
+    "title": "Honeymoon",
+    "bn": "",
+    "date": "2018-02-23",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958499",
+    "title": "Jaaneman",
+    "bn": "জানেমন",
+    "date": "2012-05-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q6692373",
+    "title": "Loveria",
+    "bn": "লাভেরিয়া",
+    "date": "2013-02-15",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4667906",
+  "name": "Abir Chatterjee",
+  "bn": "আবীর চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125510636",
+    "title": "Alaap",
+    "bn": "আলাপ",
+    "date": "2024-04-26",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7336885",
+  "name": "Ritwick Chakraborty",
+  "bn": "ঋত্বিক চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768569",
+    "title": "Jyeshthoputro",
+    "bn": "জ্যেষ্ঠপুত্র",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q122346679",
+    "title": "Tarokar Mrityu",
+    "bn": "তারকার মৃত্যু",
+    "date": "2023-09-29",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q85805455",
+    "title": "Teko",
+    "bn": "টেকো",
+    "date": "2019-11-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5266378",
+  "name": "Deepak Adhikari",
+  "bn": "দীপক অধিকারী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q18811603",
+    "title": "Herogiri",
+    "bn": "হিরোগিরি",
+    "date": "2015-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7124379",
+    "title": "Paglu",
+    "bn": "পাগলু",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6360976",
+  "name": "Kanchan Mullick",
+  "bn": "কাঞ্চন মল্লিক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q108559121",
+    "title": "Googly",
+    "bn": "গুগলি",
+    "date": "2019-03-19",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q85805455",
+    "title": "Teko",
+    "bn": "টেকো",
+    "date": "2019-11-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6400549",
+  "name": "Kharaj Mukherjee",
+  "bn": "খরাজ মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106153107",
+    "title": "Classroom",
+    "bn": "ক্লাসরুম",
+    "date": "2018-07-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q18811603",
+    "title": "Herogiri",
+    "bn": "হিরোগিরি",
+    "date": "2015-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7250587",
+  "name": "Prosenjit Chatterjee",
+  "bn": "প্রসেনজিৎ চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16057866",
+    "title": "Aandha Prem",
+    "bn": "অন্ধ প্রেম",
+    "date": "2003-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768569",
+    "title": "Jyeshthoputro",
+    "bn": "জ্যেষ্ঠপুত্র",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5118311",
+  "name": "Churni Ganguly",
+  "bn": "চূর্ণী গঙ্গোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q119141008",
+    "title": "Ardhangini",
+    "bn": "অর্ধাঙ্গিনী",
+    "date": "2023-06-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5250554",
+  "name": "Deepankar De",
+  "bn": "দীপঙ্কর দে",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16057866",
+    "title": "Aandha Prem",
+    "bn": "অন্ধ প্রেম",
+    "date": "2003-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15868587",
+  "name": "Misha Sawdagor",
+  "bn": "মিশা সওদাগর",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4684634",
+    "title": "Adorer Jamai",
+    "bn": "আদরের জামাই",
+    "date": "2011-12-30",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q131386721",
+    "title": "Kill Him",
+    "bn": "কিল হিম",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q117795251",
+    "title": "Local",
+    "bn": "লোকাল",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q117795169",
+    "title": "Shatru",
+    "bn": "শত্রু",
+    "date": "2023-04-23",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7135419",
+  "name": "Paran Bandopadhyay",
+  "bn": "পরাণ বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16727919",
+  "name": "Raja Chanda",
+  "bn": "রাজা চন্দ",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q27958499",
+    "title": "Jaaneman",
+    "bn": "জানেমন",
+    "date": "2012-05-25",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q6692373",
+    "title": "Loveria",
+    "bn": "লাভেরিয়া",
+    "date": "2013-02-15",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q5010538",
+  "name": "Ravi Kinagi",
+  "bn": "রবি কিনাগী",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q18811603",
+    "title": "Herogiri",
+    "bn": "হিরোগিরি",
+    "date": "2015-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q2992971",
+  "name": "Rituparna Sengupta",
+  "bn": "ঋতুপর্ণা সেনগুপ্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q17059620",
+    "title": "Jiyo Kaka",
+    "bn": "জিও কাকা",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7844040",
+    "title": "Trishna",
+    "bn": "তৃষ্ণা",
+    "date": "2009-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7377514",
+  "name": "Rudranil Ghosh",
+  "bn": "রুদ্রনীল ঘোষ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106153107",
+    "title": "Classroom",
+    "bn": "ক্লাসরুম",
+    "date": "2018-07-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106900325",
+    "title": "Honeymoon",
+    "bn": "",
+    "date": "2018-02-23",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q17059620",
+    "title": "Jiyo Kaka",
+    "bn": "জিও কাকা",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q3350953",
+  "name": "Sandip Ray",
+  "bn": "সন্দীপ রায়",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q7808536",
+    "title": "Tintorettor Jishu",
+    "bn": "টিনটোরেটোর যীশু",
+    "date": "2008-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q7462919",
+  "name": "Shakib Khan",
+  "bn": "শাকিব খান",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4939944",
+    "title": "Bolo Na Tumi Amar",
+    "bn": "বলো না তুমি আমার",
+    "date": "2010-10-22",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q4684634",
+    "title": "Adorer Jamai",
+    "bn": "আদরের জামাই",
+    "date": "2011-12-30",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q92769190",
+    "title": "Nabab LLB",
+    "bn": "নবাব এলএলবি",
+    "date": "2020-01-01",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16732975",
+  "name": "Shantilal Mukherjee",
+  "bn": "শান্তিলাল মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q2680357",
+  "name": "Srabanti Chatterjee",
+  "bn": "শ্রাবন্তী চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q108559121",
+    "title": "Googly",
+    "bn": "গুগলি",
+    "date": "2019-03-19",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q85805455",
+    "title": "Teko",
+    "bn": "টেকো",
+    "date": "2019-11-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7635672",
+  "name": "Sujit Mondal",
+  "bn": "সুজিত মন্ডল",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q17013372",
+    "title": "Arundhati",
+    "bn": "অরুন্ধতী",
+    "date": "2014-05-30",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q4939944",
+    "title": "Bolo Na Tumi Amar",
+    "bn": "বলো না তুমি আমার",
+    "date": "2010-10-22",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q106432894",
+    "title": "Tumi Ashbe Bole",
+    "bn": "তুমি আসবে বলে",
+    "date": "2021-01-22",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q4790711",
+  "name": "Arindam Sil",
+  "bn": "অরিন্দম শীল",
+  "roles": [
+   "director",
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q67198759",
+    "title": "Mitin Mashi",
+    "bn": "মিতিন মাসি",
+    "date": "2019-10-02",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q7844040",
+    "title": "Trishna",
+    "bn": "তৃষ্ণা",
+    "date": "2009-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q19560946",
+  "name": "Bharat Kaul",
+  "bn": "ভরত কৌল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q17013372",
+    "title": "Arundhati",
+    "bn": "অরুন্ধতী",
+    "date": "2014-05-30",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4918622",
+  "name": "Biswajit Chakraborty",
+  "bn": "বিশ্বজিৎ চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q22277117",
+  "name": "Bonny Sengupta",
+  "bn": "বনি সেনগুপ্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q124619219",
+    "title": "Doctor Bakshi",
+    "bn": "ডক্টর বক্সী",
+    "date": "2023-01-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106432894",
+    "title": "Tumi Ashbe Bole",
+    "bn": "তুমি আসবে বলে",
+    "date": "2021-01-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q25588412",
+  "name": "Koushani Mukherjee",
+  "bn": "কৌশানী মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106432894",
+    "title": "Tumi Ashbe Bole",
+    "bn": "তুমি আসবে বলে",
+    "date": "2021-01-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q379604",
+  "name": "Mithun Chakraborty",
+  "bn": "মিঠুন চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q18811603",
+    "title": "Herogiri",
+    "bn": "হিরোগিরি",
+    "date": "2015-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q5942678",
+    "title": "Hungama",
+    "bn": "হাঙ্গামা",
+    "date": "2006-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q26923159",
+  "name": "Rajiv Kumar Biswas",
+  "bn": "রাজীব কুমার বিশ্বাস",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q106153107",
+    "title": "Classroom",
+    "bn": "ক্লাসরুম",
+    "date": "2018-07-13",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q7124379",
+    "title": "Paglu",
+    "bn": "পাগলু",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q25743422",
+  "name": "Rittika Sen",
+  "bn": "ঋত্বিকা সেন",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q56452592",
+    "title": "Villain",
+    "bn": "ভিলেন",
+    "date": "2018-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7425841",
+  "name": "Saswata Chatterjee",
+  "bn": "শাশ্বত চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q17059620",
+    "title": "Jiyo Kaka",
+    "bn": "জিও কাকা",
+    "date": "2011-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q71396249",
+  "name": "Sayantan Ghosal",
+  "bn": "সায়ন্তন ঘোষাল",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q34334172",
+    "title": "Jawker Dhan",
+    "bn": "যকের ধন",
+    "date": "2017-08-04",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q1968297",
+  "name": "Soumitra Chatterjee",
+  "bn": "সৌমিত্র চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7633853",
+  "name": "Sudipta Chakraborty",
+  "bn": "সুদীপ্তা চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768569",
+    "title": "Jyeshthoputro",
+    "bn": "জ্যেষ্ঠপুত্র",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q106407951",
+  "name": "Ambarish Bhattacharya",
+  "bn": "অম্বরীশ ভট্টাচার্য",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q119141008",
+    "title": "Ardhangini",
+    "bn": "অর্ধাঙ্গিনী",
+    "date": "2023-06-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106937739",
+    "title": "Kaberi Antardhan",
+    "bn": "কাবেরী অন্তর্ধান",
+    "date": "2023-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15963899",
+  "name": "Aritra Dutta Banik",
+  "bn": "অরিত্র দত্ত বণিক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q108559121",
+    "title": "Googly",
+    "bn": "গুগলি",
+    "date": "2019-03-19",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q85805455",
+    "title": "Teko",
+    "bn": "টেকো",
+    "date": "2019-11-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4795753",
+  "name": "Arpita Pal",
+  "bn": "অর্পিতা পাল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4915450",
+  "name": "Biplab Chatterjee",
+  "bn": "বিপ্লব চ্যাটার্জি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q41152319",
+  "name": "Dwijen Bandyopadhyay",
+  "bn": "দ্বিজেন বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5527745",
+  "name": "Gaurav Chakrabarty",
+  "bn": "গৌরব চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q64768666",
+    "title": "Sagardwipey Jawker Dhan",
+    "bn": "সাগরদ্বীপে যকের ধন",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5769365",
+  "name": "Hiranmoy Chatterjee",
+  "bn": "হিরণ চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q13057224",
+  "name": "Impress Telefilm Limited",
+  "bn": "ইমপ্রেস টেলিফিল্ম",
+  "roles": [
+   "company"
+  ],
+  "films": [
+   {
+    "qid": "Q4684634",
+    "title": "Adorer Jamai",
+    "bn": "আদরের জামাই",
+    "date": "2011-12-30",
+    "platform": "iscreen",
+    "role": "company"
+   },
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "company"
+   }
+  ]
+ },
+ {
+  "qid": "Q6297352",
+  "name": "Jaya Ahsan",
+  "bn": "জয়া আহসান",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q119141008",
+    "title": "Ardhangini",
+    "bn": "অর্ধাঙ্গিনী",
+    "date": "2023-06-02",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5299396",
+  "name": "Jeet",
+  "bn": "জিৎ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6312356",
+  "name": "June Malia",
+  "bn": "জুন মালিয়া",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q67198759",
+    "title": "Mitin Mashi",
+    "bn": "মিতিন মাসি",
+    "date": "2019-10-02",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16250277",
+  "name": "Kaushik Banerjee",
+  "bn": "কৌশিক বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106432894",
+    "title": "Tumi Ashbe Bole",
+    "bn": "তুমি আসবে বলে",
+    "date": "2021-01-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15410149",
+  "name": "Kazi Hayat",
+  "bn": "কাজী হায়াৎ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q122331663",
+    "title": "Sujon Majhi",
+    "bn": "সুজন মাঝি",
+    "date": "2023-09-08",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q50990879",
+  "name": "Koushik Kar",
+  "bn": "কৌশিক কর",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6467144",
+  "name": "Laboni Sarkar",
+  "bn": "লাবণী সরকার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16057866",
+    "title": "Aandha Prem",
+    "bn": "অন্ধ প্রেম",
+    "date": "2003-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6734134",
+  "name": "Mahiya Mahi",
+  "bn": "মাহিয়া মাহি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q21998190",
+    "title": "Dhaka Attack",
+    "bn": "ঢাকা অ্যাটাক",
+    "date": "2017-10-06",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q92769190",
+    "title": "Nabab LLB",
+    "bn": "নবাব এলএলবি",
+    "date": "2020-01-01",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6751180",
+  "name": "Manoj Mitra",
+  "bn": "মনোজ মিত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6862116",
+  "name": "Mimi Chakraborty",
+  "bn": "মিমি চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125510636",
+    "title": "Alaap",
+    "bn": "আলাপ",
+    "date": "2024-04-26",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q56452592",
+    "title": "Villain",
+    "bn": "ভিলেন",
+    "date": "2018-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6872001",
+  "name": "Mir Afsar Ali",
+  "bn": "মীর আফসার আলী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q138006872",
+    "title": "Khacha",
+    "bn": "খাঁচা",
+    "date": "2026-02-06",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15375521",
+  "name": "Nipun Akter",
+  "bn": "নিপুণ আক্তার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4684634",
+    "title": "Adorer Jamai",
+    "bn": "আদরের জামাই",
+    "date": "2011-12-30",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q122331663",
+    "title": "Sujon Majhi",
+    "bn": "সুজন মাঝি",
+    "date": "2023-09-08",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7070368",
+  "name": "Nussrat Jahan",
+  "bn": "নুসরাত জাহান",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7139343",
+  "name": "Parno Mittra",
+  "bn": "পার্ণো মিত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q122346679",
+    "title": "Tarokar Mrityu",
+    "bn": "তারকার মৃত্যু",
+    "date": "2023-09-29",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q793987",
+  "name": "Payel Sarkar",
+  "bn": "পায়েল সরকার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q64768365",
+    "title": "Jamai Badal",
+    "bn": "জামাই বদল",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q20985562",
+  "name": "Pradip Mukherjee",
+  "bn": "প্রদীপ মুখার্জী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q132197286",
+  "name": "Premendu Bikash Chaki",
+  "bn": "",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q125510636",
+    "title": "Alaap",
+    "bn": "আলাপ",
+    "date": "2024-04-26",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q106900325",
+    "title": "Honeymoon",
+    "bn": "",
+    "date": "2018-02-23",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q7246508",
+  "name": "Priyanka Sarkar",
+  "bn": "প্রিয়াঙ্কা সরকার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q34334172",
+    "title": "Jawker Dhan",
+    "bn": "যকের ধন",
+    "date": "2017-08-04",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7293165",
+  "name": "Ranjit Mullick",
+  "bn": "রঞ্জিত মল্লিক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106900325",
+    "title": "Honeymoon",
+    "bn": "",
+    "date": "2018-02-23",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q122346679",
+    "title": "Tarokar Mrityu",
+    "bn": "তারকার মৃত্যু",
+    "date": "2023-09-29",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16379",
+  "name": "Sabyasachi Chakraborty",
+  "bn": "সব্যসাচী চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q34334172",
+    "title": "Jawker Dhan",
+    "bn": "যকের ধন",
+    "date": "2017-08-04",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q7808536",
+    "title": "Tintorettor Jishu",
+    "bn": "টিনটোরেটোর যীশু",
+    "date": "2008-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7429119",
+  "name": "Sayantika Banerjee",
+  "bn": "সায়ন্তিকা বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q18811603",
+    "title": "Herogiri",
+    "bn": "হিরোগিরি",
+    "date": "2015-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q21932195",
+  "name": "Shahiduzzaman Selim",
+  "bn": "শহীদুজ্জামান সেলিম",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q92769190",
+    "title": "Nabab LLB",
+    "bn": "নবাব এলএলবি",
+    "date": "2020-01-01",
+    "platform": "iscreen",
+    "role": "actor"
+   },
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q1397481",
+  "name": "Shakti Samanta",
+  "bn": "শক্তি সামন্ত",
+  "roles": [
+   "director",
+   "producer"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "director"
+   },
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "producer"
+   }
+  ]
+ },
+ {
+  "qid": "Q13729015",
+  "name": "Sreelekha Mitra",
+  "bn": "শ্রীলেখা মিত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q705446",
+  "name": "Subhashree Ganguly",
+  "bn": "শুভশ্রী গঙ্গোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q124619219",
+    "title": "Doctor Bakshi",
+    "bn": "ডক্টর বক্সী",
+    "date": "2023-01-20",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106900325",
+    "title": "Honeymoon",
+    "bn": "",
+    "date": "2018-02-23",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7631267",
+  "name": "Subhasish Mukhopadhyay",
+  "bn": "শুভাশিষ মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q96741438",
+  "name": "Supriyo Dutta",
+  "bn": "সুপ্রিয় দত্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106153107",
+    "title": "Classroom",
+    "bn": "ক্লাসরুম",
+    "date": "2018-07-13",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q962572",
+  "name": "Victor Banerjee",
+  "bn": "ভিক্টর বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   },
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q104717675",
+  "name": "Abhimanyu Mukherjee",
+  "bn": "অভিমন্যু মুখোপাধ্যায়",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q4689234",
+  "name": "Afiea Nusrat Barsha",
+  "bn": "আফিয়া নুসরাত বর্ষা",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q131386721",
+    "title": "Kill Him",
+    "bn": "কিল হিম",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q395883",
+  "name": "Agradoot",
+  "bn": "অগ্রদূত",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q106040500",
+    "title": "Uttarayan",
+    "bn": "উত্তরায়ণ",
+    "date": "1963-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q4695986",
+  "name": "Ahmed Rubel",
+  "bn": "আহমেদ রেজা রুবেল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q27918370",
+  "name": "Ahmed Sharif",
+  "bn": "আহমেদ শরীফ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q117795251",
+    "title": "Local",
+    "bn": "লোকাল",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4701809",
+  "name": "Akshay Kapoor",
+  "bn": "অক্ষয় কাপুর",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q124619219",
+    "title": "Doctor Bakshi",
+    "bn": "ডক্টর বক্সী",
+    "date": "2023-01-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q2839215",
+  "name": "Alok Nath",
+  "bn": "অলোক নাথ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4764595",
+  "name": "Anik Dutta",
+  "bn": "অনীক দত্ত",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q15633511",
+  "name": "Anika Kabir Shokh",
+  "bn": "আনিকা কবির শখ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4939944",
+    "title": "Bolo Na Tumi Amar",
+    "bn": "বলো না তুমি আমার",
+    "date": "2010-10-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q546833",
+  "name": "Anil Chatterjee",
+  "bn": "অনিল চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106040500",
+    "title": "Uttarayan",
+    "bn": "উত্তরায়ণ",
+    "date": "1963-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q28370128",
+  "name": "Anirban Bhattacharya",
+  "bn": "অনির্বাণ ভট্টাচার্য",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q132126515",
+  "name": "Anirban Chakraborty",
+  "bn": "অনির্বাণ চক্রবর্তী",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q138006872",
+    "title": "Khacha",
+    "bn": "খাঁচা",
+    "date": "2026-02-06",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q4765754",
+  "name": "Anjan Dutt",
+  "bn": "অঞ্জন দত্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q85748217",
+    "title": "Bony",
+    "bn": "",
+    "date": "2021-10-10",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q12059735",
+  "name": "Ankush Hazra",
+  "bn": "অঙ্কুশ হাজরা",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q56452592",
+    "title": "Villain",
+    "bn": "ভিলেন",
+    "date": "2018-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q27662543",
+  "name": "Anonno Mamun",
+  "bn": "অনন্য মামুন",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q92769190",
+    "title": "Nabab LLB",
+    "bn": "নবাব এলএলবি",
+    "date": "2020-01-01",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q21066399",
+  "name": "Anuradha Ray",
+  "bn": "অনুরাধা রায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16057866",
+    "title": "Aandha Prem",
+    "bn": "অন্ধ প্রেম",
+    "date": "2003-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q14301448",
+  "name": "Apu Biswas",
+  "bn": "অপু বিশ্বাস",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4684634",
+    "title": "Adorer Jamai",
+    "bn": "আদরের জামাই",
+    "date": "2011-12-30",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15253440",
+  "name": "Arifin Shuvoo",
+  "bn": "আরিফিন শুভ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q21998190",
+    "title": "Dhaka Attack",
+    "bn": "ঢাকা অ্যাটাক",
+    "date": "2017-10-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q1476759",
+  "name": "Arun Kumar Chatterjee",
+  "bn": "অরুণকুমার চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106040500",
+    "title": "Uttarayan",
+    "bn": "উত্তরায়ণ",
+    "date": "1963-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q3595438",
+  "name": "Ashish Vidyarthi",
+  "bn": "আশিষ বিদ্যার্থী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q27958499",
+    "title": "Jaaneman",
+    "bn": "জানেমন",
+    "date": "2012-05-25",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q64857144",
+  "name": "Ashna Habib Bhabna",
+  "bn": "আশনা হাবিব ভাবনা",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q21005615",
+  "name": "Ashok Dhanuka",
+  "bn": "অশোক ধানুকা",
+  "roles": [
+   "producer"
+  ],
+  "films": [
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "producer"
+   }
+  ]
+ },
+ {
+  "qid": "Q21066091",
+  "name": "Baba Yadav",
+  "bn": "বাবা যাদব",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q56452592",
+    "title": "Villain",
+    "bn": "ভিলেন",
+    "date": "2018-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q15874560",
+  "name": "Bappy Chowdhury",
+  "bn": "বাপ্পি চৌধুরী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q117795169",
+    "title": "Shatru",
+    "bn": "শত্রু",
+    "date": "2023-04-23",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4865906",
+  "name": "Barun Chanda",
+  "bn": "বরুণ চন্দ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q38805220",
+    "title": "Chaya O Chobi",
+    "bn": "ছায়া ও ছবি",
+    "date": "2017-08-25",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4901377",
+  "name": "Bhaswar Chatterjee",
+  "bn": "ভাস্বর চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16249679",
+    "title": "Jekhane Bhooter Bhoy",
+    "bn": "যেখানে ভূতের ভয়",
+    "date": "2012-12-21",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q4903004",
+  "name": "Bibhu Bhattacharya",
+  "bn": "বিভু ভট্টাচার্য",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q7808536",
+    "title": "Tintorettor Jishu",
+    "bn": "টিনটোরেটোর যীশু",
+    "date": "2008-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q12985953",
+  "name": "Bobby Haque",
+  "bn": "ববি হক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125882647",
+    "title": "Moyurakkhi",
+    "bn": "ময়ূরাক্ষী",
+    "date": "2024-06-17",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q108066172",
+  "name": "Buddhadeb Bhattacharya",
+  "bn": "বুদ্ধদেব ভট্টাচার্য",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106390615",
+    "title": "Miss Call",
+    "bn": "মিস কল",
+    "date": "2021-02-26",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5070943",
+  "name": "Chandan Sen",
+  "bn": "চন্দন সেন",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5203796",
+  "name": "D. Ramanaidu",
+  "bn": "ডি রামানাইদু",
+  "roles": [
+   "producer"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "producer"
+   }
+  ]
+ },
+ {
+  "qid": "Q3349817",
+  "name": "Debashree Roy",
+  "bn": "দেবশ্রী রায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5248128",
+  "name": "Debolina Dutta",
+  "bn": "দেবলীনা দত্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5248578",
+  "name": "Debshankar Haldar",
+  "bn": "দেবশঙ্কর হালদার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q17013372",
+    "title": "Arundhati",
+    "bn": "অরুন্ধতী",
+    "date": "2014-05-30",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q3021150",
+  "name": "Deepa Sahi",
+  "bn": "দীপা সাহি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q85973655",
+  "name": "Delwar Jahan Jhantu",
+  "bn": "দেলোয়ার জাহান ঝন্টু",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q122331663",
+    "title": "Sujon Majhi",
+    "bn": "সুজন মাঝি",
+    "date": "2023-09-08",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q69542654",
+  "name": "Dipankar Dipon",
+  "bn": "দীপংকর দীপন",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q21998190",
+    "title": "Dhaka Attack",
+    "bn": "ঢাকা অ্যাটাক",
+    "date": "2017-10-06",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q5289472",
+  "name": "Dolon Roy",
+  "bn": "দোলন রায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q52144933",
+    "title": "Drishtikone",
+    "bn": "দৃষ্টিকোণ",
+    "date": "2018-04-27",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q85973254",
+  "name": "Don",
+  "bn": "ডন",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q65589026",
+  "name": "Elora Gohor",
+  "bn": "ইলোরা গহর",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q19891438",
+  "name": "Eskay Movies",
+  "bn": "এসকে মুভিজ",
+  "roles": [
+   "company"
+  ],
+  "films": [
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "company"
+   }
+  ]
+ },
+ {
+  "qid": "Q112207381",
+  "name": "Farzana Chobi",
+  "bn": "ফারজানা ছবি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125882647",
+    "title": "Moyurakkhi",
+    "bn": "ময়ূরাক্ষী",
+    "date": "2024-06-17",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5443963",
+  "name": "Ferdous Ahmed",
+  "bn": "ফেরদৌস আহমেদ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q122331663",
+    "title": "Sujon Majhi",
+    "bn": "সুজন মাঝি",
+    "date": "2023-09-08",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q17332332",
+  "name": "Gargi Roychowdhury",
+  "bn": "গার্গী রায়চৌধুরী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q64768569",
+    "title": "Jyeshthoputro",
+    "bn": "জ্যেষ্ঠপুত্র",
+    "date": "2019-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5588482",
+  "name": "Goutam Halder",
+  "bn": "গৌতম হালদার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q2680378",
+  "name": "Haradhan Bandopadhyay",
+  "bn": "হারাধন বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5654113",
+  "name": "Haranath Chakraborty",
+  "bn": "হরনাথ চক্রবর্তী",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q122346679",
+    "title": "Tarokar Mrityu",
+    "bn": "তারকার মৃত্যু",
+    "date": "2023-09-29",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q53456139",
+  "name": "Himel Ashraf",
+  "bn": "হিমেল আশরাফ",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q121605221",
+  "name": "Idhika Paul",
+  "bn": "ইধিকা পাল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q137361348",
+  "name": "Imtiaz Barshon",
+  "bn": "ইমতিয়াজ বর্ষণ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6026916",
+  "name": "Indraneil Sengupta",
+  "bn": "ইন্দ্রনীল সেনগুপ্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q17013372",
+    "title": "Arundhati",
+    "bn": "অরুন্ধতী",
+    "date": "2014-05-30",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6052334",
+  "name": "Jennifer Kendal",
+  "bn": "জেনিফার কেন্ডাল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6203212",
+  "name": "Jisshu Sengupta",
+  "bn": "যীশু সেনগুপ্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55393463",
+    "title": "Jio Pagla",
+    "bn": "জিও পাগলা",
+    "date": "2017-10-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q22278478",
+  "name": "Jyotika Jyoti",
+  "bn": "জ্যোতিকা জ্যোতি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15304063",
+  "name": "Kamaleshwar Mukherjee",
+  "bn": "কমলেশ্বর মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16201252",
+  "name": "Kanchana Moitra",
+  "bn": "কাঞ্চনা মৈত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q138006872",
+    "title": "Khacha",
+    "bn": "খাঁচা",
+    "date": "2026-02-06",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q970456",
+  "name": "Koena Mitra",
+  "bn": "কোয়েনা মিত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q20684409",
+  "name": "Koushik Roy",
+  "bn": "কৌশিক রায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q19665030",
+  "name": "Laila Hasan",
+  "bn": "লায়লা হাসান",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q20985303",
+  "name": "Lily Chakravarty",
+  "bn": "লিলি চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q119141008",
+    "title": "Ardhangini",
+    "bn": "অর্ধাঙ্গিনী",
+    "date": "2023-06-02",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q87758098",
+  "name": "Lutfur Rahman George",
+  "bn": "লুৎফর রহমান জর্জ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55080281",
+    "title": "Priyotoma",
+    "bn": "প্রিয়তমা",
+    "date": "2023-06-29",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q61080495",
+  "name": "M B Manik",
+  "bn": "এম বি মানিক",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q4939944",
+    "title": "Bolo Na Tumi Amar",
+    "bn": "বলো না তুমি আমার",
+    "date": "2010-10-22",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q5299478",
+  "name": "M.A. Jalil Ananta",
+  "bn": "অনন্ত জলিল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q131386721",
+    "title": "Kill Him",
+    "bn": "কিল হিম",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q3348898",
+  "name": "Madhabi Mukherjee",
+  "bn": "মাধবী মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q79781208",
+    "title": "Borunbabur Bondhu",
+    "bn": "বরুণবাবুর বন্ধু",
+    "date": "2020-01-10",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16202519",
+  "name": "Manasi Sinha",
+  "bn": "মানসী সিনহা",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q85805455",
+    "title": "Teko",
+    "bn": "টেকো",
+    "date": "2019-11-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q337434",
+  "name": "Mandakini",
+  "bn": "মন্দাকিনী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q104829934",
+  "name": "Manoj Pramanik",
+  "bn": "মনোজ প্রামানিক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6785678",
+  "name": "Masum Pervez Rubel",
+  "bn": "রুবেল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q131386721",
+    "title": "Kill Him",
+    "bn": "কিল হিম",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q107116500",
+  "name": "Matia Banu Shuku",
+  "bn": "মতিয়া বানু শুকু",
+  "roles": [
+   "producer"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "producer"
+   }
+  ]
+ },
+ {
+  "qid": "Q123111079",
+  "name": "Mohammad Rabby Mridha",
+  "bn": "",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q109587561",
+    "title": "Payer Tolay Mati Nai",
+    "bn": "পায়ের তলায় মাটি নাই",
+    "date": "",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q6906781",
+  "name": "Monu Mukhopadhyay",
+  "bn": "মনু মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q55603646",
+    "title": "Alinagarer Golokdhadha",
+    "bn": "আলিনগরের গোলকধাঁধা",
+    "date": "2018-04-20",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q67379269",
+  "name": "Mrinal Mukherjee",
+  "bn": "মৃণাল মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16057866",
+    "title": "Aandha Prem",
+    "bn": "অন্ধ প্রেম",
+    "date": "2003-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q75533",
+  "name": "National Film Development Corporation of India",
+  "bn": "জাতীয় চলচ্চিত্র উন্নয়ন কর্পোরেশন",
+  "roles": [
+   "company"
+  ],
+  "films": [
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "company"
+   }
+  ]
+ },
+ {
+  "qid": "Q7070300",
+  "name": "Nurul Alam Atique",
+  "bn": "নুরুল আলম আতিক",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q23000307",
+  "name": "Orchita Sporshia",
+  "bn": "অর্চিতা স্পর্শিয়া",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q92769190",
+    "title": "Nabab LLB",
+    "bn": "নবাব এলএলবি",
+    "date": "2020-01-01",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7124528",
+  "name": "Pahari Sanyal",
+  "bn": "পাহাড়ী সান্যাল",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106040500",
+    "title": "Uttarayan",
+    "bn": "উত্তরায়ণ",
+    "date": "1963-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q107093410",
+  "name": "Parthasarathi Deb",
+  "bn": "পার্থসারথি দেব",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125977371",
+    "title": "Khelaghar",
+    "bn": "খেলাঘর বাঁধতে লেগেছি",
+    "date": "2024-05-24",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16200381",
+  "name": "Pijush Ganguly",
+  "bn": "পীযূষ গঙ্গোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16858782",
+    "title": "Chaar",
+    "bn": "চার",
+    "date": "2014-06-13",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q27947739",
+  "name": "Poulomi Das",
+  "bn": "পৌলমি দাস",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106173855",
+    "title": "Flyover",
+    "bn": "",
+    "date": "2021-04-02",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q56037475",
+  "name": "Pritam Jalan",
+  "bn": "প্রীতম জালান",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q7844040",
+    "title": "Trishna",
+    "bn": "তৃষ্ণা",
+    "date": "2009-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q5054439",
+  "name": "Puja Banerjee",
+  "bn": "পূজা বসু",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q6692373",
+    "title": "Loveria",
+    "bn": "লাভেরিয়া",
+    "date": "2013-02-15",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q52149647",
+  "name": "Puja Cherry Roy",
+  "bn": "পূজা চেরি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q134429418",
+    "title": "Tagar",
+    "bn": "টগর",
+    "date": "2025-07-07",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7260123",
+  "name": "Puneet Issar",
+  "bn": "পুনীত ইসসর",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q20538698",
+    "title": "Besh Korechi Prem Korechi",
+    "bn": "বেশ করেছি প্রেম করেছি",
+    "date": "2015-07-17",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q16345639",
+  "name": "Quazi Nawshaba Ahmed",
+  "bn": "কাজী নওশাবা আহমেদ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q21998190",
+    "title": "Dhaka Attack",
+    "bn": "ঢাকা অ্যাটাক",
+    "date": "2017-10-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q5223491",
+  "name": "Rachna Banerjee",
+  "bn": "রচনা বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16057866",
+    "title": "Aandha Prem",
+    "bn": "অন্ধ প্রেম",
+    "date": "2003-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q15966750",
+  "name": "Rahul Banerjee",
+  "bn": "রাহুল বন্দ্যোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q34334172",
+    "title": "Jawker Dhan",
+    "bn": "যকের ধন",
+    "date": "2017-08-04",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7283589",
+  "name": "Rahul Dev",
+  "bn": "রাহুল দেব",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q131386721",
+    "title": "Kill Him",
+    "bn": "কিল হিম",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q65926773",
+  "name": "Raihan Rafi",
+  "bn": "রায়হান রাফী",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q3194810",
+  "name": "Raj Chakraborty",
+  "bn": "রাজ চক্রবর্তী",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q7293122",
+  "name": "Ranjeet",
+  "bn": "রঞ্জিত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q110260558",
+  "name": "Rashed Mamun Apu",
+  "bn": "রাশেদ মামুন অপু",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7334475",
+  "name": "Rimjhim Mitra",
+  "bn": "রিমঝিম মিত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q32923",
+  "name": "Rituparno Ghosh",
+  "bn": "ঋতুপর্ণ ঘোষ",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q27954419",
+  "name": "Rukmini Maitra",
+  "bn": "রুক্মিণী মৈত্র",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q65058947",
+    "title": "Kidnap",
+    "bn": "কিডন্যাপ",
+    "date": "2019-06-05",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q23744851",
+  "name": "Saayoni Ghosh",
+  "bn": "সায়নী ঘোষ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q7502572",
+    "title": "Shotru",
+    "bn": "শত্রু",
+    "date": "2011-06-03",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7396229",
+  "name": "Sabitri Chatterjee",
+  "bn": "সাবিত্রী চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106040500",
+    "title": "Uttarayan",
+    "bn": "উত্তরায়ণ",
+    "date": "1963-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7397582",
+  "name": "Sadashiv Amrapurkar",
+  "bn": "সদাশিব আম্রপুরকার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7399562",
+  "name": "Saheb Chatterjee",
+  "bn": "সাহেব চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q25096454",
+    "title": "Love Express",
+    "bn": "লাভ এক্সপ্রেস",
+    "date": "2016-09-09",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q8873",
+  "name": "Satyajit Ray",
+  "bn": "সত্যজিৎ রায়",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q31176164",
+  "name": "Shabnom Bubly",
+  "bn": "শবনম বুবলি",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q117795251",
+    "title": "Local",
+    "bn": "লোকাল",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q47399253",
+  "name": "Shahadat Hossain Liton",
+  "bn": "শাহাদাত হোসেন লিটন",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q4684634",
+    "title": "Adorer Jamai",
+    "bn": "আদরের জামাই",
+    "date": "2011-12-30",
+    "platform": "iscreen",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q23761660",
+  "name": "Shahidul Alam Sachchu",
+  "bn": "শহীদুল আলম সাচ্চু",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7488672",
+  "name": "Shankar Chakraborty",
+  "bn": "শঙ্কর চক্রবর্তী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q23761533",
+  "name": "Shatabdi Wadud",
+  "bn": "শতাব্দী ওয়াদুদ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q21998190",
+    "title": "Dhaka Attack",
+    "bn": "ঢাকা অ্যাটাক",
+    "date": "2017-10-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q81970318",
+  "name": "Shiba Shanu",
+  "bn": "শিবা শানু",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q117795251",
+    "title": "Local",
+    "bn": "লোকাল",
+    "date": "2023-04-22",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q6128285",
+  "name": "Silajit Majumder",
+  "bn": "শিলাজিৎ মজুমদার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q23762720",
+  "name": "Sohini Sarkar",
+  "bn": "সোহিনী সরকার",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q27958460",
+    "title": "Byomkesh Pawrbo",
+    "bn": "ব্যোমকেশ পর্ব",
+    "date": "2016-12-16",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q49991198",
+  "name": "Soukarya Ghosal",
+  "bn": "সৌকর্য ঘোষাল",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q124328394",
+    "title": "Bhootpori",
+    "bn": "ভূতপরী",
+    "date": "2024-02-09",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q35489292",
+  "name": "Sourav Das",
+  "bn": "সৌরভ দাস",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7631272",
+  "name": "Subhendu Chatterjee",
+  "bn": "শুভেন্দু চট্টোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16850914",
+    "title": "Jamaibabu Jindabad",
+    "bn": "জামাইবাবু জিন্দাবাদ",
+    "date": "2001-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q25345112",
+  "name": "Sudeshna Roy",
+  "bn": "সুদেষ্ণা রায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q85805455",
+    "title": "Teko",
+    "bn": "টেকো",
+    "date": "2019-11-22",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q108406002",
+  "name": "Sumit Sengupta",
+  "bn": "সুমিত সেনগুপ্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125882647",
+    "title": "Moyurakkhi",
+    "bn": "ময়ূরাক্ষী",
+    "date": "2024-06-17",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7645135",
+  "name": "Supriya Devi",
+  "bn": "সুপ্রিয়া দেবী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q106040500",
+    "title": "Uttarayan",
+    "bn": "উত্তরায়ণ",
+    "date": "1963-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7645776",
+  "name": "Suresh Productions",
+  "bn": "সুরেশ প্রোডাকশনস",
+  "roles": [
+   "company"
+  ],
+  "films": [
+   {
+    "qid": "Q4811865",
+    "title": "Asukh",
+    "bn": "অসুখ",
+    "date": "1999-01-01",
+    "platform": "addatimes",
+    "role": "company"
+   }
+  ]
+ },
+ {
+  "qid": "Q7653795",
+  "name": "Swapan Saha",
+  "bn": "স্বপন সাহা",
+  "roles": [
+   "director"
+  ],
+  "films": [
+   {
+    "qid": "Q5942678",
+    "title": "Hungama",
+    "bn": "হাঙ্গামা",
+    "date": "2006-01-01",
+    "platform": "addatimes",
+    "role": "director"
+   }
+  ]
+ },
+ {
+  "qid": "Q50136966",
+  "name": "Swastika Dutta",
+  "bn": "স্বস্তিকা দত্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q125510636",
+    "title": "Alaap",
+    "bn": "আলাপ",
+    "date": "2024-04-26",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7654049",
+  "name": "Swatilekha Sengupta",
+  "bn": "স্বাতীলেখা সেনগুপ্ত",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q717188",
+    "title": "Ghare Baire",
+    "bn": "ঘরে-বাইরে",
+    "date": "1984-01-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q146724",
+  "name": "Tanuja",
+  "bn": "তনুজা",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q137191772",
+  "name": "Tanzika Amin",
+  "bn": "তানজিকা আমিন",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q137383308",
+    "title": "Omimangshito",
+    "bn": "অমিমাংসিত",
+    "date": "2025-12-15",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q65560547",
+  "name": "Tarun Ghosh",
+  "bn": "তরুন ঘোষ",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q4754313",
+    "title": "Andha Bichar",
+    "bn": "অন্ধ বিচার",
+    "date": "1990-04-06",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q19818718",
+  "name": "Tathagata Mukherjee",
+  "bn": "তথাগত মুখোপাধ্যায়",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q16345988",
+    "title": "Badshahi Angti",
+    "bn": "বাদশাহী আংটি",
+    "date": "2014-12-01",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q7827930",
+  "name": "Tota Roy Chowdhury",
+  "bn": "টোটা রায়চৌধুরী",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q7124380",
+    "title": "Paglu 2",
+    "bn": "পাগলু ২",
+    "date": "2012-08-31",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q929422",
+  "name": "Vinay Pathak",
+  "bn": "বিনয় পাঠক",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q67198759",
+    "title": "Mitin Mashi",
+    "bn": "মিতিন মাসি",
+    "date": "2019-10-02",
+    "platform": "addatimes",
+    "role": "actor"
+   }
+  ]
+ },
+ {
+  "qid": "Q64667943",
+  "name": "Zinat Sanu Swagata",
+  "bn": "জিনাত শানু স্বাগতা",
+  "roles": [
+   "actor"
+  ],
+  "films": [
+   {
+    "qid": "Q110203898",
+    "title": "Laal Moroger Jhuti",
+    "bn": "লাল মোরগের ঝুঁটি",
+    "date": "2021-12-10",
+    "platform": "iscreen",
+    "role": "actor"
+   }
+  ]
+ }
+]
