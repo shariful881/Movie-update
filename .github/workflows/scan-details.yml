@@ -1,0 +1,42 @@
+name: বিস্তারিত স্ক্যান (দীপ্ত প্লে ও আই স্ক্রিন)
+
+# প্রতিদিন বাংলাদেশ সময় সকাল ৬টা ১৩ মিনিটে (UTC 00:13), আর স্ক্রিপ্ট বদলালে।
+on:
+  schedule:
+    - cron: '13 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - scripts/scan-details.mjs
+      - .github/workflows/scan-details.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scan-details
+  cancel-in-progress: false
+
+jobs:
+  details:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/scan-details.mjs
+      - name: ফলাফল সেভ
+        run: |
+          git config user.name "cinekhoj-bot"
+          git config user.email "cinekhoj-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "কোনো পরিবর্তন নেই"
+          else
+            git commit -m "বিস্তারিত স্ক্যান $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
