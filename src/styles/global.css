@@ -19,6 +19,7 @@
   --bad-bg: #2a1712;
   --bad-line: #5a2e22;
   --radius: 14px;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
