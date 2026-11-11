@@ -8,6 +8,7 @@ on:
       - scripts/**
       - .github/workflows/scan-ott.yml
       - .github/workflows/enrich-movies.yml
+      - .github/workflows/discover.yml
   workflow_dispatch:
 
 permissions:
