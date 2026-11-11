@@ -41,7 +41,10 @@ const SOURCES = [
       const s = segments(e.loc);
       if (s[0] !== 'content' || s[1] !== 'details' || s.length !== 4) return null;
       const title = e.title || slugTitle(s[3]);
-      return { kind: s[2] === 'series' ? 'series' : guessKind(e, title), title };
+      const kind = s[2] === 'series' ? (guessKind({}, title) === 'sports' ? 'sports' : 'series') : guessKind(e, title);
+      // ধরন জানা যায় না এমন ভিডিও, লাইভ টিভি, খেলা আর ছোট ক্লিপ তালিকায় রাখে না
+      if (!['movie', 'natok', 'series'].includes(kind)) return null;
+      return { kind, title };
     },
   },
   {
