@@ -180,10 +180,7 @@ const jsonLd = [
   )}
 
   {hasBody && (
-    <section class="section">
-      <h2>কাহিনি সংক্ষেপ (স্পয়লার নেই)</h2>
-      <div class="prose"><Content /></div>
-    </section>
+    <article class="prose article"><Content /></article>
   )}
 
   <AdSlot label="বিজ্ঞাপন" />
@@ -304,4 +301,9 @@ const jsonLd = [
   .person { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
   .person:hover { border-color: var(--accent); color: var(--text); }
   .wide { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .article { max-width: 760px; gap: 14px; font-size: 18px; line-height: 1.8; }
+  .article :global(h2) { font-size: 24px; color: var(--text); margin-top: 18px; }
+  .article :global(h3) { font-size: 20px; color: var(--text); margin-top: 8px; }
+  .article :global(p) { margin: 0; }
+  .article :global(ul) { margin: 0; padding-left: 22px; }
 </style>
