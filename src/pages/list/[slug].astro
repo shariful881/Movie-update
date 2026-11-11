@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TitleCard from '../../components/TitleCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { allLists } from '../../lib/lists';
+import { bn, link } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const titles = await getCollection('titles', ({ data }) => !data.draft);
+  return allLists(titles).map((l) => ({ params: { slug: l.slug }, props: { slug: l.slug } }));
+}
+
+const { slug } = Astro.props;
+const titles = await getCollection('titles', ({ data }) => !data.draft);
+const list = allLists(titles).find((l) => l.slug === slug)!;
+const items = titles
+  .filter(list.match)
+  .sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0) || (b.data.year ?? 0) - (a.data.year ?? 0));
+const platforms = await getCollection('platforms');
+const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name]));
+const indexable = items.some((t) => t.data.lastVerified);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: list.title,
+  numberOfItems: items.length,
+};
+---
+<Base title={list.title} description={list.description} jsonLd={jsonLd} noindex={!indexable}>
+  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › <a href={link('/list/')} style="color: var(--muted)">তালিকা</a> › {list.title}</nav>
+  <div class="stack" style="gap: 6px">
+    <h1>{list.title}</h1>
+    <p class="muted">{list.description} মোট {bn(items.length)}টি।</p>
+  </div>
+  <AdSlot label="বিজ্ঞাপন" />
+  <div class="grid">{items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+</Base>

@@ -1,0 +1,13 @@
+---
+title: "Ponchopandob"
+titleEn: "Ponchopandob"
+type: "series"
+language: "বাংলা"
+availability:
+  - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/ponchopandob"}
+faqs:
+  - {"q":"Ponchopandob কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Ponchopandob বাংলাদেশ থেকে দীপ্ত প্লে-এ দেখা যায়।"}
+sources:
+  - {"name":"দীপ্ত প্লে","url":"https://www.deeptoplay.com/series/ponchopandob"}
+generated: true
+---

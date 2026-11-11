@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { allLists } from '../../lib/lists';
+import { bn, link } from '../../lib/format';
+
+const titles = await getCollection('titles', ({ data }) => !data.draft);
+const lists = allLists(titles).map((l) => ({ ...l, n: titles.filter(l.match).length }));
+---
+<Base title="তালিকা" description="বাংলা ডাবিং সিরিয়াল, বাংলাদেশি সিনেমা, কলকাতার সিনেমা, ফ্রিতে দেখার কনটেন্টসহ বিভিন্ন তালিকা।">
+  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › তালিকা</nav>
+  <h1>তালিকা</h1>
+  <div class="grid">
+    {lists.map((l) => (
+      <a class="card list" href={link(`/list/${l.slug}/`)}>
+        <span class="list-title">{l.title}</span>
+        <span class="small muted">{bn(l.n)}টি</span>
+      </a>
+    ))}
+  </div>
+</Base>
+<style>
+  .list { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); }
+  .list:hover { border-color: var(--accent); color: var(--text); }
+  .list-title { font-size: 19px; font-weight: 700; line-height: 1.35; }
+</style>

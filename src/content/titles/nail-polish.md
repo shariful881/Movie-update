@@ -1,0 +1,13 @@
+---
+title: "Nail Polish"
+titleEn: "Nail Polish"
+type: "natok"
+language: "বাংলা"
+availability:
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/nail-polish","note":"সাবস্ক্রিপশন লাগে"}
+faqs:
+  - {"q":"Nail Polish কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Nail Polish বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
+sources:
+  - {"name":"আই স্ক্রিন","url":"https://iscreen.com.bd/content/details/video/nail-polish"}
+generated: true
+---

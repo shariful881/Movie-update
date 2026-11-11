@@ -1,0 +1,13 @@
+---
+title: "Khatam-e-Quran"
+titleEn: "Khatam-e-Quran"
+type: "series"
+language: "বাংলা"
+availability:
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/khatam-e-quran","note":"সাবস্ক্রিপশন লাগে"}
+faqs:
+  - {"q":"Khatam-e-Quran কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Khatam-e-Quran বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
+sources:
+  - {"name":"আই স্ক্রিন","url":"https://iscreen.com.bd/content/details/series/khatam-e-quran"}
+generated: true
+---

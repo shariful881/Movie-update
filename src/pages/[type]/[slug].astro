@@ -2,7 +2,8 @@
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import { accessLabel, bn, bnDate, bnRuntime, titleUrl, typeLabel, typePath, link } from '../../lib/format';
+import TitleCard from '../../components/TitleCard.astro';
+import { accessLabel, bn, bnDate, bnRuntime, isVerified, jobLabel, link, personUrl, titleUrl, typeLabel, typePath, typeSingular } from '../../lib/format';
 
 export async function getStaticPaths() {
   const titles = await getCollection('titles', ({ data }) => !data.draft);
@@ -12,33 +13,58 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const d = entry.data;
 const { Content } = await render(entry);
+const hasBody = Boolean(entry.body?.trim());
+const verified = isVerified(entry);
 
 const allPlatforms = (await getCollection('platforms')).sort((a, b) => a.data.order - b.data.order);
-const available = await Promise.all(
-  d.availability.map(async (a) => ({ ...a, p: await getEntry(a.platform) })),
-);
+const platformNames = Object.fromEntries(allPlatforms.map((p) => [p.id, p.data.name]));
+const available = await Promise.all(d.availability.map(async (a) => ({ ...a, p: await getEntry(a.platform) })));
 const availableIds = new Set(d.availability.map((a) => a.platform.id));
 const otherPlatforms = allPlatforms.filter((p) => !availableIds.has(p.id));
 const where = available.map((a) => a.p?.data.name).filter(Boolean).join(', ');
 
-const pageTitle = `${d.title} (${bn(d.year)}) কোথায় দেখবেন? ${where || 'ওটিটি তথ্য'}`;
-const description = d.summary;
+const peopleIds = new Set((await getCollection('people')).map((p) => p.id));
+const personLink = (id?: string) => (id && peopleIds.has(id) ? personUrl(id) : null);
+const crewBy = (job: 'director' | 'producer' | 'company') => d.crew.filter((c) => c.job === job);
+const directorText = d.director || crewBy('director').map((c) => c.name).join(', ');
+const productionText = d.production || crewBy('company').map((c) => c.name).join(', ');
+
+const yearText = d.year ? ` (${bn(d.year)})` : '';
+const pageTitle = `${d.title}${yearText} কোথায় দেখবেন? ${where || 'ওটিটি তথ্য'}`;
+const summary =
+  d.summary ||
+  (where
+    ? `${d.title}${yearText} বাংলাদেশ থেকে দেখা যায় ${where}-এ।${d.episodes ? ` মোট ${bn(d.episodes)}টি পর্ব।` : ''}`
+    : `${d.title}${yearText} কোথায় দেখা যায় তা এখনো যাচাই করা হয়নি।`);
 const url = new URL(titleUrl(entry), Astro.site).toString();
 const typeHref = link(`/${typePath[d.type]}/`);
 
 const facts = [
-  d.releaseDate && { label: d.type === 'movie' ? 'সিনেমা হলে মুক্তি' : 'মুক্তি', value: `${bnDate(d.releaseDate)}${d.releaseNote ? ` (${d.releaseNote})` : ''}` },
+  d.releaseDate && { label: d.type === 'movie' ? 'মুক্তি' : 'প্রথম প্রচার', value: `${bnDate(d.releaseDate)}${d.releaseNote ? ` (${d.releaseNote})` : ''}` },
+  !d.releaseDate && d.year && { label: 'মুক্তির বছর', value: bn(d.year) },
   d.ottReleaseDate && { label: 'ওটিটিতে মুক্তি', value: bnDate(d.ottReleaseDate) },
   d.runtimeMinutes && { label: 'দৈর্ঘ্য', value: bnRuntime(d.runtimeMinutes) },
-  d.episodes && { label: 'পর্ব', value: `${bn(d.episodes)}টি` },
+  d.seasons && d.seasons > 1 && { label: 'সিজন', value: `${bn(d.seasons)}টি` },
+  d.episodes && { label: 'মোট পর্ব', value: `${bn(d.episodes)}টি` },
   d.genres.length && { label: 'ধরন', value: d.genres.join(', ') },
-  d.director && { label: 'পরিচালক', value: d.director },
-  d.production && { label: 'প্রযোজনা', value: d.production },
-  { label: 'ভাষা', value: d.language },
+  directorText && { label: 'পরিচালক', value: directorText },
+  productionText && { label: 'প্রযোজনা', value: productionText },
+  d.origin && { label: 'মূল দেশ', value: d.origin },
+  { label: 'ভাষা', value: d.dubbed ? `${d.language} (ডাবিং)` : d.language },
   d.ageRating && { label: 'বয়স উপযোগিতা', value: d.ageRating, warn: true },
 ].filter(Boolean) as { label: string; value: string; warn?: boolean }[];
 
 const familyHead = { yes: 'হ্যাঁ।', caution: 'সাবধানে।', no: 'না।' } as const;
+
+// একই অভিনেতার আরও কাজ, বা একই প্ল্যাটফর্ম ও ধরনের আরও টাইটেল
+const others = (await getCollection('titles', ({ data }) => !data.draft)).filter((t) => t.id !== entry.id);
+const castIds = new Set(d.cast.map((c) => c.id).filter(Boolean));
+const related = [
+  ...others.filter((t) => t.data.cast.some((c) => c.id && castIds.has(c.id))),
+  ...others.filter((t) => t.data.type === d.type && t.data.availability.some((a) => availableIds.has(a.platform.id))),
+]
+  .filter((t, i, arr) => arr.findIndex((x) => x.id === t.id) === i)
+  .slice(0, 6);
 
 const work: Record<string, unknown> = {
   '@context': 'https://schema.org',
@@ -50,9 +76,11 @@ const work: Record<string, unknown> = {
   genre: d.genres,
   ...(d.releaseDate && { datePublished: d.releaseDate.toISOString().slice(0, 10) }),
   ...(d.runtimeMinutes && { duration: `PT${d.runtimeMinutes}M` }),
-  ...(d.director && { director: { '@type': 'Person', name: d.director } }),
-  ...(d.cast.length && { actor: d.cast.map((c) => ({ '@type': 'Person', name: c.name })) }),
+  ...(d.episodes && d.type !== 'movie' && { numberOfEpisodes: d.episodes }),
+  ...(directorText && { director: directorText.split(', ').map((name) => ({ '@type': 'Person', name })) }),
+  ...(d.cast.length && { actor: d.cast.slice(0, 10).map((c) => ({ '@type': 'Person', name: c.name })) }),
   ...(d.ageRating && { contentRating: d.ageRating }),
+  ...(d.wikidata && { sameAs: [`https://www.wikidata.org/wiki/${d.wikidata}`] }),
 };
 const jsonLd = [
   work,
@@ -74,23 +102,24 @@ const jsonLd = [
     : []),
 ];
 ---
-<Base title={pageTitle} description={description} jsonLd={jsonLd}>
+<Base title={pageTitle} description={summary} jsonLd={jsonLd} noindex={!verified}>
   <nav aria-label="অবস্থান" class="crumbs small muted">
     <a href={link('/')}>হোম</a> › <a href={typeHref}>{typeLabel[d.type]}</a> › <span>{d.title}</span>
   </nav>
 
   <div class="stack" style="gap: 8px">
-    <h1>{d.title} ({bn(d.year)}) কোথায় দেখবেন?</h1>
-    {d.lastVerified ? (
+    <span class="small muted">{typeSingular[d.type]}{d.dubbed ? ' · বাংলা ডাবিং' : ''}{d.titleEn && d.titleEn !== d.title ? ` · ${d.titleEn}` : ''}</span>
+    <h1>{d.title}{yearText} কোথায় দেখবেন?</h1>
+    {verified ? (
       <p class="small muted">সর্বশেষ যাচাই: {bnDate(d.lastVerified)}</p>
     ) : (
-      <p class="small verify-pending">এই পাতার প্ল্যাটফর্মের তথ্য এখনো অ্যাপে যাচাই করা হয়নি। মুক্তির সময়ের খবরের ভিত্তিতে লেখা।</p>
+      <p class="small verify-pending">এই পাতার তথ্য এখনো অ্যাপে যাচাই করা হয়নি। প্ল্যাটফর্মের সাইটম্যাপ ও উইকিডাটার ভিত্তিতে তৈরি।</p>
     )}
   </div>
 
   <section class="card answer" aria-label="সংক্ষিপ্ত উত্তর">
     <span class="answer-label">সংক্ষেপে উত্তর</span>
-    <p>{d.summary}</p>
+    <p>{summary}</p>
   </section>
 
   <div class="grid facts">
@@ -112,11 +141,11 @@ const jsonLd = [
           <div class="card platform">
             <div class="platform-head">
               <span class="platform-name">{a.p.data.name}</span>
-              <span class="pill">আছে</span>
+              <span class:list={['pill', { 'pill-warn': !verified }]}>{verified ? 'আছে' : 'যাচাই বাকি'}</span>
             </div>
             <p class="small muted">{accessLabel[a.p.data.access]}{a.note ? ` · ${a.note}` : ''}</p>
-            <a class="btn" href={a.url ?? a.p.data.affiliateUrl ?? a.p.data.url} rel={a.p.data.affiliateUrl && !a.url ? 'sponsored noopener' : 'noopener'} target="_blank">
-              {a.p.data.name}তে দেখুন
+            <a class="btn" href={a.p.data.affiliateUrl ?? a.url ?? a.p.data.url} rel={a.p.data.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">
+              {a.p.data.name} খুলুন
             </a>
             <a class="small" href={link(`/platform/${a.p.id}/`)}>{a.p.data.name} সম্পর্কে বিস্তারিত</a>
           </div>
@@ -150,10 +179,12 @@ const jsonLd = [
     </section>
   )}
 
-  <section class="section">
-    <h2>কাহিনি সংক্ষেপ (স্পয়লার নেই)</h2>
-    <div class="prose"><Content /></div>
-  </section>
+  {hasBody && (
+    <section class="section">
+      <h2>কাহিনি সংক্ষেপ (স্পয়লার নেই)</h2>
+      <div class="prose"><Content /></div>
+    </section>
+  )}
 
   <AdSlot label="বিজ্ঞাপন" />
 
@@ -161,12 +192,38 @@ const jsonLd = [
     <section class="section">
       <h2>অভিনয়শিল্পী</h2>
       <div class="grid cast">
-        {d.cast.map((c) => (
-          <div class="card">
-            <div style="font-weight: 600">{c.name}</div>
-            {c.role && <div class="small muted">{c.role}</div>}
-          </div>
-        ))}
+        {d.cast.map((c) => {
+          const href = personLink(c.id);
+          return href ? (
+            <a class="card person" href={href}>
+              <span style="font-weight: 600">{c.name}</span>
+              {c.role && <span class="small muted">{c.role}</span>}
+              <span class="small">সব কাজ দেখুন</span>
+            </a>
+          ) : (
+            <div class="card">
+              <div style="font-weight: 600">{c.name}</div>
+              {c.role && <div class="small muted">{c.role}</div>}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  {d.crew.length > 0 && (
+    <section class="section">
+      <h2>নির্মাণে</h2>
+      <div class="grid cast">
+        {d.crew.map((c) => {
+          const href = personLink(c.id);
+          return (
+            <div class="card">
+              <div class="small muted">{jobLabel[c.job]}</div>
+              {href ? <a href={href} style="font-weight: 600">{c.name}</a> : <div style="font-weight: 600">{c.name}</div>}
+            </div>
+          );
+        })}
       </div>
     </section>
   )}
@@ -191,6 +248,13 @@ const jsonLd = [
           <p class="prose">{f.a}</p>
         </div>
       ))}
+    </section>
+  )}
+
+  {related.length > 0 && (
+    <section class="section">
+      <h2>আরও দেখুন</h2>
+      <div class="grid">{related.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
   )}
 
@@ -237,5 +301,7 @@ const jsonLd = [
   .lvl-mid { color: var(--warn); }
   .lvl-low { color: #c9cdd4; }
   .cast { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .person { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
+  .person:hover { border-color: var(--accent); color: var(--text); }
   .wide { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 </style>

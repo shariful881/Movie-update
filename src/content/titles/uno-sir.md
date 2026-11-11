@@ -1,0 +1,13 @@
+---
+title: "Uno Sir"
+titleEn: "Uno Sir"
+type: "microdrama"
+language: "বাংলা"
+availability:
+  - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/micro-drama/uno-sir"}
+faqs:
+  - {"q":"Uno Sir কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Uno Sir বাংলাদেশ থেকে দীপ্ত প্লে-এ দেখা যায়।"}
+sources:
+  - {"name":"দীপ্ত প্লে","url":"https://www.deeptoplay.com/micro-drama/uno-sir"}
+generated: true
+---

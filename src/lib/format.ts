@@ -13,14 +13,40 @@ export const bnRuntime = (min?: number) => {
   return `প্রায় ${h ? `${bn(h)} ঘণ্টা ` : ''}${m ? `${bn(m)} মিনিট` : ''}`.trim();
 };
 
-export const typeLabel = { movie: 'সিনেমা', series: 'ওয়েব সিরিজ', natok: 'নাটক' } as const;
-export const typePath = { movie: 'movie', series: 'series', natok: 'natok' } as const;
+export type TitleType = 'movie' | 'series' | 'natok' | 'tvshow' | 'microdrama';
 
-export const accessLabel = { paid: 'সাবস্ক্রিপশন লাগে', free: 'ফ্রি', mixed: 'ফ্রি ও পেইড দুটোই' } as const;
+export const typeLabel: Record<TitleType, string> = {
+  movie: 'সিনেমা',
+  series: 'সিরিজ ও ধারাবাহিক',
+  natok: 'নাটক ও টেলিফিল্ম',
+  tvshow: 'টিভি শো',
+  microdrama: 'মাইক্রো ড্রামা',
+};
+export const typeSingular: Record<TitleType, string> = {
+  movie: 'সিনেমা',
+  series: 'সিরিজ',
+  natok: 'নাটক',
+  tvshow: 'টিভি শো',
+  microdrama: 'মাইক্রো ড্রামা',
+};
+export const typePath: Record<TitleType, string> = {
+  movie: 'movie',
+  series: 'series',
+  natok: 'natok',
+  tvshow: 'tv-show',
+  microdrama: 'micro-drama',
+};
+
+export const accessLabel = { paid: 'সাবস্ক্রিপশন লাগে', free: 'ফ্রি', mixed: 'ফ্রি ও পেইড দুটোই', unknown: 'দাম যাচাই করা বাকি' } as const;
+
+export const jobLabel = { director: 'পরিচালক', producer: 'প্রযোজক', company: 'প্রযোজনা প্রতিষ্ঠান', actor: 'অভিনয়শিল্পী' } as const;
 
 // সাইট সাব-ফোল্ডারে থাকলে (যেমন GitHub Pages) প্রতিটা লিংকের আগে সেই ফোল্ডার যোগ করে
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const link = (path: string) => `${base}${path}`;
 
-export const titleUrl = (t: { id: string; data: { type: 'movie' | 'series' | 'natok' } }) =>
-  link(`/${typePath[t.data.type]}/${t.id}/`);
+export const titleUrl = (t: { id: string; data: { type: TitleType } }) => link(`/${typePath[t.data.type]}/${t.id}/`);
+export const personUrl = (id: string) => link(`/person/${id}/`);
+
+// যাচাই হয়েছে (lastVerified আছে) এমন পাতাই গুগলে ইনডেক্স হয়
+export const isVerified = (t: { data: { lastVerified?: Date } }) => Boolean(t.data.lastVerified);

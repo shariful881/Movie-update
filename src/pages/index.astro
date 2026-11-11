@@ -3,13 +3,24 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import TitleCard from '../components/TitleCard.astro';
 import AdSlot from '../components/AdSlot.astro';
-import { accessLabel, link } from '../lib/format';
+import { allLists } from '../lib/lists';
+import { accessLabel, bn, link, personUrl, typeLabel, typePath, type TitleType } from '../lib/format';
 
-const titles = (await getCollection('titles', ({ data }) => !data.draft)).sort(
-  (a, b) => (b.data.ottReleaseDate ?? b.data.releaseDate ?? new Date(0)).getTime() - (a.data.ottReleaseDate ?? a.data.releaseDate ?? new Date(0)).getTime(),
-);
+const titles = await getCollection('titles', ({ data }) => !data.draft);
 const platforms = (await getCollection('platforms')).sort((a, b) => a.data.order - b.data.order);
 const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name]));
+const people = await getCollection('people');
+
+const byDate = (t: (typeof titles)[number]) => (t.data.releaseDate ?? t.data.ottReleaseDate ?? (t.data.year ? new Date(`${t.data.year}-01-01`) : new Date(0))).getTime();
+const latestMovies = titles.filter((t) => t.data.type === 'movie').sort((a, b) => byDate(b) - byDate(a)).slice(0, 6);
+const dubbed = titles.filter((t) => t.data.dubbed).sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0)).slice(0, 6);
+const serials = titles.filter((t) => t.data.type === 'series' && !t.data.dubbed).sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0)).slice(0, 6);
+const natok = titles.filter((t) => t.data.type === 'natok').sort((a, b) => byDate(b) - byDate(a)).slice(0, 6);
+
+const typeCounts = (Object.keys(typePath) as TitleType[]).map((t) => ({ t, n: titles.filter((x) => x.data.type === t).length })).filter((x) => x.n);
+const lists = allLists(titles).slice(0, 6);
+const worksOf = (id: string) => titles.filter((t) => t.data.cast.some((c) => c.id === id) || t.data.crew.some((c) => c.id === id)).length;
+const stars = people.filter((p) => p.data.kind === 'person').map((p) => ({ p, n: worksOf(p.id) })).sort((a, b) => b.n - a.n).slice(0, 12);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -23,22 +34,67 @@ const jsonLd = {
 <Base title="সিনেখোঁজ: কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন" description="বাংলাদেশ থেকে কোন সিনেমা, নাটক আর ওয়েব সিরিজ কোন ওটিটিতে বৈধভাবে দেখা যায়, বাংলায় যাচাই করা তথ্য।" jsonLd={jsonLd}>
   <section class="hero stack">
     <h1>কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন?</h1>
-    <p class="muted">বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায়, সাবস্ক্রিপশন লাগে কিনা, পরিবার নিয়ে দেখা যাবে কিনা, সব এক জায়গায়, বাংলায়।</p>
+    <p class="muted">বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায়, সাবস্ক্রিপশন লাগে কিনা, কত পর্ব, কারা অভিনয় করেছেন, সব এক জায়গায়, বাংলায়।</p>
+    <nav aria-label="বিভাগ" class="types">
+      {typeCounts.map(({ t, n }) => <a class="chip" href={link(`/${typePath[t]}/`)}>{typeLabel[t]} <span class="muted">&nbsp;{bn(n)}</span></a>)}
+    </nav>
   </section>
 
-  <section class="section">
-    <h2>সাম্প্রতিক</h2>
-    {titles.length ? (
-      <div class="grid">{titles.slice(0, 12).map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
-    ) : (
-      <p class="card muted">শিগগিরই আসছে।</p>
-    )}
-  </section>
+  {latestMovies.length > 0 && (
+    <section class="section">
+      <div class="head"><h2>সিনেমা</h2><a href={link('/movie/')}>সব দেখুন</a></div>
+      <div class="grid">{latestMovies.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+    </section>
+  )}
+
+  {dubbed.length > 0 && (
+    <section class="section">
+      <div class="head"><h2>বাংলা ডাবিং সিরিয়াল</h2><a href={link('/list/bangla-dubbing/')}>সব দেখুন</a></div>
+      <div class="grid">{dubbed.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+    </section>
+  )}
 
   <AdSlot label="বিজ্ঞাপন" />
 
+  {serials.length > 0 && (
+    <section class="section">
+      <div class="head"><h2>জনপ্রিয় ধারাবাহিক</h2><a href={link('/series/')}>সব দেখুন</a></div>
+      <div class="grid">{serials.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+    </section>
+  )}
+
+  {natok.length > 0 && (
+    <section class="section">
+      <div class="head"><h2>নাটক ও টেলিফিল্ম</h2><a href={link('/natok/')}>সব দেখুন</a></div>
+      <div class="grid">{natok.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+    </section>
+  )}
+
+  {stars.length > 0 && (
+    <section class="section">
+      <div class="head"><h2>তারকা ও নির্মাতা</h2><a href={link('/person/')}>সব দেখুন</a></div>
+      <div class="stars">
+        {stars.map(({ p, n }) => (
+          <a class="card star" href={personUrl(p.id)}>
+            <span class="star-name">{p.data.name}</span>
+            <span class="small muted">{bn(n)}টি কাজ</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {lists.length > 0 && (
+    <section class="section">
+      <div class="head"><h2>তালিকা</h2><a href={link('/list/')}>সব দেখুন</a></div>
+      <div class="grid">
+        {lists.map((l) => <a class="card plat" href={link(`/list/${l.slug}/`)}><span class="list-name">{l.title}</span></a>)}
+      </div>
+    </section>
+  )}
+
   <section class="section">
-    <h2>ওটিটি প্ল্যাটফর্ম</h2>
+    <div class="head"><h2>ওটিটি প্ল্যাটফর্ম</h2><a href={link('/platform/')}>সব দেখুন</a></div>
     <div class="grid">
       {platforms.map((p) => (
         <a class="card plat" href={link(`/platform/${p.id}/`)}>
@@ -57,8 +113,15 @@ const jsonLd = {
 </Base>
 
 <style>
-  .hero { padding: 16px 0 4px; gap: 10px; }
+  .hero { padding: 16px 0 4px; gap: 12px; }
+  .types { display: flex; flex-wrap: wrap; gap: 10px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
   .plat { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); }
   .plat:hover { border-color: var(--accent); color: var(--text); }
   .plat-name { font-size: 22px; font-weight: 700; }
+  .list-name { font-size: 18px; font-weight: 600; line-height: 1.4; }
+  .stars { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .star { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
+  .star:hover { border-color: var(--accent); color: var(--text); }
+  .star-name { font-weight: 600; }
 </style>

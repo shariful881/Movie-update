@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { bn, link, personUrl } from '../../lib/format';
+
+const people = await getCollection('people');
+const titles = await getCollection('titles', ({ data }) => !data.draft);
+const countOf = (id: string) => titles.filter((t) => t.data.cast.some((c) => c.id === id) || t.data.crew.some((c) => c.id === id)).length;
+const rows = people.map((p) => ({ p, n: countOf(p.id) })).sort((a, b) => b.n - a.n || a.p.data.name.localeCompare(b.p.data.name, 'bn'));
+const persons = rows.filter((r) => r.p.data.kind === 'person');
+const companies = rows.filter((r) => r.p.data.kind === 'company');
+---
+<Base title="তারকা ও নির্মাতা" description="বাংলা সিনেমা ও সিরিজের অভিনেতা, পরিচালক, প্রযোজক আর প্রযোজনা প্রতিষ্ঠান: কার কোন কাজ কোথায় দেখা যায়।">
+  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › তারকা ও নির্মাতা</nav>
+  <h1>তারকা ও নির্মাতা</h1>
+  <section class="section">
+    <h2>অভিনেতা, পরিচালক ও প্রযোজক ({bn(persons.length)})</h2>
+    <div class="people">
+      {persons.map(({ p, n }) => (
+        <a class="card person" href={personUrl(p.id)}>
+          <span class="name">{p.data.name}</span>
+          <span class="small muted">{bn(n)}টি কাজ</span>
+        </a>
+      ))}
+    </div>
+  </section>
+  {companies.length > 0 && (
+    <section class="section">
+      <h2>প্রযোজনা প্রতিষ্ঠান ({bn(companies.length)})</h2>
+      <div class="people">
+        {companies.map(({ p, n }) => (
+          <a class="card person" href={personUrl(p.id)}>
+            <span class="name">{p.data.name}</span>
+            <span class="small muted">{bn(n)}টি কাজ</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</Base>
+<style>
+  .people { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+  .person { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
+  .person:hover { border-color: var(--accent); color: var(--text); }
+  .name { font-weight: 600; }
+</style>

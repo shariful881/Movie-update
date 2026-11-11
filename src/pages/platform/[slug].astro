@@ -38,7 +38,7 @@ const titles = await getCollection('titles', ({ data }) => !data.draft && data.a
   <AdSlot label="বিজ্ঞাপন" />
 
   <section class="section">
-    <h2>{d.name}তে যা দেখা যায়</h2>
+    <h2>{d.name}-এ যা দেখা যায়</h2>
     {titles.length ? (
       <div class="grid">{titles.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     ) : (
