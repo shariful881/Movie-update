@@ -17,6 +17,17 @@ const slugTitle = (slug) =>
     .trim()
     .replace(/\b\w/g, (c) => c.toUpperCase());
 
+// দৈর্ঘ্য দেখে আন্দাজ: ৭০ মিনিটের বেশি সিনেমা, ২০-৭০ মিনিট নাটক, এর কম গান বা ক্লিপ
+const guessKind = (e, title) => {
+  if (/^yes$/i.test(e.live)) return 'live';
+  if (/highlight|\bvs\b|\bodi\b|\bt20\b|\bcup\b|\bmatch\b/i.test(title)) return 'sports';
+  const sec = Number(e.duration) || 0;
+  if (!sec) return 'video';
+  if (sec >= 70 * 60) return 'movie';
+  if (sec >= 20 * 60) return 'natok';
+  return 'short';
+};
+
 const segments = (url) => new URL(url).pathname.split('/').filter(Boolean);
 
 const SOURCES = [
@@ -28,7 +39,8 @@ const SOURCES = [
     pick(e) {
       const s = segments(e.loc);
       if (s[0] !== 'content' || s[1] !== 'details' || s.length !== 4) return null;
-      return { kind: s[2] === 'series' ? 'series' : 'video', title: e.title || slugTitle(s[3]) };
+      const title = e.title || slugTitle(s[3]);
+      return { kind: s[2] === 'series' ? 'series' : guessKind(e, title), title };
     },
   },
   {
@@ -135,6 +147,9 @@ export function parseSitemap(xml) {
     lastmod: tag(m[1], 'lastmod'),
     title: tag(m[1], 'video:title'),
     published: tag(m[1], 'video:publication_date'),
+    duration: tag(m[1], 'video:duration'),
+    live: tag(m[1], 'video:live'),
+    subscription: tag(m[1], 'video:requires_subscription'),
   }));
   return { children: [], entries: entries.filter((e) => e.loc) };
 }
@@ -163,6 +178,8 @@ async function scanSource(src) {
         title: p.title,
         url: e.loc,
         published: (e.published || e.lastmod || '').slice(0, 10),
+        minutes: e.duration ? Math.round(Number(e.duration) / 60) : '',
+        access: /^yes$/i.test(e.subscription) ? 'paid' : /^no$/i.test(e.subscription) ? 'free' : '',
       });
     }
   }
@@ -174,7 +191,7 @@ const csvCell = (v) => {
   return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 };
 const toCsv = (rows) =>
-  ['platform,kind,title,url,published,first_seen', ...rows.map((r) => [r.platform, r.kind, r.title, r.url, r.published, r.first_seen].map(csvCell).join(','))].join('\n') + '\n';
+  ['platform,kind,title,minutes,access,published,first_seen,url', ...rows.map((r) => [r.platform, r.kind, r.title, r.minutes, r.access, r.published, r.first_seen, r.url].map(csvCell).join(','))].join('\n') + '\n';
 
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
