@@ -22,7 +22,8 @@ const guessKind = (e, title) => {
   if (/^yes$/i.test(e.live)) return 'live';
   if (/highlight|\bvs\b|\bodi\b|\bt20\b|\bcup\b|\bmatch\b/i.test(title)) return 'sports';
   const sec = Number(e.duration) || 0;
-  if (!sec) return 'video';
+  // অনেক ভিডিওর দৈর্ঘ্য ১ মিনিট বা খালি দেওয়া, যা আসল না: সেগুলো "অজানা" (video)
+  if (sec <= 60) return 'video';
   if (sec >= 70 * 60) return 'movie';
   if (sec >= 20 * 60) return 'natok';
   return 'short';
