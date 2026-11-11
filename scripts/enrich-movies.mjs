@@ -60,9 +60,9 @@ async function details(qids) {
   if (!qids.length) return [];
   const query = `
 SELECT ?film ?bn ?en ?date ?country
-  (GROUP_CONCAT(DISTINCT ?dirL; separator="|") AS ?directors)
-  (GROUP_CONCAT(DISTINCT ?prodL; separator="|") AS ?producers)
-  (GROUP_CONCAT(DISTINCT ?coL; separator="|") AS ?companies)
+  (GROUP_CONCAT(DISTINCT CONCAT(STRAFTER(STR(?d), "entity/"), "::", ?dirL, "::", COALESCE(?dirB, "")); separator="|") AS ?directors)
+  (GROUP_CONCAT(DISTINCT CONCAT(STRAFTER(STR(?p), "entity/"), "::", ?prodL, "::", COALESCE(?prodB, "")); separator="|") AS ?producers)
+  (GROUP_CONCAT(DISTINCT CONCAT(STRAFTER(STR(?co), "entity/"), "::", ?coL, "::", COALESCE(?coB, "")); separator="|") AS ?companies)
 WHERE {
   VALUES ?film { ${qids.map((q) => `wd:${q}`).join(' ')} }
   ?film wdt:P31/wdt:P279* wd:Q11424 .
@@ -71,9 +71,9 @@ WHERE {
   OPTIONAL { ?film rdfs:label ?en FILTER(LANG(?en) = "en") }
   OPTIONAL { ?film wdt:P577 ?date }
   OPTIONAL { ?film wdt:P495 ?c . ?c rdfs:label ?country FILTER(LANG(?country) = "en") }
-  OPTIONAL { ?film wdt:P57 ?d . ?d rdfs:label ?dirL FILTER(LANG(?dirL) = "en") }
-  OPTIONAL { ?film wdt:P162 ?p . ?p rdfs:label ?prodL FILTER(LANG(?prodL) = "en") }
-  OPTIONAL { ?film wdt:P272 ?co . ?co rdfs:label ?coL FILTER(LANG(?coL) = "en") }
+  OPTIONAL { ?film wdt:P57 ?d . ?d rdfs:label ?dirL FILTER(LANG(?dirL) = "en") OPTIONAL { ?d rdfs:label ?dirB FILTER(LANG(?dirB) = "bn") } }
+  OPTIONAL { ?film wdt:P162 ?p . ?p rdfs:label ?prodL FILTER(LANG(?prodL) = "en") OPTIONAL { ?p rdfs:label ?prodB FILTER(LANG(?prodB) = "bn") } }
+  OPTIONAL { ?film wdt:P272 ?co . ?co rdfs:label ?coL FILTER(LANG(?coL) = "en") OPTIONAL { ?co rdfs:label ?coB FILTER(LANG(?coB) = "bn") } }
 }
 GROUP BY ?film ?bn ?en ?date ?country`;
   const j = await getJson(`https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(query)}`);
@@ -81,34 +81,42 @@ GROUP BY ?film ?bn ?en ?date ?country`;
   const byFilm = new Map();
   for (const b of j.results.bindings) {
     const id = b.film.value.split('/').pop();
-    const cur = byFilm.get(id) ?? { qid: id, bn: '', en: '', dates: new Set(), countries: new Set(), directors: '', producers: '', companies: '' };
+    const cur = byFilm.get(id) ?? { qid: id, bn: '', en: '', dates: new Set(), countries: new Set(), directors: [], producers: [], companies: [] };
     if (b.bn) cur.bn = b.bn.value;
     if (b.en) cur.en = b.en.value;
     if (b.date) cur.dates.add(b.date.value.slice(0, 10));
     if (b.country) cur.countries.add(b.country.value);
-    if (b.directors?.value) cur.directors = b.directors.value.split('|').join(', ');
-    if (b.producers?.value) cur.producers = b.producers.value.split('|').join(', ');
-    if (b.companies?.value) cur.companies = b.companies.value.split('|').join(', ');
+    if (b.directors?.value) cur.directors = people(b.directors.value);
+    if (b.producers?.value) cur.producers = people(b.producers.value);
+    if (b.companies?.value) cur.companies = people(b.companies.value);
     byFilm.set(id, cur);
   }
   return [...byFilm.values()];
 }
 
+// "Q123::Name::বাংলা নাম|..." থেকে [{qid, name, bn}]
+const people = (v) =>
+  v.split('|').filter(Boolean).map((x) => {
+    const [qid, name, bn] = x.split('::');
+    return { qid, name, bn: bn || '' };
+  }).filter((x) => x.qid && x.name);
+
 // অভিনয়শিল্পী, উইকিডাটায় যে ক্রমে আছে (ক্রমিক নম্বর থাকলে সেই অনুযায়ী)
 async function cast(qid) {
   const query = `
-SELECT ?actorL ?ord WHERE {
+SELECT ?a ?actorL ?actorB ?ord WHERE {
   wd:${qid} p:P161 ?st . ?st ps:P161 ?a .
   OPTIONAL { ?st pq:P1545 ?ord }
   OPTIONAL { ?a rdfs:label ?actorL FILTER(LANG(?actorL) = "en") }
+  OPTIONAL { ?a rdfs:label ?actorB FILTER(LANG(?actorB) = "bn") }
 }`;
   const j = await getJson(`https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(query)}`);
   await sleep(1000);
   return j.results.bindings
-    .map((b, i) => ({ name: b.actorL?.value ?? '', ord: b.ord ? Number(b.ord.value) : 1000 + i }))
+    .map((b, i) => ({ qid: b.a.value.split('/').pop(), name: b.actorL?.value ?? '', bn: b.actorB?.value ?? '', ord: b.ord ? Number(b.ord.value) : 1000 + i }))
     .filter((x) => x.name)
     .sort((a, b) => a.ord - b.ord)
-    .map((x) => x.name);
+    .map(({ qid, name, bn }) => ({ qid, name, bn }));
 }
 
 const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]+/gu, '');
@@ -123,7 +131,7 @@ async function main() {
   const movies = catalog.filter((r) => r.kind === 'movie');
   const out = [];
   for (const m of movies) {
-    const row = { title: m.title, platform: m.platform, url: m.url, status: '', qid: '', bn: '', date: '', country: '', directors: '', producers: '', companies: '', cast: '' };
+    const row = { title: m.title, platform: m.platform, url: m.url, status: '', qid: '', bn: '', date: '', country: '', directors: [], producers: [], companies: [], cast: [] };
     try {
       const films = await details(await search(m.title));
       // নামের সাথে হুবহু মেলে এমনগুলো আগে
@@ -143,7 +151,7 @@ async function main() {
         row.directors = f.directors;
         row.producers = f.producers;
         row.companies = f.companies;
-        row.cast = (await cast(f.qid)).join(', ');
+        row.cast = await cast(f.qid);
       }
     } catch (e) {
       row.status = `ত্রুটি: ${e.message}`;
@@ -151,8 +159,31 @@ async function main() {
     out.push(row);
     console.log(`${row.status} | ${m.title} | ${row.qid}`);
   }
+  // মানুষ ও প্রতিষ্ঠানের তালিকা: প্রতিটা উইকিডাটা আইডির অধীনে তার সব সিনেমা
+  const persons = new Map();
+  const add = (p, role, film) => {
+    const cur = persons.get(p.qid) ?? { qid: p.qid, name: p.name, bn: p.bn, roles: new Set(), films: [] };
+    cur.roles.add(role);
+    if (!cur.films.some((f) => f.qid === film.qid && f.role === role)) cur.films.push({ qid: film.qid, title: film.title, bn: film.bn, date: film.date, platform: film.platform, role });
+    persons.set(p.qid, cur);
+  };
+  for (const r of out) {
+    if (!['মিলেছে', 'আংশিক নাম মিলেছে'].includes(r.status)) continue;
+    r.directors.forEach((p) => add(p, 'director', r));
+    r.producers.forEach((p) => add(p, 'producer', r));
+    r.companies.forEach((p) => add(p, 'company', r));
+    r.cast.forEach((p) => add(p, 'actor', r));
+  }
+  const personList = [...persons.values()].map((p) => ({ ...p, roles: [...p.roles] })).sort((a, b) => b.films.length - a.films.length || a.name.localeCompare(b.name));
+  await writeFile(new URL('movies-details.json', DATA), JSON.stringify(out, null, 1));
+  await writeFile(new URL('people.json', DATA), JSON.stringify(personList, null, 1));
+
+  const fmt = (list) => list.map((p) => `${p.name} [${p.qid}]`).join('; ');
   const cols = ['title', 'bn', 'platform', 'status', 'date', 'directors', 'producers', 'companies', 'cast', 'country', 'qid', 'url'];
-  await writeFile(new URL('movies-details.csv', DATA), [cols.join(','), ...out.map((r) => cols.map((c) => csvCell(r[c])).join(','))].join('\n') + '\n');
+  const flat = out.map((r) => ({ ...r, directors: fmt(r.directors), producers: fmt(r.producers), companies: fmt(r.companies), cast: fmt(r.cast) }));
+  await writeFile(new URL('movies-details.csv', DATA), [cols.join(','), ...flat.map((r) => cols.map((c) => csvCell(r[c])).join(','))].join('\n') + '\n');
+  const pcols = ['qid', 'name', 'bn', 'roles', 'film_count', 'films'];
+  await writeFile(new URL('people.csv', DATA), [pcols.join(','), ...personList.map((p) => [p.qid, p.name, p.bn, p.roles.join(' '), p.films.length, p.films.map((f) => f.title).join('; ')].map(csvCell).join(','))].join('\n') + '\n');
 }
 
 main().catch((e) => {
