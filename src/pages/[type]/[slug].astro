@@ -1,0 +1,241 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { accessLabel, bn, bnDate, bnRuntime, titleUrl, typeLabel, typePath } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const titles = await getCollection('titles', ({ data }) => !data.draft);
+  return titles.map((entry) => ({ params: { type: typePath[entry.data.type], slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+
+const allPlatforms = (await getCollection('platforms')).sort((a, b) => a.data.order - b.data.order);
+const available = await Promise.all(
+  d.availability.map(async (a) => ({ ...a, p: await getEntry(a.platform) })),
+);
+const availableIds = new Set(d.availability.map((a) => a.platform.id));
+const otherPlatforms = allPlatforms.filter((p) => !availableIds.has(p.id));
+const where = available.map((a) => a.p?.data.name).filter(Boolean).join(', ');
+
+const pageTitle = `${d.title} (${bn(d.year)}) কোথায় দেখবেন? ${where || 'ওটিটি তথ্য'}`;
+const description = d.summary;
+const url = new URL(titleUrl(entry), Astro.site).toString();
+const typeHref = `/${typePath[d.type]}/`;
+
+const facts = [
+  d.releaseDate && { label: d.type === 'movie' ? 'সিনেমা হলে মুক্তি' : 'মুক্তি', value: `${bnDate(d.releaseDate)}${d.releaseNote ? ` (${d.releaseNote})` : ''}` },
+  d.ottReleaseDate && { label: 'ওটিটিতে মুক্তি', value: bnDate(d.ottReleaseDate) },
+  d.runtimeMinutes && { label: 'দৈর্ঘ্য', value: bnRuntime(d.runtimeMinutes) },
+  d.episodes && { label: 'পর্ব', value: `${bn(d.episodes)}টি` },
+  d.genres.length && { label: 'ধরন', value: d.genres.join(', ') },
+  d.director && { label: 'পরিচালক', value: d.director },
+  d.production && { label: 'প্রযোজনা', value: d.production },
+  { label: 'ভাষা', value: d.language },
+  d.ageRating && { label: 'বয়স উপযোগিতা', value: d.ageRating, warn: true },
+].filter(Boolean) as { label: string; value: string; warn?: boolean }[];
+
+const familyHead = { yes: 'হ্যাঁ।', caution: 'সাবধানে।', no: 'না।' } as const;
+
+const work: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': d.type === 'movie' ? 'Movie' : 'TVSeries',
+  name: d.title,
+  alternateName: d.titleEn,
+  url,
+  inLanguage: 'bn',
+  genre: d.genres,
+  ...(d.releaseDate && { datePublished: d.releaseDate.toISOString().slice(0, 10) }),
+  ...(d.runtimeMinutes && { duration: `PT${d.runtimeMinutes}M` }),
+  ...(d.director && { director: { '@type': 'Person', name: d.director } }),
+  ...(d.cast.length && { actor: d.cast.map((c) => ({ '@type': 'Person', name: c.name })) }),
+  ...(d.ageRating && { contentRating: d.ageRating }),
+};
+const jsonLd = [
+  work,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'হোম', item: new URL('/', Astro.site).toString() },
+      { '@type': 'ListItem', position: 2, name: typeLabel[d.type], item: new URL(typeHref, Astro.site).toString() },
+      { '@type': 'ListItem', position: 3, name: d.title, item: url },
+    ],
+  },
+  ...(d.faqs.length
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: d.faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+      }]
+    : []),
+];
+---
+<Base title={pageTitle} description={description} jsonLd={jsonLd}>
+  <nav aria-label="অবস্থান" class="crumbs small muted">
+    <a href="/">হোম</a> › <a href={typeHref}>{typeLabel[d.type]}</a> › <span>{d.title}</span>
+  </nav>
+
+  <div class="stack" style="gap: 8px">
+    <h1>{d.title} ({bn(d.year)}) কোথায় দেখবেন?</h1>
+    {d.lastVerified ? (
+      <p class="small muted">সর্বশেষ যাচাই: {bnDate(d.lastVerified)}</p>
+    ) : (
+      <p class="small verify-pending">এই পাতার প্ল্যাটফর্মের তথ্য এখনো অ্যাপে যাচাই করা হয়নি। মুক্তির সময়ের খবরের ভিত্তিতে লেখা।</p>
+    )}
+  </div>
+
+  <section class="card answer" aria-label="সংক্ষিপ্ত উত্তর">
+    <span class="answer-label">সংক্ষেপে উত্তর</span>
+    <p>{d.summary}</p>
+  </section>
+
+  <div class="grid facts">
+    {facts.map((f) => (
+      <div class="card fact">
+        <span class="small muted">{f.label}</span>
+        <span class:list={['fact-value', { warn: f.warn }]}>{f.value}</span>
+      </div>
+    ))}
+  </div>
+
+  <AdSlot label="বিজ্ঞাপন" />
+
+  <section class="section">
+    <h2>কোথায় দেখবেন</h2>
+    {available.length ? (
+      <div class="grid platforms">
+        {available.map((a) => a.p && (
+          <div class="card platform">
+            <div class="platform-head">
+              <span class="platform-name">{a.p.data.name}</span>
+              <span class="pill">আছে</span>
+            </div>
+            <p class="small muted">{accessLabel[a.p.data.access]}{a.note ? ` · ${a.note}` : ''}</p>
+            <a class="btn" href={a.url ?? a.p.data.affiliateUrl ?? a.p.data.url} rel={a.p.data.affiliateUrl && !a.url ? 'sponsored noopener' : 'noopener'} target="_blank">
+              {a.p.data.name}তে দেখুন
+            </a>
+            <a class="small" href={`/platform/${a.p.id}/`}>{a.p.data.name} সম্পর্কে বিস্তারিত</a>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="card">এখনো কোনো বৈধ প্ল্যাটফর্মে পাওয়া যায়নি। পাওয়া গেলে এখানে আপডেট করা হবে।</p>
+    )}
+    {d.checkedPlatforms.length > 0 && (
+      <p class="small muted">আমরা খুঁজেছি: {d.checkedPlatforms.join(', ')}। যেগুলোর নাম উপরে নেই, সেখানে পাওয়া যায়নি।</p>
+    )}
+    <p class="small muted">সিনেখোঁজ কোনো সিনেমা হোস্ট করে না এবং পাইরেটেড লিংক দেয় না।</p>
+  </section>
+
+  {d.family && (
+    <section class="section">
+      <h2>পরিবার নিয়ে দেখা যাবে?</h2>
+      <div class:list={['card', 'family', `family-${d.family.verdict}`]}>
+        <strong>{familyHead[d.family.verdict]}</strong> {d.family.text}
+      </div>
+      {d.family.items.length > 0 && (
+        <div class="grid">
+          {d.family.items.map((i) => (
+            <div class="card">
+              <div style="font-weight: 600">{i.label}</div>
+              <div class:list={['lvl', `lvl-${i.level}`]}>{i.text}</div>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  )}
+
+  <section class="section">
+    <h2>কাহিনি সংক্ষেপ (স্পয়লার নেই)</h2>
+    <div class="prose"><Content /></div>
+  </section>
+
+  <AdSlot label="বিজ্ঞাপন" />
+
+  {d.cast.length > 0 && (
+    <section class="section">
+      <h2>অভিনয়শিল্পী</h2>
+      <div class="grid cast">
+        {d.cast.map((c) => (
+          <div class="card">
+            <div style="font-weight: 600">{c.name}</div>
+            {c.role && <div class="small muted">{c.role}</div>}
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {d.facts.length > 0 && (
+    <section class="grid wide">
+      {d.facts.map((f) => (
+        <div class="card stack" style="gap: 6px">
+          <h2 style="font-size: 21px">{f.heading}</h2>
+          <p class="prose">{f.text}</p>
+        </div>
+      ))}
+    </section>
+  )}
+
+  {d.faqs.length > 0 && (
+    <section class="section">
+      <h2>সাধারণ প্রশ্ন</h2>
+      {d.faqs.map((f) => (
+        <div class="card">
+          <h3 style="font-size: 17px">{f.q}</h3>
+          <p class="prose">{f.a}</p>
+        </div>
+      ))}
+    </section>
+  )}
+
+  {otherPlatforms.length > 0 && (
+    <section class="section">
+      <h2>বাংলাদেশের অন্যান্য ওটিটি</h2>
+      <p class="small muted">এটা সাধারণ তালিকা। এই প্ল্যাটফর্মগুলোতে {d.title} আছে, এমন দাবি নয়।</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px">
+        {otherPlatforms.map((p) => <a class="chip" href={`/platform/${p.id}/`}>{p.data.name}</a>)}
+      </div>
+    </section>
+  )}
+
+  <AdSlot label="বিজ্ঞাপন" />
+
+  {d.sources.length > 0 && (
+    <p class="small muted">
+      তথ্যসূত্র: {d.sources.map((s, i) => <>{i > 0 && ', '}<a href={s.url} rel="noopener" target="_blank">{s.name}</a></>)}।
+      ওটিটিতে থাকা না থাকা সময়ের সাথে বদলায়। ভুল দেখলে <a href="/jogajog/">আমাদের জানান</a>।
+    </p>
+  )}
+</Base>
+
+<style>
+  .crumbs a { color: var(--muted); }
+  .verify-pending { color: var(--warn); }
+  .answer { display: flex; flex-direction: column; gap: 6px; padding: 20px 22px; }
+  .answer-label { font-size: 13px; font-weight: 600; color: var(--accent); }
+  .answer p { font-size: 19px; }
+  .facts { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .fact { display: flex; flex-direction: column; }
+  .fact-value { font-size: 18px; font-weight: 600; }
+  .fact-value.warn { color: var(--bad); }
+  .platforms { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .platform { display: flex; flex-direction: column; gap: 10px; padding: 20px; }
+  .platform-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .platform-name { font-size: 22px; font-weight: 700; }
+  .family { font-size: 18px; }
+  .family-no { background: var(--bad-bg); border-color: var(--bad-line); }
+  .family-no strong { color: var(--bad); }
+  .family-caution strong { color: var(--warn); }
+  .family-yes strong { color: var(--ok); }
+  .lvl-high { color: var(--bad); }
+  .lvl-mid { color: var(--warn); }
+  .lvl-low { color: #c9cdd4; }
+  .cast { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .wide { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+</style>

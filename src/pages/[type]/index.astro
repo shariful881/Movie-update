@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TitleCard from '../../components/TitleCard.astro';
+import { typeLabel, typePath } from '../../lib/format';
+
+export function getStaticPaths() {
+  return (Object.keys(typePath) as (keyof typeof typePath)[]).map((t) => ({ params: { type: typePath[t] }, props: { kind: t } }));
+}
+
+const { kind } = Astro.props;
+const titles = (await getCollection('titles', ({ data }) => !data.draft && data.type === kind)).sort((a, b) => b.data.year - a.data.year);
+const platforms = await getCollection('platforms');
+const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name]));
+const label = typeLabel[kind];
+---
+<Base title={`বাংলা ${label} কোথায় দেখবেন`} description={`বাংলাদেশ থেকে কোন ${label} কোন ওটিটিতে দেখা যায়, যাচাই করা তালিকা।`}>
+  <nav aria-label="অবস্থান" class="small muted"><a href="/" style="color: var(--muted)">হোম</a> › {label}</nav>
+  <h1>{label} কোথায় দেখবেন</h1>
+  {titles.length ? (
+    <div class="grid">{titles.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+  ) : (
+    <p class="card muted">এই বিভাগে শিগগিরই {label} যোগ হবে।</p>
+  )}
+</Base>

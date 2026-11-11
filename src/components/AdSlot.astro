@@ -1,0 +1,26 @@
+---
+// অ্যাডসেন্স অনুমোদনের পর .env ফাইলে PUBLIC_ADSENSE_CLIENT=ca-pub-XXXX দিলে আসল বিজ্ঞাপন দেখাবে।
+// তার আগে শুধু একটা খালি জায়গা দেখায়।
+interface Props { slot?: string; label?: string }
+const { slot, label = 'বিজ্ঞাপন' } = Astro.props;
+const client = import.meta.env.PUBLIC_ADSENSE_CLIENT;
+---
+{client && slot ? (
+  <div class="ad">
+    <ins class="adsbygoogle" style="display:block" data-ad-client={client} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+) : (
+  <div class="ad ad-placeholder" aria-hidden="true">{label}</div>
+)}
+<style>
+  .ad { margin: 8px 0; min-height: 90px; }
+  .ad-placeholder {
+    border: 1px dashed var(--line-strong);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    color: var(--faint);
+    font-size: 14px;
+  }
+</style>

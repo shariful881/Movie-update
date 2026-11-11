@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import { bn } from '../lib/format';
+
+interface Props {
+  title: string;
+  description: string;
+  jsonLd?: object | object[];
+  noindex?: boolean;
+}
+const { title, description, jsonLd, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const fullTitle = title.includes('সিনেখোঁজ') ? title : `${title} | সিনেখোঁজ`;
+const adClient = import.meta.env.PUBLIC_ADSENSE_CLIENT;
+const year = new Date().getFullYear();
+const nav = [
+  { href: '/movie/', label: 'সিনেমা' },
+  { href: '/series/', label: 'ওয়েব সিরিজ' },
+  { href: '/natok/', label: 'নাটক' },
+  { href: '/platform/', label: 'ওটিটি প্ল্যাটফর্ম' },
+];
+---
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="সিনেখোঁজ" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="bn_BD" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" />
+    {adClient && (
+      <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`} crossorigin="anonymous"></script>
+    )}
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a href="/" class="logo">সিনেখোঁজ</a>
+        <nav aria-label="প্রধান মেনু">
+          {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+        </nav>
+      </div>
+    </header>
+    <main class="wrap main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-col">
+        <p>সিনেখোঁজ কোনো সিনেমা, নাটক বা সিরিজ হোস্ট করে না, আর পাইরেটেড লিংক দেয় না। আমরা শুধু বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায় সেই তথ্য যাচাই করে দিই।</p>
+        <nav aria-label="সাইটের তথ্য" class="footer-links">
+          <a href="/amader-kotha/">আমাদের কথা</a>
+          <a href="/kivabe-jachai-kori/">আমরা কীভাবে যাচাই করি</a>
+          <a href="/jogajog/">যোগাযোগ</a>
+          <a href="/privacy-policy/">প্রাইভেসি পলিসি</a>
+        </nav>
+        <p class="small">© {bn(year)} সিনেখোঁজ</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header { background: var(--surface-2); border-bottom: 1px solid var(--line); }
+  .header-row { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: space-between; padding-top: 12px; padding-bottom: 12px; }
+  .logo { font-size: 24px; font-weight: 700; color: var(--text); text-decoration: none; }
+  .logo:hover { color: var(--accent); }
+  .header-row nav { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 15px; }
+  .header-row nav a { color: #c9cdd4; text-decoration: none; padding: 8px 0; }
+  .header-row nav a:hover { color: var(--accent); }
+  .main { padding-top: 24px; padding-bottom: 64px; display: flex; flex-direction: column; gap: 28px; }
+  .site-footer { border-top: 1px solid var(--line); background: var(--surface-2); color: var(--muted); font-size: 15px; }
+  .footer-col { padding-top: 28px; padding-bottom: 28px; display: flex; flex-direction: column; gap: 14px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+  .footer-links a { color: #c9cdd4; }
+</style>

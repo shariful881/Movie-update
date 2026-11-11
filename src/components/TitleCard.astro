@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { bn, titleUrl, typeLabel } from '../lib/format';
+interface Props { entry: CollectionEntry<'titles'>; platformNames: Record<string, string> }
+const { entry, platformNames } = Astro.props;
+const d = entry.data;
+const where = d.availability.map((a) => platformNames[a.platform.id] ?? a.platform.id).join(', ');
+---
+<a class="title-card" href={titleUrl(entry)}>
+  <span class="t-type">{typeLabel[d.type]} · {bn(d.year)}</span>
+  <span class="t-name">{d.title}</span>
+  <span class="t-where">{where ? `দেখুন: ${where}` : 'প্রাপ্যতা যাচাই চলছে'}</span>
+</a>
+<style>
+  .title-card {
+    display: flex; flex-direction: column; gap: 4px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 16px 18px; text-decoration: none; color: var(--text); min-height: 44px;
+  }
+  .title-card:hover { border-color: var(--accent); color: var(--text); }
+  .t-type { font-size: 13px; color: var(--muted); }
+  .t-name { font-size: 22px; font-weight: 700; }
+  .t-where { font-size: 15px; color: var(--accent); }
+</style>

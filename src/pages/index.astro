@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import TitleCard from '../components/TitleCard.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { accessLabel } from '../lib/format';
+
+const titles = (await getCollection('titles', ({ data }) => !data.draft)).sort(
+  (a, b) => (b.data.ottReleaseDate ?? b.data.releaseDate ?? new Date(0)).getTime() - (a.data.ottReleaseDate ?? a.data.releaseDate ?? new Date(0)).getTime(),
+);
+const platforms = (await getCollection('platforms')).sort((a, b) => a.data.order - b.data.order);
+const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name]));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'সিনেখোঁজ',
+  alternateName: 'CineKhoj',
+  url: new URL('/', Astro.site).toString(),
+  inLanguage: 'bn',
+};
+---
+<Base title="সিনেখোঁজ: কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন" description="বাংলাদেশ থেকে কোন সিনেমা, নাটক আর ওয়েব সিরিজ কোন ওটিটিতে বৈধভাবে দেখা যায়, বাংলায় যাচাই করা তথ্য।" jsonLd={jsonLd}>
+  <section class="hero stack">
+    <h1>কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন?</h1>
+    <p class="muted">বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায়, সাবস্ক্রিপশন লাগে কিনা, পরিবার নিয়ে দেখা যাবে কিনা, সব এক জায়গায়, বাংলায়।</p>
+  </section>
+
+  <section class="section">
+    <h2>সাম্প্রতিক</h2>
+    {titles.length ? (
+      <div class="grid">{titles.slice(0, 12).map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+    ) : (
+      <p class="card muted">শিগগিরই আসছে।</p>
+    )}
+  </section>
+
+  <AdSlot label="বিজ্ঞাপন" />
+
+  <section class="section">
+    <h2>ওটিটি প্ল্যাটফর্ম</h2>
+    <div class="grid">
+      {platforms.map((p) => (
+        <a class="card plat" href={`/platform/${p.id}/`}>
+          <span class="plat-name">{p.data.name}</span>
+          <span class="small muted">{accessLabel[p.data.access]}</span>
+          <span class="small">{p.data.tagline}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="card stack" style="gap: 8px">
+    <h2 style="font-size: 21px">আমাদের তথ্য কেন বিশ্বাস করবেন</h2>
+    <p class="muted">প্রতিটা টাইটেল আমরা প্ল্যাটফর্মের অ্যাপে নিজে খুঁজে যাচাই করি, আর পাতায় সর্বশেষ যাচাইয়ের তারিখ লিখে দিই। <a href="/kivabe-jachai-kori/">আমরা কীভাবে যাচাই করি</a></p>
+  </section>
+</Base>
+
+<style>
+  .hero { padding: 16px 0 4px; gap: 10px; }
+  .plat { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); }
+  .plat:hover { border-color: var(--accent); color: var(--text); }
+  .plat-name { font-size: 22px; font-weight: 700; }
+</style>
