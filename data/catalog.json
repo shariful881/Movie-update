@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T15:08:10.810Z",
+ "generated_at": "2026-11-11T15:17:59.557Z",
  "sources": {
   "iscreen": {
    "name": "আই স্ক্রিন",
@@ -10,6 +10,11 @@
    "name": "দীপ্ত প্লে",
    "status": "ok",
    "count": 192
+  },
+  "addatimes": {
+   "name": "অ্যাডাটাইমস",
+   "status": "ok",
+   "count": 136
   },
   "bongo": {
    "name": "বঙ্গ",
@@ -23,6 +28,1366 @@
   }
  },
  "items": [
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Aandha Prem",
+   "url": "https://www.addatimes.com/movie/aandha-prem",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Achena Atithi",
+   "url": "https://www.addatimes.com/movie/achena-atithi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Action",
+   "url": "https://www.addatimes.com/movie/action",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Alaap",
+   "url": "https://www.addatimes.com/movie/alaap",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Alinagarer Golokdhadha",
+   "url": "https://www.addatimes.com/movie/alinagarer-golokdhadha",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Alo",
+   "url": "https://www.addatimes.com/movie/alo",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Aloukik",
+   "url": "https://www.addatimes.com/movie/aloukik",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Amanush",
+   "url": "https://www.addatimes.com/movie/amanush",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ananda Ashram",
+   "url": "https://www.addatimes.com/movie/ananda-ashram",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Andha Bichar",
+   "url": "https://www.addatimes.com/movie/andha-bichar",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ankhi",
+   "url": "https://www.addatimes.com/movie/ankhi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Anusandhan",
+   "url": "https://www.addatimes.com/movie/anusandhan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Anyway Abichar",
+   "url": "https://www.addatimes.com/movie/anyway-abichar",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Aradhana",
+   "url": "https://www.addatimes.com/movie/aradhana",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ardhangini",
+   "url": "https://www.addatimes.com/movie/ardhangini",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Arjun Kalimpong E Sitaharan",
+   "url": "https://www.addatimes.com/movie/arjun-kalimpong-e-sitaharan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Arundhati",
+   "url": "https://www.addatimes.com/movie/arundhati",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ashrita",
+   "url": "https://www.addatimes.com/movie/ashrita",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Asukh",
+   "url": "https://www.addatimes.com/movie/asukh",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Badshahi Angti",
+   "url": "https://www.addatimes.com/movie/badshahi-angti",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Banhisikha",
+   "url": "https://www.addatimes.com/movie/banhisikha",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Besh Korechi Prem Korechi",
+   "url": "https://www.addatimes.com/movie/besh-korechi-prem-korechi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Bhootchakra Pvt Ltd",
+   "url": "https://www.addatimes.com/movie/bhootchakra-pvt-ltd",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Bhootpori",
+   "url": "https://www.addatimes.com/movie/bhootpori",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Bidhatar Lekha",
+   "url": "https://www.addatimes.com/movie/bidhatar-lekha",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Bolo Na Tumi Amar",
+   "url": "https://www.addatimes.com/movie/bolo-na-tumi-amar",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Bony",
+   "url": "https://www.addatimes.com/movie/bony",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Borunbabur Bondhu",
+   "url": "https://www.addatimes.com/movie/borunbabur-bondhu",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Brindaban Leela",
+   "url": "https://www.addatimes.com/movie/brindaban-leela",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Byomkesh Pawrbo",
+   "url": "https://www.addatimes.com/movie/byomkesh-pawrbo",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Chaar",
+   "url": "https://www.addatimes.com/movie/chaar",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Chakravyuh",
+   "url": "https://www.addatimes.com/movie/chakravyuh",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Chaya O Chobi",
+   "url": "https://www.addatimes.com/movie/chaya-o-chobi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Classroom",
+   "url": "https://www.addatimes.com/movie/classroom",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Dada",
+   "url": "https://www.addatimes.com/movie/dada",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Debi",
+   "url": "https://www.addatimes.com/movie/debi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Deva",
+   "url": "https://www.addatimes.com/movie/deva",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Devdas",
+   "url": "https://www.addatimes.com/movie/devdas",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Dhaka Attack",
+   "url": "https://www.addatimes.com/movie/dhaka-attack",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Doctor Bakshi",
+   "url": "https://www.addatimes.com/movie/doctor-bakshi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Don No 1",
+   "url": "https://www.addatimes.com/movie/don-no-1",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Drishtikone",
+   "url": "https://www.addatimes.com/movie/drishtikone",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ei Prithibi Tomar Amar",
+   "url": "https://www.addatimes.com/movie/ei-prithibi-tomar-amar",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Flyover",
+   "url": "https://www.addatimes.com/movie/flyover",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ghare Baire",
+   "url": "https://www.addatimes.com/movie/ghare-baire",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Ghatak",
+   "url": "https://www.addatimes.com/movie/ghatak",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Girlfriend",
+   "url": "https://www.addatimes.com/movie/girlfriend",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Golmal",
+   "url": "https://www.addatimes.com/movie/golmal",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Googly",
+   "url": "https://www.addatimes.com/movie/googly",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Guru",
+   "url": "https://www.addatimes.com/movie/guru",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Hero",
+   "url": "https://www.addatimes.com/movie/hero",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Herogiri",
+   "url": "https://www.addatimes.com/movie/herogiri",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Highway",
+   "url": "https://www.addatimes.com/movie/highway",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Honeymoon",
+   "url": "https://www.addatimes.com/movie/honeymoon",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Hungama",
+   "url": "https://www.addatimes.com/movie/hungama",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jaaneman",
+   "url": "https://www.addatimes.com/movie/jaaneman",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jamai Badal",
+   "url": "https://www.addatimes.com/movie/jamai-badal",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jamaibabu Jindabad",
+   "url": "https://www.addatimes.com/movie/jamaibabu-jindabad",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jawker Dhan",
+   "url": "https://www.addatimes.com/movie/jawker-dhan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jekhane Bhooter Bhoy",
+   "url": "https://www.addatimes.com/movie/jekhane-bhooter-bhoy",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jio Pagla",
+   "url": "https://www.addatimes.com/movie/jio-pagla",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jiyo Kaka",
+   "url": "https://www.addatimes.com/movie/jiyo-kaka",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jor",
+   "url": "https://www.addatimes.com/movie/jor",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Jyeshthoputro",
+   "url": "https://www.addatimes.com/movie/jyeshthoputro",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Kaberi Antardhan",
+   "url": "https://www.addatimes.com/movie/kaberi-antardhan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Khelaghar",
+   "url": "https://www.addatimes.com/movie/khelaghar",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Kidnap",
+   "url": "https://www.addatimes.com/movie/kidnap",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Kothamrita",
+   "url": "https://www.addatimes.com/movie/kothamrita",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Love Express",
+   "url": "https://www.addatimes.com/movie/love-express",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Love Marriage",
+   "url": "https://www.addatimes.com/movie/love-marriage",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Love Story",
+   "url": "https://www.addatimes.com/movie/love-story",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Loveria",
+   "url": "https://www.addatimes.com/movie/loveria",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Magic",
+   "url": "https://www.addatimes.com/movie/magic",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Meher Aali",
+   "url": "https://www.addatimes.com/movie/meher-aali",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Miss Call",
+   "url": "https://www.addatimes.com/movie/miss-call",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Mitin Mashi",
+   "url": "https://www.addatimes.com/movie/mitin-mashi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Mon Je Kore Uru Uru",
+   "url": "https://www.addatimes.com/movie/mon-je-kore-uru-uru",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Paglu",
+   "url": "https://www.addatimes.com/movie/paglu",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Paglu 2",
+   "url": "https://www.addatimes.com/movie/paglu-2",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Path Bhola",
+   "url": "https://www.addatimes.com/movie/path-bhola",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Piya Re",
+   "url": "https://www.addatimes.com/movie/piya-re",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Premi No 1 1",
+   "url": "https://www.addatimes.com/movie/premi-no-1-1",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Prime Time",
+   "url": "https://www.addatimes.com/movie/prime-time",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Pupa",
+   "url": "https://www.addatimes.com/movie/pupa",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Rakhi Purnima",
+   "url": "https://www.addatimes.com/movie/rakhi-purnima",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Rangbazz",
+   "url": "https://www.addatimes.com/movie/rangbazz",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Rawkto Rawhosyo",
+   "url": "https://www.addatimes.com/movie/rawkto-rawhosyo",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Rocky",
+   "url": "https://www.addatimes.com/movie/rocky",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Sagardwipey Jawker Dhan",
+   "url": "https://www.addatimes.com/movie/sagardwipey-jawker-dhan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Shaitan",
+   "url": "https://www.addatimes.com/movie/shaitan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Shotru",
+   "url": "https://www.addatimes.com/movie/shotru",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Shriman Bhootnath",
+   "url": "https://www.addatimes.com/movie/shriman-bhootnath",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Shush Ekbar Bolo",
+   "url": "https://www.addatimes.com/movie/shush-ekbar-bolo",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Smriti Tuku Thak",
+   "url": "https://www.addatimes.com/movie/smriti-tuku-thak",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Tarokar Mrityu",
+   "url": "https://www.addatimes.com/movie/tarokar-mrityu",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Teko",
+   "url": "https://www.addatimes.com/movie/teko",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Tenida And Company",
+   "url": "https://www.addatimes.com/movie/tenida-and-company",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Thik Dupure Mid Day",
+   "url": "https://www.addatimes.com/movie/thik-dupure-mid-day",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Tiger",
+   "url": "https://www.addatimes.com/movie/tiger",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Tintorettor Jishu",
+   "url": "https://www.addatimes.com/movie/tintorettor-jishu",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Toke Chhara Banchbo Naa",
+   "url": "https://www.addatimes.com/movie/toke-chhara-banchbo-naa",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Trishna",
+   "url": "https://www.addatimes.com/movie/trishna",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Tumi Ashbe Bole",
+   "url": "https://www.addatimes.com/movie/tumi-ashbe-bole",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Uttarayan",
+   "url": "https://www.addatimes.com/movie/uttarayan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "movie",
+   "title": "Villain",
+   "url": "https://www.addatimes.com/movie/villain",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Abhishapto",
+   "url": "https://www.addatimes.com/series/abhishapto",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Amriter Sandhane The Banaras Chapter",
+   "url": "https://www.addatimes.com/series/amriter-sandhane-the-banaras-chapter",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Basanta Ese Geche",
+   "url": "https://www.addatimes.com/series/basanta-ese-geche",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Bcbaal The Private Dick",
+   "url": "https://www.addatimes.com/series/bcbaal-the-private-dick",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Britto",
+   "url": "https://www.addatimes.com/series/britto",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Byomkesh Bakshi",
+   "url": "https://www.addatimes.com/series/byomkesh-bakshi",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Cabaret",
+   "url": "https://www.addatimes.com/series/cabaret",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Dekhechhi Tomake Shrabone",
+   "url": "https://www.addatimes.com/series/dekhechhi-tomake-shrabone",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Feluda Ferot Jawto Kanto Kathmandute",
+   "url": "https://www.addatimes.com/series/feluda-ferot-jawto-kanto-kathmandute",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Gentlemen",
+   "url": "https://www.addatimes.com/series/gentlemen",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Ghoshbabur Retirement Plan",
+   "url": "https://www.addatimes.com/series/ghoshbabur-retirement-plan",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Ghostana",
+   "url": "https://www.addatimes.com/series/ghostana",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "In Their Life",
+   "url": "https://www.addatimes.com/series/in-their-life",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Julie",
+   "url": "https://www.addatimes.com/series/julie",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Khujechi Toke Raat Berate",
+   "url": "https://www.addatimes.com/series/khujechi-toke-raat-berate",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Khyapa",
+   "url": "https://www.addatimes.com/series/khyapa",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Lady Queen Gents Parlour",
+   "url": "https://www.addatimes.com/series/lady-queen-gents-parlour",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Monsoon Melodies",
+   "url": "https://www.addatimes.com/series/monsoon-melodies",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Nandini",
+   "url": "https://www.addatimes.com/series/nandini",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Oh Mother Bengali",
+   "url": "https://www.addatimes.com/series/oh-mother-bengali",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "One Night Stand",
+   "url": "https://www.addatimes.com/series/one-night-stand",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Petni",
+   "url": "https://www.addatimes.com/series/petni",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Preme Pora Baron",
+   "url": "https://www.addatimes.com/series/preme-pora-baron",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Sin Web Series",
+   "url": "https://www.addatimes.com/series/sin-web-series",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Sin Whispers Of Guilt",
+   "url": "https://www.addatimes.com/series/sin-whispers-of-guilt",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Sufiyana",
+   "url": "https://www.addatimes.com/series/sufiyana",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "The Lost Tribe",
+   "url": "https://www.addatimes.com/series/the-lost-tribe",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "The Senapatis Vol 1",
+   "url": "https://www.addatimes.com/series/the-senapatis-vol-1",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Tomake Bujhina Priyo",
+   "url": "https://www.addatimes.com/series/tomake-bujhina-priyo",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Utshober Pore Web Series",
+   "url": "https://www.addatimes.com/series/utshober-pore-web-series",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "addatimes",
+   "kind": "series",
+   "title": "Virgin Mohito",
+   "url": "https://www.addatimes.com/series/virgin-mohito",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-11"
+  },
   {
    "platform": "deeptoplay",
    "kind": "micro-drama",
