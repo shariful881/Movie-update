@@ -3,6 +3,10 @@ name: GitHub Pages-এ প্রকাশ
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - data/**
+      - scripts/**
+      - .github/workflows/scan-ott.yml
   workflow_dispatch:
 
 permissions:

@@ -1,0 +1,41 @@
+name: ওটিটি স্ক্যান
+
+# প্রতিদিন বাংলাদেশ সময় সকাল ৬টার আগে (UTC 23:47) চলে, আর স্ক্রিপ্ট বদলালেও চলে।
+on:
+  schedule:
+    - cron: '47 23 * * *'
+  push:
+    branches: [main]
+    paths:
+      - scripts/scan-ott.mjs
+      - .github/workflows/scan-ott.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scan-ott
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/scan-ott.mjs
+      - name: ফলাফল সেভ
+        run: |
+          git config user.name "cinekhoj-bot"
+          git config user.email "cinekhoj-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "কোনো পরিবর্তন নেই"
+          else
+            git commit -m "ওটিটি স্ক্যান $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
