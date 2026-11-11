@@ -7,7 +7,8 @@ seasons: 5
 episodes: 90
 genres: ["Series","কমেডি","Romantic Drama"]
 language: "বাংলা"
-origin: "বাংলাদেশ"
+origin: "তুরস্ক"
+dubbed: true
 cast:
   - {"name":"Furkan Andic"}
   - {"name":"Aybüke Pusat"}
@@ -19,6 +20,7 @@ availability:
 faqs:
   - {"q":"Tumi Acho Sobkhane কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Tumi Acho Sobkhane বাংলাদেশ থেকে দীপ্ত প্লে-এ দেখা যায়।"}
   - {"q":"Tumi Acho Sobkhane কত পর্ব?","a":"মোট ৯০টি পর্ব, ৫টি সিজনে।"}
+  - {"q":"Tumi Acho Sobkhane কি বাংলায় দেখা যায়?","a":"হ্যাঁ, তুরস্ক-এর এই সিরিজ বাংলা ডাবিংয়ে দীপ্ত প্লে-এ দেখা যায়।"}
   - {"q":"Tumi Acho Sobkhane-এ কারা অভিনয় করেছেন?","a":"Furkan Andic, Aybüke Pusat।"}
 sources:
   - {"name":"দীপ্ত প্লে","url":"https://www.deeptoplay.com/series/tumi-acho-sobkhane"}

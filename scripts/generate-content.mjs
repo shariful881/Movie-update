@@ -139,6 +139,8 @@ for (const s of sources) {
     const dirs = (s.directors || '').split(',').map((x) => x.trim()).filter(Boolean);
     if (!base.crew?.length && dirs.length) base.crew = dirs.map((n) => ({ name: n, job: 'director', id: personByEnName.get(norm(n)) }));
     base.origin = base.origin || s.origin || undefined;
+    // পুরনো স্ক্যানের সাথে মিল রেখে: তুর্কি অক্ষরওয়ালা নাম থাকলে তুর্কি ধারাবাহিক
+    if (base.origin === 'বাংলাদেশ' && /[ğşıİçöüÇÖÜŞĞ]/.test(`${s.cast} ${s.directors}`)) base.origin = 'তুরস্ক';
     base.dubbed = Boolean(base.origin && base.origin !== 'বাংলাদেশ');
   }
 

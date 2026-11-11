@@ -61,7 +61,7 @@ const ORIGINS = [
 ];
 const originOf = (text, names = '') => {
   for (const [re, c] of ORIGINS) if (re.test(text)) return c;
-  if (/[ğşıİ]/.test(names)) return 'তুরস্ক';
+  if (/[ğşıİçöüÇÖÜŞĞ]/.test(names)) return 'তুরস্ক';
   return '';
 };
 
@@ -100,7 +100,7 @@ async function deepto(url, kind) {
     genres: titlesOf(text, 'genres').join(', ') || ld.genre || '',
     cast: casts.join(', '),
     directors,
-    origin: originOf(desc, casts.join(' ')) || 'বাংলাদেশ',
+    origin: originOf(desc, `${casts.join(' ')} ${directors}`) || 'বাংলাদেশ',
   };
 }
 

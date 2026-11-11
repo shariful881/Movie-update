@@ -7,7 +7,8 @@ seasons: 1
 episodes: 6
 genres: ["Series"]
 language: "বাংলা"
-origin: "বাংলাদেশ"
+origin: "তুরস্ক"
+dubbed: true
 cast:
   - {"name":"Burak Özçivit"}
   - {"name":"Neslihan Atagül"}
@@ -16,6 +17,7 @@ availability:
 faqs:
   - {"q":"Learned Friend কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Learned Friend বাংলাদেশ থেকে দীপ্ত প্লে-এ দেখা যায়।"}
   - {"q":"Learned Friend কত পর্ব?","a":"মোট ৬টি পর্ব।"}
+  - {"q":"Learned Friend কি বাংলায় দেখা যায়?","a":"হ্যাঁ, তুরস্ক-এর এই সিরিজ বাংলা ডাবিংয়ে দীপ্ত প্লে-এ দেখা যায়।"}
   - {"q":"Learned Friend-এ কারা অভিনয় করেছেন?","a":"Burak Özçivit, Neslihan Atagül।"}
 sources:
   - {"name":"দীপ্ত প্লে","url":"https://www.deeptoplay.com/series/learned-friend"}
