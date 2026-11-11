@@ -56,6 +56,17 @@ const SOURCES = [
     },
   },
   {
+    id: 'addatimes',
+    name: 'অ্যাডাটাইমস',
+    origin: 'https://www.addatimes.com',
+    sitemap: 'https://www.addatimes.com/sitemap.xml',
+    pick(e) {
+      const s = segments(e.loc);
+      if (s.length !== 2 || !['movie', 'series'].includes(s[0])) return null;
+      return { kind: s[0], title: e.title || slugTitle(s[1]) };
+    },
+  },
+  {
     id: 'bongo',
     name: 'বঙ্গ',
     origin: 'https://bongobd.com',
