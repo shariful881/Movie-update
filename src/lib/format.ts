@@ -18,5 +18,9 @@ export const typePath = { movie: 'movie', series: 'series', natok: 'natok' } as 
 
 export const accessLabel = { paid: 'সাবস্ক্রিপশন লাগে', free: 'ফ্রি', mixed: 'ফ্রি ও পেইড দুটোই' } as const;
 
+// সাইট সাব-ফোল্ডারে থাকলে (যেমন GitHub Pages) প্রতিটা লিংকের আগে সেই ফোল্ডার যোগ করে
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+export const link = (path: string) => `${base}${path}`;
+
 export const titleUrl = (t: { id: string; data: { type: 'movie' | 'series' | 'natok' } }) =>
-  `/${typePath[t.data.type]}/${t.id}/`;
+  link(`/${typePath[t.data.type]}/${t.id}/`);

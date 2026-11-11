@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { bn } from '../lib/format';
+import { bn, link } from '../lib/format';
 
 interface Props {
   title: string;
@@ -35,8 +35,8 @@ const nav = [
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="bn_BD" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href={link('/favicon.svg')} type="image/svg+xml" />
+    <link rel="sitemap" href={link('/sitemap-index.xml')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" />
@@ -48,9 +48,9 @@ const nav = [
   <body>
     <header class="site-header">
       <div class="wrap header-row">
-        <a href="/" class="logo">সিনেখোঁজ</a>
+        <a href={link('/')} class="logo">সিনেখোঁজ</a>
         <nav aria-label="প্রধান মেনু">
-          {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+          {nav.map((n) => <a href={link(n.href)}>{n.label}</a>)}
         </nav>
       </div>
     </header>
@@ -61,10 +61,10 @@ const nav = [
       <div class="wrap footer-col">
         <p>সিনেখোঁজ কোনো সিনেমা, নাটক বা সিরিজ হোস্ট করে না, আর পাইরেটেড লিংক দেয় না। আমরা শুধু বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায় সেই তথ্য যাচাই করে দিই।</p>
         <nav aria-label="সাইটের তথ্য" class="footer-links">
-          <a href="/amader-kotha/">আমাদের কথা</a>
-          <a href="/kivabe-jachai-kori/">আমরা কীভাবে যাচাই করি</a>
-          <a href="/jogajog/">যোগাযোগ</a>
-          <a href="/privacy-policy/">প্রাইভেসি পলিসি</a>
+          <a href={link('/amader-kotha/')}>আমাদের কথা</a>
+          <a href={link('/kivabe-jachai-kori/')}>আমরা কীভাবে যাচাই করি</a>
+          <a href={link('/jogajog/')}>যোগাযোগ</a>
+          <a href={link('/privacy-policy/')}>প্রাইভেসি পলিসি</a>
         </nav>
         <p class="small">© {bn(year)} সিনেখোঁজ</p>
       </div>

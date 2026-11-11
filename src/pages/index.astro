@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import TitleCard from '../components/TitleCard.astro';
 import AdSlot from '../components/AdSlot.astro';
-import { accessLabel } from '../lib/format';
+import { accessLabel, link } from '../lib/format';
 
 const titles = (await getCollection('titles', ({ data }) => !data.draft)).sort(
   (a, b) => (b.data.ottReleaseDate ?? b.data.releaseDate ?? new Date(0)).getTime() - (a.data.ottReleaseDate ?? a.data.releaseDate ?? new Date(0)).getTime(),
@@ -16,7 +16,7 @@ const jsonLd = {
   '@type': 'WebSite',
   name: 'সিনেখোঁজ',
   alternateName: 'CineKhoj',
-  url: new URL('/', Astro.site).toString(),
+  url: new URL(link('/'), Astro.site).toString(),
   inLanguage: 'bn',
 };
 ---
@@ -41,7 +41,7 @@ const jsonLd = {
     <h2>ওটিটি প্ল্যাটফর্ম</h2>
     <div class="grid">
       {platforms.map((p) => (
-        <a class="card plat" href={`/platform/${p.id}/`}>
+        <a class="card plat" href={link(`/platform/${p.id}/`)}>
           <span class="plat-name">{p.data.name}</span>
           <span class="small muted">{accessLabel[p.data.access]}</span>
           <span class="small">{p.data.tagline}</span>
@@ -52,7 +52,7 @@ const jsonLd = {
 
   <section class="card stack" style="gap: 8px">
     <h2 style="font-size: 21px">আমাদের তথ্য কেন বিশ্বাস করবেন</h2>
-    <p class="muted">প্রতিটা টাইটেল আমরা প্ল্যাটফর্মের অ্যাপে নিজে খুঁজে যাচাই করি, আর পাতায় সর্বশেষ যাচাইয়ের তারিখ লিখে দিই। <a href="/kivabe-jachai-kori/">আমরা কীভাবে যাচাই করি</a></p>
+    <p class="muted">প্রতিটা টাইটেল আমরা প্ল্যাটফর্মের অ্যাপে নিজে খুঁজে যাচাই করি, আর পাতায় সর্বশেষ যাচাইয়ের তারিখ লিখে দিই। <a href={link('/kivabe-jachai-kori/')}>আমরা কীভাবে যাচাই করি</a></p>
   </section>
 </Base>
 

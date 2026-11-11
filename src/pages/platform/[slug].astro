@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import TitleCard from '../../components/TitleCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import { accessLabel, bnDate } from '../../lib/format';
+import { accessLabel, bnDate, link } from '../../lib/format';
 
 export async function getStaticPaths() {
   const platforms = await getCollection('platforms');
@@ -18,7 +18,7 @@ const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name
 const titles = await getCollection('titles', ({ data }) => !data.draft && data.availability.some((a) => a.platform.id === entry.id));
 ---
 <Base title={`${d.name} (${d.nameEn}): কী দেখা যায়, দাম ও সাবস্ক্রিপশন`} description={`${d.name} ওটিটি প্ল্যাটফর্মে কী পাওয়া যায়, সাবস্ক্রিপশন লাগে কিনা, আর এখানে থাকা সিনেমা, নাটক ও সিরিজের তালিকা।`}>
-  <nav aria-label="অবস্থান" class="small muted"><a href="/" style="color: var(--muted)">হোম</a> › <a href="/platform/" style="color: var(--muted)">ওটিটি প্ল্যাটফর্ম</a> › {d.name}</nav>
+  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › <a href={link('/platform/')} style="color: var(--muted)">ওটিটি প্ল্যাটফর্ম</a> › {d.name}</nav>
   <div class="stack" style="gap: 8px">
     <h1>{d.name} ({d.nameEn})</h1>
     <p class="muted">{d.tagline}</p>
