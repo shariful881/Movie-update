@@ -4,7 +4,7 @@ titleEn: "Taroka Kothon: Tawsif Mahbub & Tasnia Farin"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-tawsif-mahbub-tasnia-farin","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-tawsif-mahbub-tasnia-farin","note":"ফ্রি · আই স্ক্রিনে যোগ: ৩০ সেপ্টেম্বর ২০২৪"}
 faqs:
   - {"q":"Taroka Kothon: Tawsif Mahbub & Tasnia Farin কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Taroka Kothon: Tawsif Mahbub & Tasnia Farin বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

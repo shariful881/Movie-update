@@ -4,7 +4,7 @@ titleEn: "Vim Monohor Iftar"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/vim-monohor-iftar","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/vim-monohor-iftar","note":"আই স্ক্রিনে যোগ: ১ মার্চ ২০২৫"}
 faqs:
   - {"q":"Vim Monohor Iftar কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Vim Monohor Iftar বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

@@ -9,7 +9,7 @@ origin: "বাংলাদেশ"
 cast:
   - {"name":"পূজা চেরি"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/tagar","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/tagar","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ২৫ জানুয়ারি ২০২৬"}
 faqs:
   - {"q":"টগর কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী টগর বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"টগর কবে মুক্তি পায়?","a":"৭ জুলাই ২০২৫ তারিখে।"}

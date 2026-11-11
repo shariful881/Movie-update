@@ -15,7 +15,7 @@ crew:
   - {"name":"শাহাদাত হোসেন লিটন","job":"director"}
   - {"name":"ইমপ্রেস টেলিফিল্ম","job":"company","id":"impress-telefilm-limited"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/adorer-jamai","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/adorer-jamai","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ৮ মে ১৯৮৩"}
 faqs:
   - {"q":"আদরের জামাই কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী আদরের জামাই বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"আদরের জামাই কবে মুক্তি পায়?","a":"৩০ ডিসেম্বর ২০১১ তারিখে।"}

@@ -4,7 +4,7 @@ titleEn: "840"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/840-series","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/840-series","note":"আই স্ক্রিনে যোগ: ১৫ সেপ্টেম্বর ২০২৫"}
 faqs:
   - {"q":"840 কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী 840 বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

@@ -11,7 +11,7 @@ cast:
   - {"name":"সুমিত সেনগুপ্ত"}
   - {"name":"ফারজানা ছবি"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/moyurakkhi","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/moyurakkhi","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ৭ জুলাই ২০২৬"}
 faqs:
   - {"q":"ময়ূরাক্ষী কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী ময়ূরাক্ষী বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"ময়ূরাক্ষী কবে মুক্তি পায়?","a":"১৭ জুন ২০২৪ তারিখে।"}

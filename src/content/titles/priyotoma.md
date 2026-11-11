@@ -16,7 +16,7 @@ cast:
 crew:
   - {"name":"হিমেল আশরাফ","job":"director"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/priyotoma","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/priyotoma","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ৫ ফেব্রুয়ারি ২০২৬"}
 faqs:
   - {"q":"প্রিয়তমা কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী প্রিয়তমা বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"প্রিয়তমা কবে মুক্তি পায়?","a":"২৯ জুন ২০২৩ তারিখে।"}

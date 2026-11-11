@@ -4,7 +4,7 @@ titleEn: "Taroka Kothon: Mehreen"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-mehreen","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-mehreen","note":"ফ্রি · আই স্ক্রিনে যোগ: ৩১ অক্টোবর ২০২৪"}
 faqs:
   - {"q":"Taroka Kothon: Mehreen কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Taroka Kothon: Mehreen বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

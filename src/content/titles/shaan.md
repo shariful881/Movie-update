@@ -7,7 +7,7 @@ releaseDate: "2022-05-03"
 language: "বাংলা"
 origin: "বাংলাদেশ"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/shaan","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/shaan","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ২৪ মে ২০২৬"}
 faqs:
   - {"q":"শান কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী শান বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"শান কবে মুক্তি পায়?","a":"৩ মে ২০২২ তারিখে।"}

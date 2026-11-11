@@ -16,7 +16,7 @@ crew:
   - {"name":"রায়হান রাফী","job":"director"}
   - {"name":"ইমপ্রেস টেলিফিল্ম","job":"company","id":"impress-telefilm-limited"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/omimangshito","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/omimangshito","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ১৪ ডিসেম্বর ২০২৫"}
 faqs:
   - {"q":"অমিমাংসিত কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী অমিমাংসিত বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"অমিমাংসিত কবে মুক্তি পায়?","a":"১৫ ডিসেম্বর ২০২৫ তারিখে।"}

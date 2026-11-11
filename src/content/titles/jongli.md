@@ -7,7 +7,7 @@ releaseDate: "2025-03-30"
 language: "বাংলা"
 origin: "বাংলাদেশ"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/jongli","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/jongli","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ২৪ মে ২০২৬"}
 faqs:
   - {"q":"জংলি কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী জংলি বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"জংলি কবে মুক্তি পায়?","a":"৩০ মার্চ ২০২৫ তারিখে।"}

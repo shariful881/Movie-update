@@ -3,6 +3,7 @@ title: "Sorkari Chakrijibi"
 titleEn: "Sorkari Chakrijibi"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/sorkari-chakrijibi"}
 faqs:

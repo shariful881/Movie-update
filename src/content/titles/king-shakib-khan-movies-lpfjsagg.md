@@ -4,7 +4,7 @@ titleEn: "King Shakib Khan Movies"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/king-shakib-khan-movies-lpfjsagg","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/king-shakib-khan-movies-lpfjsagg","note":"আই স্ক্রিনে যোগ: ২৪ আগস্ট ২০২৪"}
 faqs:
   - {"q":"King Shakib Khan Movies কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী King Shakib Khan Movies বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

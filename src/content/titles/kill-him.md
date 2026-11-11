@@ -13,7 +13,7 @@ cast:
   - {"name":"রাহুল দেব"}
   - {"name":"মিশা সওদাগর","id":"misha-sawdagor"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/kill-him","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/kill-him","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ১১ আগস্ট ২০২৬"}
 faqs:
   - {"q":"কিল হিম কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী কিল হিম বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"কিল হিম কবে মুক্তি পায়?","a":"২২ এপ্রিল ২০২৩ তারিখে।"}

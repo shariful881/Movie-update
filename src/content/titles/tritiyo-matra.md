@@ -4,7 +4,7 @@ titleEn: "Tritiyo Matra"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/tritiyo-matra","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/tritiyo-matra","note":"আই স্ক্রিনে যোগ: ২৯ এপ্রিল ২০২৪"}
 faqs:
   - {"q":"Tritiyo Matra কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Tritiyo Matra বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

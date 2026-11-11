@@ -4,7 +4,7 @@ titleEn: "Mehmed"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/mehmed","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/mehmed","note":"আই স্ক্রিনে যোগ: ৮ মার্চ ২০২৫"}
 faqs:
   - {"q":"Mehmed কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Mehmed বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

@@ -1,12 +1,26 @@
 ---
-title: "Choddobeshi Bhalobasa"
-titleEn: "Choddobeshi Bhalobasa"
+title: "True Love in Disguise l A Twist You Didn’t Expect"
+titleEn: "True Love in Disguise l A Twist You Didn’t Expect"
 type: "microdrama"
+ottReleaseDate: "2026-04-03"
+seasons: 1
+episodes: 100
+genres: ["বিনোদন"]
 language: "বাংলা"
+origin: "চীন"
+dubbed: true
+cast:
+  - {"name":"Abu Hurayra Tanvir"}
+  - {"name":"Tanzika Amin"}
+  - {"name":"Rukaiya Jahan Chamak"}
+  - {"name":"Irfan Sajjad"}
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/micro-drama/choddobeshi-bhalobasa"}
 faqs:
-  - {"q":"Choddobeshi Bhalobasa কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Choddobeshi Bhalobasa বাংলাদেশ থেকে দীপ্ত প্লে-এ দেখা যায়।"}
+  - {"q":"True Love in Disguise l A Twist You Didn’t Expect কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী True Love in Disguise l A Twist You Didn’t Expect বাংলাদেশ থেকে দীপ্ত প্লে-এ দেখা যায়।"}
+  - {"q":"True Love in Disguise l A Twist You Didn’t Expect কত পর্ব?","a":"মোট ১০০টি পর্ব।"}
+  - {"q":"True Love in Disguise l A Twist You Didn’t Expect কি বাংলায় দেখা যায়?","a":"হ্যাঁ, চীন-এর এই মাইক্রো ড্রামা বাংলা ডাবিংয়ে দীপ্ত প্লে-এ দেখা যায়।"}
+  - {"q":"True Love in Disguise l A Twist You Didn’t Expect-এ কারা অভিনয় করেছেন?","a":"Abu Hurayra Tanvir, Tanzika Amin, Rukaiya Jahan Chamak, Irfan Sajjad।"}
 sources:
   - {"name":"দীপ্ত প্লে","url":"https://www.deeptoplay.com/micro-drama/choddobeshi-bhalobasa"}
 generated: true

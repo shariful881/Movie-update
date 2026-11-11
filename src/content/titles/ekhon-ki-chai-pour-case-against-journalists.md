@@ -4,7 +4,7 @@ titleEn: "Ekhon Ki Chai (Pour case against journalists)"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/ekhon-ki-chai-pour-case-against-journalists","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/ekhon-ki-chai-pour-case-against-journalists","note":"ফ্রি · আই স্ক্রিনে যোগ: ৩০ সেপ্টেম্বর ২০২৪"}
 faqs:
   - {"q":"Ekhon Ki Chai (Pour case against journalists) কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Ekhon Ki Chai (Pour case against journalists) বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

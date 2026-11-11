@@ -3,6 +3,7 @@ title: "Oprokash"
 titleEn: "Oprokash"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/oprokash"}
 faqs:

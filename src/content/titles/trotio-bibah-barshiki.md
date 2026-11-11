@@ -3,6 +3,7 @@ title: "Trotio Bibah Barshiki"
 titleEn: "Trotio Bibah Barshiki"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/trotio-bibah-barshiki"}
 faqs:

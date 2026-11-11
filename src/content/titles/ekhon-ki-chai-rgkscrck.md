@@ -4,7 +4,7 @@ titleEn: "Ekhon ki chai"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/ekhon-ki-chai-rgkscrck","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/ekhon-ki-chai-rgkscrck","note":"আই স্ক্রিনে যোগ: ২৪ জুলাই ২০২৫"}
 faqs:
   - {"q":"Ekhon ki chai কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Ekhon ki chai বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

@@ -3,6 +3,7 @@ title: "Premer Shatkahon"
 titleEn: "Premer Shatkahon"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/premer-shatkahon"}
 faqs:

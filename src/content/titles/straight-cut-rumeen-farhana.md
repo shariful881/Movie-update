@@ -4,7 +4,7 @@ titleEn: "Straight Cut - Rumeen Farhana"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/straight-cut-rumeen-farhana","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/straight-cut-rumeen-farhana","note":"ফ্রি · আই স্ক্রিনে যোগ: ৩০ ডিসেম্বর ২০২৪"}
 faqs:
   - {"q":"Straight Cut - Rumeen Farhana কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Straight Cut - Rumeen Farhana বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

@@ -13,7 +13,7 @@ cast:
 crew:
   - {"name":"অনন্য মামুন","job":"director"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/nabab-llb","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/nabab-llb","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ৬ জানুয়ারি ২০২৬"}
 faqs:
   - {"q":"নবাব এলএলবি কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী নবাব এলএলবি বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"নবাব এলএলবি কোন সালের সিনেমা?","a":"২০২০ সালের।"}

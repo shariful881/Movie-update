@@ -104,19 +104,20 @@ function fromWikidata(wd) {
   };
 }
 
-const ISCREEN_TYPE = { সিনেমা: 'movie', সিরিজ: 'series', নাটক: 'natok', টেলিফিল্ম: 'natok' };
 const DEEPTO_TYPE = { 'ধারাবাহিক/সিরিজ': 'series', 'টিভি শো': 'tvshow', 'মাইক্রো ড্রামা': 'microdrama' };
 const ADDA_TYPE = { movie: 'movie', series: 'series' };
 const CATALOG_TYPE = { movie: 'movie', natok: 'natok', series: 'series', 'micro-drama': 'microdrama', 'tv-shows': 'tvshow' };
 
 const detailByUrl = new Map(details.map((d) => [d.url, d]));
+const catalogKind = new Map(catalog.map((c) => [c.url, c.kind]));
 const sources = [];
 for (const d of details) sources.push(d);
 for (const c of catalog) if (!detailByUrl.has(c.url)) sources.push({ ...c, fromCatalog: true });
 
 for (const s of sources) {
   let type;
-  if (s.platform === 'iscreen') type = s.fromCatalog ? CATALOG_TYPE[s.kind] : ISCREEN_TYPE[s.kind];
+  // আই স্ক্রিনের পাতার og:type নাটক আর গানকেও "movie" বলে, তাই দৈর্ঘ্যভিত্তিক শ্রেণিই আগে; শুধু সিরিজ পাতার ট্যাগ থেকে
+  if (s.platform === 'iscreen') type = CATALOG_TYPE[catalogKind.get(s.url)] ?? (s.kind === 'সিরিজ' ? 'series' : undefined);
   else if (s.platform === 'deeptoplay') type = s.fromCatalog ? CATALOG_TYPE[s.kind] : DEEPTO_TYPE[s.kind];
   else if (s.platform === 'addatimes') type = ADDA_TYPE[s.kind];
   if (!type || !s.title) continue;

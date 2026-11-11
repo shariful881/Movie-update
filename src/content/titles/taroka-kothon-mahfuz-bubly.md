@@ -4,7 +4,7 @@ titleEn: "Taroka Kothon: Mahfuz - Bubly"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-mahfuz-bubly","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-mahfuz-bubly","note":"ফ্রি · আই স্ক্রিনে যোগ: ২৭ এপ্রিল ২০২৪"}
 faqs:
   - {"q":"Taroka Kothon: Mahfuz - Bubly কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Taroka Kothon: Mahfuz - Bubly বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

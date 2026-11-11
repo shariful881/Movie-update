@@ -4,7 +4,7 @@ titleEn: "Bhober Hut"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/vhober-hat-yvnwaiye","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/vhober-hat-yvnwaiye","note":"আই স্ক্রিনে যোগ: ৩১ ডিসেম্বর ২০২৪"}
 faqs:
   - {"q":"Bhober Hut কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Bhober Hut বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

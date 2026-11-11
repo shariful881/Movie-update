@@ -17,7 +17,7 @@ crew:
   - {"name":"নুরুল আলম আতিক","job":"director"}
   - {"name":"মতিয়া বানু শুকু","job":"producer"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/laal-moroger-jhuti","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/laal-moroger-jhuti","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ৫ মে ২০২৬"}
 faqs:
   - {"q":"লাল মোরগের ঝুঁটি কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী লাল মোরগের ঝুঁটি বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"লাল মোরগের ঝুঁটি কবে মুক্তি পায়?","a":"১০ ডিসেম্বর ২০২১ তারিখে।"}

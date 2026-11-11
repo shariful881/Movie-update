@@ -3,6 +3,7 @@ title: "Village Cup"
 titleEn: "Village Cup"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/village-cup"}
 faqs:

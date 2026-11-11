@@ -4,7 +4,7 @@ titleEn: "Shutoy Badha Jibon"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/shutoy-badha-jibon","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/shutoy-badha-jibon","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ১৩ মে ২০২৬"}
 faqs:
   - {"q":"Shutoy Badha Jibon কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Shutoy Badha Jibon বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

@@ -12,7 +12,7 @@ cast:
   - {"name":"শবনম বুবলি"}
   - {"name":"শিবা শানু"}
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/local","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/local","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ১৬ এপ্রিল ২০২৬"}
 faqs:
   - {"q":"লোকাল কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী লোকাল বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
   - {"q":"লোকাল কবে মুক্তি পায়?","a":"২২ এপ্রিল ২০২৩ তারিখে।"}

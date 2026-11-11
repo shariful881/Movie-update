@@ -4,7 +4,7 @@ titleEn: "Nibedita"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/nibedita","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/nibedita","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ১৬ অক্টোবর ২০২৫"}
 faqs:
   - {"q":"Nibedita কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Nibedita বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

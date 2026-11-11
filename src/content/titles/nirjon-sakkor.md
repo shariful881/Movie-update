@@ -3,6 +3,7 @@ title: "Nirjon Sakkor"
 titleEn: "Nirjon Sakkor"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/nirjon-sakkor"}
 faqs:

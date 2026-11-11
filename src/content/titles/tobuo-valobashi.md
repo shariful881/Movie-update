@@ -3,6 +3,7 @@ title: "Tobuo Valobashi"
 titleEn: "Tobuo Valobashi"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/tobuo-valobashi"}
 faqs:

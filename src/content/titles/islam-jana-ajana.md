@@ -4,7 +4,7 @@ titleEn: "Islam Jana-Ajana"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/islam-jana-ajana","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/islam-jana-ajana","note":"আই স্ক্রিনে যোগ: ৫ মার্চ ২০২৫"}
 faqs:
   - {"q":"Islam Jana-Ajana কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Islam Jana-Ajana বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

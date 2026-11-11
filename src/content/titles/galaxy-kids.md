@@ -4,7 +4,7 @@ titleEn: "Galaxy Kids"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/galaxy-kids","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/galaxy-kids","note":"আই স্ক্রিনে যোগ: ২৯ জুলাই ২০২৫"}
 faqs:
   - {"q":"Galaxy Kids কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Galaxy Kids বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

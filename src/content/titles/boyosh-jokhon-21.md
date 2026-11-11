@@ -4,7 +4,7 @@ titleEn: "Boyosh Jokhon 21"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/boyosh-jokhon-21","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/boyosh-jokhon-21","note":"আই স্ক্রিনে যোগ: ৩১ জানুয়ারি ২০২৫"}
 faqs:
   - {"q":"Boyosh Jokhon 21 কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Boyosh Jokhon 21 বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

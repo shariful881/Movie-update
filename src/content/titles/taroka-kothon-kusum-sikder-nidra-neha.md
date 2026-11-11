@@ -4,7 +4,7 @@ titleEn: "Taroka Kothon: Kusum Sikder & Nidra Neha"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-kusum-sikder-nidra-neha","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/taroka-kothon-kusum-sikder-nidra-neha","note":"ফ্রি · আই স্ক্রিনে যোগ: ৩০ সেপ্টেম্বর ২০২৪"}
 faqs:
   - {"q":"Taroka Kothon: Kusum Sikder & Nidra Neha কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Taroka Kothon: Kusum Sikder & Nidra Neha বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

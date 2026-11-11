@@ -4,7 +4,7 @@ titleEn: "Round Table"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/round-table","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/round-table","note":"আই স্ক্রিনে যোগ: ২৬ জুলাই ২০২৫"}
 faqs:
   - {"q":"Round Table কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Round Table বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

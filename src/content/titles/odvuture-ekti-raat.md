@@ -4,7 +4,7 @@ titleEn: "Odvuture Ekti Raat"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/odvuture-ekti-raat","note":"সাবস্ক্রিপশন লাগে"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/odvuture-ekti-raat","note":"সাবস্ক্রিপশন লাগে · আই স্ক্রিনে যোগ: ১৫ অক্টোবর ২০২৬"}
 faqs:
   - {"q":"Odvuture Ekti Raat কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Odvuture Ekti Raat বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

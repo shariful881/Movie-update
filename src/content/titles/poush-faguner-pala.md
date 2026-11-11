@@ -4,7 +4,7 @@ titleEn: "Poush Faguner Pala"
 type: "series"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/poush-faguner-pala","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/series/poush-faguner-pala","note":"আই স্ক্রিনে যোগ: ২১ অক্টোবর ২০২৬"}
 faqs:
   - {"q":"Poush Faguner Pala কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Poush Faguner Pala বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:

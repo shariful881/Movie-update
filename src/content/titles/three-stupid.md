@@ -3,6 +3,7 @@ title: "Three Stupid"
 titleEn: "Three Stupid"
 type: "series"
 language: "বাংলা"
+origin: "বাংলাদেশ"
 availability:
   - {"platform":"deeptoplay","url":"https://www.deeptoplay.com/series/three-stupid"}
 faqs:

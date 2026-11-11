@@ -4,7 +4,7 @@ titleEn: "Ekhon Ki Chai (No more looting)"
 type: "natok"
 language: "বাংলা"
 availability:
-  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/ekhon-ki-chai-no-more-looting","note":"ফ্রি"}
+  - {"platform":"iscreen","url":"https://iscreen.com.bd/content/details/video/ekhon-ki-chai-no-more-looting","note":"ফ্রি · আই স্ক্রিনে যোগ: ৩০ জুলাই ২০২৪"}
 faqs:
   - {"q":"Ekhon Ki Chai (No more looting) কোথায় দেখা যাবে?","a":"প্ল্যাটফর্মের তালিকা অনুযায়ী Ekhon Ki Chai (No more looting) বাংলাদেশ থেকে আই স্ক্রিন-এ দেখা যায়।"}
 sources:
