@@ -1,52 +1,130 @@
+/*
+  সিনেখোঁজ ডিজাইন: ঢাকার হাতে আঁকা সিনেমার পোস্টার আর রিকশা-আর্টের রং।
+  লেআউট: বাঁ-দিকে সাজানো, সাদা জমিন, রঙিন পোস্টার টাইলগুলোই একমাত্র উজ্জ্বল জিনিস।
+*/
 :root {
-  --bg: #111317;
-  --surface: #1a1d23;
-  --surface-2: #15181d;
-  --line: #2a2e36;
-  --line-strong: #3a3f49;
-  --text: #ecedef;
-  --soft: #d5d8dd;
-  --muted: #a9aeb8;
-  --faint: #8e949f;
-  --accent: #f0b429;
-  --accent-hover: #ffd36e;
-  --on-accent: #111317;
-  --ok-bg: #173b37;
-  --ok: #7fe0d5;
-  --warn: #f5cf83;
-  --warn-bg: #3a2a12;
-  --bad: #f28b6b;
-  --bad-bg: #2a1712;
-  --bad-line: #5a2e22;
-  --radius: 14px;
+  /* জমিন ও কালি */
+  --bg: #fbfbf8;
+  --surface: #ffffff;
+  --surface-2: #f2f3ee;
+  --line: #e1e3db;
+  --line-strong: #c9ccc1;
+  --text: #1c2030;
+  --soft: #33384a;
+  --muted: #5d6273;
+  --faint: #6f7484;
+
+  /* রিকশা-আর্ট রং (টাইল, চিপ আর অ্যাকসেন্ট) */
+  --magenta: #c2185b;
+  --teal: #00796b;
+  --indigo: #283593;
+  --marigold: #e9a100;
+  --leaf: #2e7d32;
+  --vermilion: #d84315;
+
+  --accent: #c2185b;
+  --accent-hover: #9c1149;
+  --on-accent: #ffffff;
+  --link: #a3154f;
+
+  /* অবস্থা */
+  --ok-bg: #e2f2ec;
+  --ok: #0f6b4f;
+  --warn: #8a5a00;
+  --warn-bg: #fdf1d6;
+  --bad: #b3261e;
+  --bad-bg: #fbe9e7;
+  --bad-line: #f1c4be;
+
+  --radius: 10px;
+  --radius-lg: 16px;
+  --font-display: 'Anek Bangla', 'Hind Siliguri', system-ui, sans-serif;
+  --font-body: 'Hind Siliguri', 'Noto Sans Bengali', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #12151f;
+    --surface: #1a1e2b;
+    --surface-2: #161a26;
+    --line: #2b3042;
+    --line-strong: #3b4157;
+    --text: #eceef4;
+    --soft: #d2d5df;
+    --muted: #a7acbb;
+    --faint: #9297a8;
+    --accent: #f06292;
+    --accent-hover: #f48fb1;
+    --on-accent: #1a0b12;
+    --link: #f48fb1;
+    --ok-bg: #12332a;
+    --ok: #7fd9b8;
+    --warn: #f3c969;
+    --warn-bg: #3a2c0c;
+    --bad: #ff9a8b;
+    --bad-bg: #36191a;
+    --bad-line: #5e2b2b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #12151f;
+  --surface: #1a1e2b;
+  --surface-2: #161a26;
+  --line: #2b3042;
+  --line-strong: #3b4157;
+  --text: #eceef4;
+  --soft: #d2d5df;
+  --muted: #a7acbb;
+  --faint: #9297a8;
+  --accent: #f06292;
+  --accent-hover: #f48fb1;
+  --on-accent: #1a0b12;
+  --link: #f48fb1;
+  --ok-bg: #12332a;
+  --ok: #7fd9b8;
+  --warn: #f3c969;
+  --warn-bg: #3a2c0c;
+  --bad: #ff9a8b;
+  --bad-bg: #36191a;
+  --bad-line: #5e2b2b;
   color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 
+html { -webkit-text-size-adjust: 100%; }
+
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: 'Hind Siliguri', system-ui, sans-serif;
+  font-family: var(--font-body);
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
-a { color: var(--accent); }
+a { color: var(--link); text-underline-offset: 3px; }
 a:hover { color: var(--accent-hover); }
+:focus-visible { outline: 3px solid var(--marigold); outline-offset: 2px; border-radius: 4px; }
 
-h1, h2, h3 { line-height: 1.3; margin: 0; }
-h1 { font-size: clamp(28px, 4vw, 40px); }
-h2 { font-size: 24px; }
-h3 { font-size: 19px; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.25; margin: 0; text-wrap: balance; letter-spacing: -0.005em; }
+h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 700; font-stretch: 90%; }
+h2 { font-size: clamp(22px, 3vw, 27px); font-weight: 700; }
+h3 { font-size: 19px; font-weight: 600; }
 p { margin: 0; }
 
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
 .stack { display: flex; flex-direction: column; gap: 14px; }
-.section { display: flex; flex-direction: column; gap: 14px; }
+.section { display: flex; flex-direction: column; gap: 16px; }
 .muted { color: var(--muted); }
-.small { font-size: 14px; }
+.small { font-size: 15px; }
 
 .card {
   background: var(--surface);
@@ -57,25 +135,41 @@ p { margin: 0; }
 
 .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
+/* পোস্টার টাইলের গ্রিড আর আনুভূমিক সারি */
+.tiles { display: grid; gap: 22px 16px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(148px, 172px);
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+.rail > * { scroll-snap-align: start; }
+
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0 18px;
-  border-radius: 10px;
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 999px;
   background: var(--accent);
   color: var(--on-accent);
   font-weight: 700;
   text-decoration: none;
+  border: 0;
 }
 .btn:hover { background: var(--accent-hover); color: var(--on-accent); }
-.btn-outline { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
+.btn-outline { background: transparent; border: 1.5px solid var(--accent); color: var(--link); }
 .btn-outline:hover { background: transparent; color: var(--accent-hover); border-color: var(--accent-hover); }
 
 .pill {
   display: inline-block;
   font-size: 13px;
+  font-weight: 600;
   padding: 2px 10px;
   border-radius: 999px;
   background: var(--ok-bg);
@@ -86,15 +180,45 @@ p { margin: 0; }
 .chip {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   min-height: 44px;
   padding: 0 16px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: 999px;
   background: var(--surface);
   color: var(--text);
   text-decoration: none;
+  white-space: nowrap;
 }
 .chip:hover { border-color: var(--accent); color: var(--text); }
 
+/* প্ল্যাটফর্মের রঙিন নামফলক */
+.plat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+.plat-badge::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--pc, var(--accent));
+  flex: none;
+}
+
+.section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.section-head a { font-weight: 600; text-decoration: none; }
+
 .prose { display: flex; flex-direction: column; gap: 12px; color: var(--soft); }
 .prose ul { margin: 0; padding-left: 22px; }
+
+.crumbs { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; }
+.crumbs a { color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}

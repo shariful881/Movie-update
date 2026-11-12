@@ -1,16 +1,16 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { accessLabel, link } from '../../lib/format';
+import { accessLabel, link, platformColor } from '../../lib/format';
 
 const platforms = (await getCollection('platforms')).sort((a, b) => a.data.order - b.data.order);
 ---
 <Base title="বাংলাদেশের ওটিটি প্ল্যাটফর্ম" description="বাংলাদেশে জনপ্রিয় ওটিটি প্ল্যাটফর্মগুলোর তালিকা: কোনটায় কী পাওয়া যায়, ফ্রি নাকি পেইড।">
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › ওটিটি প্ল্যাটফর্ম</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> ওটিটি প্ল্যাটফর্ম</nav>
   <h1>বাংলাদেশের ওটিটি প্ল্যাটফর্ম</h1>
   <div class="grid">
     {platforms.map((p) => (
-      <a class="card plat" href={link(`/platform/${p.id}/`)}>
+      <a class="card plat" style={`--pc:${platformColor[p.id] ?? 'var(--accent)'}`} href={link(`/platform/${p.id}/`)}>
         <span class="plat-name">{p.data.name}</span>
         <span class="small muted">{accessLabel[p.data.access]}</span>
         <span class="small">{p.data.tagline}</span>
@@ -19,7 +19,7 @@ const platforms = (await getCollection('platforms')).sort((a, b) => a.data.order
   </div>
 </Base>
 <style>
-  .plat { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); }
-  .plat:hover { border-color: var(--accent); color: var(--text); }
+  .plat { border-top: 6px solid var(--pc); display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); }
+  .plat:hover { border-color: var(--pc); color: var(--text); }
   .plat-name { font-size: 22px; font-weight: 700; }
 </style>

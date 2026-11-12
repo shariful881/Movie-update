@@ -45,7 +45,7 @@ const jsonLd = {
 };
 ---
 <Base title={pageTitle} description={description} jsonLd={jsonLd} noindex={!indexable}>
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › <a href={link('/person/')} style="color: var(--muted)">তারকা ও নির্মাতা</a> › {d.name}</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> <a href={link('/person/')}>তারকা ও নির্মাতা</a> <span aria-hidden="true">/</span> {d.name}</nav>
   <div class="stack" style="gap: 6px">
     <span class="small muted">{roles}{d.nameEn !== d.name ? ` · ${d.nameEn}` : ''}</span>
     <h1>{pageTitle}</h1>
@@ -55,7 +55,7 @@ const jsonLd = {
   {groups.map((g) => (
     <section class="section">
       <h2>{g.label} ({bn(g.items.length)})</h2>
-      <div class="grid">{g.items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="tiles">{g.items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
   ))}
   {d.wikidata && (

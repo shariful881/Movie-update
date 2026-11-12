@@ -48,5 +48,36 @@ export const link = (path: string) => `${base}${path}`;
 export const titleUrl = (t: { id: string; data: { type: TitleType } }) => link(`/${typePath[t.data.type]}/${t.id}/`);
 export const personUrl = (id: string) => link(`/person/${id}/`);
 
+// প্রতিটা প্ল্যাটফর্মের নামফলকের রং (ব্র্যান্ডের লোগো নয়, শুধু চেনার সুবিধার জন্য)
+export const platformColor: Record<string, string> = {
+  chorki: '#c2185b',
+  hoichoi: '#d84315',
+  iscreen: '#283593',
+  deeptoplay: '#00796b',
+  addatimes: '#e9a100',
+  bongo: '#2e7d32',
+  binge: '#6a1b9a',
+  toffee: '#ad1457',
+  netflix: '#b71c1c',
+  primevideo: '#1565c0',
+};
+
+// পোস্টার টাইলের রং: টাইটেলের নাম থেকে স্থির একটা রং, যাতে প্রতিবার একই থাকে
+const tilePalette = [
+  { bg: '#c2185b', fg: '#ffffff', ink: '#ffd54f' },
+  { bg: '#00796b', fg: '#ffffff', ink: '#ffcc80' },
+  { bg: '#283593', fg: '#ffffff', ink: '#f48fb1' },
+  { bg: '#e9a100', fg: '#1c2030', ink: '#b71c1c' },
+  { bg: '#2e7d32', fg: '#ffffff', ink: '#fff176' },
+  { bg: '#d84315', fg: '#ffffff', ink: '#fff59d' },
+  { bg: '#4a148c', fg: '#ffffff', ink: '#80deea' },
+  { bg: '#006064', fg: '#ffffff', ink: '#ffab91' },
+];
+export const tileColors = (key: string) => {
+  let h = 0;
+  for (const ch of key) h = (h * 31 + ch.codePointAt(0)!) >>> 0;
+  return tilePalette[h % tilePalette.length];
+};
+
 // যাচাই হয়েছে (lastVerified আছে) এমন পাতাই গুগলে ইনডেক্স হয়
 export const isVerified = (t: { data: { lastVerified?: Date } }) => Boolean(t.data.lastVerified);

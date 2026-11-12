@@ -28,11 +28,11 @@ const jsonLd = {
 };
 ---
 <Base title={list.title} description={list.description} jsonLd={jsonLd} noindex={!indexable}>
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › <a href={link('/list/')} style="color: var(--muted)">তালিকা</a> › {list.title}</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> <a href={link('/list/')}>তালিকা</a> <span aria-hidden="true">/</span> {list.title}</nav>
   <div class="stack" style="gap: 6px">
     <h1>{list.title}</h1>
     <p class="muted">{list.description} মোট {bn(items.length)}টি।</p>
   </div>
   <AdSlot label="বিজ্ঞাপন" />
-  <div class="grid">{items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+  <div class="tiles">{items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
 </Base>

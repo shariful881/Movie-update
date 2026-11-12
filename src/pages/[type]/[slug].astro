@@ -3,7 +3,8 @@ import { getCollection, getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import TitleCard from '../../components/TitleCard.astro';
-import { accessLabel, bn, bnDate, bnRuntime, isVerified, jobLabel, link, personUrl, titleUrl, typeLabel, typePath, typeSingular } from '../../lib/format';
+import Poster from '../../components/Poster.astro';
+import { accessLabel, bn, bnDate, bnRuntime, isVerified, jobLabel, link, personUrl, platformColor, titleUrl, typeLabel, typePath, typeSingular } from '../../lib/format';
 
 export async function getStaticPaths() {
   const titles = await getCollection('titles', ({ data }) => !data.draft);
@@ -103,207 +104,254 @@ const jsonLd = [
 ];
 ---
 <Base title={pageTitle} description={summary} jsonLd={jsonLd} noindex={!verified}>
-  <nav aria-label="অবস্থান" class="crumbs small muted">
-    <a href={link('/')}>হোম</a> › <a href={typeHref}>{typeLabel[d.type]}</a> › <span>{d.title}</span>
+  <nav aria-label="অবস্থান" class="crumbs">
+    <a href={link('/')}>হোম</a><span aria-hidden="true">/</span><a href={typeHref}>{typeLabel[d.type]}</a><span aria-hidden="true">/</span><span>{d.title}</span>
   </nav>
 
-  <div class="stack" style="gap: 8px">
-    <span class="small muted">{typeSingular[d.type]}{d.dubbed ? ' · বাংলা ডাবিং' : ''}{d.titleEn && d.titleEn !== d.title ? ` · ${d.titleEn}` : ''}</span>
-    <h1>{d.title}{yearText} কোথায় দেখবেন?</h1>
-    {verified ? (
-      <p class="small muted">সর্বশেষ যাচাই: {bnDate(d.lastVerified)}</p>
-    ) : (
-      <p class="small verify-pending">এই পাতার তথ্য এখনো অ্যাপে যাচাই করা হয়নি। প্ল্যাটফর্মের সাইটম্যাপ ও উইকিডাটার ভিত্তিতে তৈরি।</p>
-    )}
-  </div>
+  <header class="t-hero">
+    <div class="t-poster"><Poster id={entry.id} title={d.title} type={d.type} dubbed={d.dubbed} size="lg" /></div>
+    <div class="t-head">
+      <p class="t-kind">
+        <span>{typeSingular[d.type]}</span>
+        {d.dubbed && <span class="pill pill-warn">বাংলা ডাবিং</span>}
+        {d.titleEn && d.titleEn !== d.title && <span class="muted">{d.titleEn}</span>}
+      </p>
+      <h1>{d.title}{yearText} কোথায় দেখবেন?</h1>
+      <p class="t-answer">{summary}</p>
 
-  <section class="card answer" aria-label="সংক্ষিপ্ত উত্তর">
-    <span class="answer-label">সংক্ষেপে উত্তর</span>
-    <p>{summary}</p>
-  </section>
+      <section class="watch" aria-labelledby="watch-h">
+        <h2 id="watch-h">কোথায় দেখবেন</h2>
+        {available.length ? (
+          <ul class="watch-list">
+            {available.map((a) => a.p && (
+              <li style={`--pc:${platformColor[a.p.id] ?? 'var(--accent)'}`}>
+                <div class="w-info">
+                  <a class="plat-badge w-name" href={link(`/platform/${a.p.id}/`)}>{a.p.data.name}</a>
+                  <span class="small muted">{a.note ?? accessLabel[a.p.data.access]}</span>
+                </div>
+                <a class="btn w-btn" href={a.p.data.affiliateUrl ?? a.url ?? a.p.data.url} rel={a.p.data.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">{a.p.data.name} খুলুন</a>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted">এখনো কোনো বৈধ প্ল্যাটফর্মে পাওয়া যায়নি। পাওয়া গেলে এখানে আপডেট করা হবে।</p>
+        )}
+        <p class="w-foot">
+          {verified ? <span>সর্বশেষ যাচাই: {bnDate(d.lastVerified)}</span> : <span class="verify-pending">প্ল্যাটফর্মের তালিকা থেকে নেওয়া, অ্যাপে যাচাই এখনো বাকি</span>}
+          <span>আমরা কোনো ভিডিও হোস্ট করি না, পাইরেটেড লিংকও দিই না।</span>
+        </p>
+        {d.checkedPlatforms.length > 0 && (
+          <p class="small muted">আমরা খুঁজেছি: {d.checkedPlatforms.join(', ')}। যেগুলোর নাম উপরে নেই, সেখানে পাওয়া যায়নি।</p>
+        )}
+      </section>
+    </div>
+  </header>
 
-  <div class="grid facts">
+  <dl class="facts">
     {facts.map((f) => (
-      <div class="card fact">
-        <span class="small muted">{f.label}</span>
-        <span class:list={['fact-value', { warn: f.warn }]}>{f.value}</span>
+      <div class="fact">
+        <dt>{f.label}</dt>
+        <dd class:list={{ warn: f.warn }}>{f.value}</dd>
       </div>
     ))}
-  </div>
+  </dl>
 
   <AdSlot label="বিজ্ঞাপন" />
 
-  <section class="section">
-    <h2>কোথায় দেখবেন</h2>
-    {available.length ? (
-      <div class="grid platforms">
-        {available.map((a) => a.p && (
-          <div class="card platform">
-            <div class="platform-head">
-              <span class="platform-name">{a.p.data.name}</span>
-              <span class:list={['pill', { 'pill-warn': !verified }]}>{verified ? 'আছে' : 'যাচাই বাকি'}</span>
-            </div>
-            <p class="small muted">{accessLabel[a.p.data.access]}{a.note ? ` · ${a.note}` : ''}</p>
-            <a class="btn" href={a.p.data.affiliateUrl ?? a.url ?? a.p.data.url} rel={a.p.data.affiliateUrl ? 'sponsored noopener' : 'noopener'} target="_blank">
-              {a.p.data.name} খুলুন
-            </a>
-            <a class="small" href={link(`/platform/${a.p.id}/`)}>{a.p.data.name} সম্পর্কে বিস্তারিত</a>
-          </div>
-        ))}
-      </div>
-    ) : (
-      <p class="card">এখনো কোনো বৈধ প্ল্যাটফর্মে পাওয়া যায়নি। পাওয়া গেলে এখানে আপডেট করা হবে।</p>
-    )}
-    {d.checkedPlatforms.length > 0 && (
-      <p class="small muted">আমরা খুঁজেছি: {d.checkedPlatforms.join(', ')}। যেগুলোর নাম উপরে নেই, সেখানে পাওয়া যায়নি।</p>
-    )}
-    <p class="small muted">সিনেখোঁজ কোনো সিনেমা হোস্ট করে না এবং পাইরেটেড লিংক দেয় না।</p>
-  </section>
+  <div class="t-body">
+    <div class="t-main">
+      {hasBody && <article class="article"><Content /></article>}
 
-  {d.family && (
-    <section class="section">
-      <h2>পরিবার নিয়ে দেখা যাবে?</h2>
-      <div class:list={['card', 'family', `family-${d.family.verdict}`]}>
-        <strong>{familyHead[d.family.verdict]}</strong> {d.family.text}
-      </div>
-      {d.family.items.length > 0 && (
-        <div class="grid">
-          {d.family.items.map((i) => (
-            <div class="card">
-              <div style="font-weight: 600">{i.label}</div>
-              <div class:list={['lvl', `lvl-${i.level}`]}>{i.text}</div>
+      {d.family && (
+        <section class="section">
+          <h2>পরিবার নিয়ে দেখা যাবে?</h2>
+          <div class:list={['family', `family-${d.family.verdict}`]}>
+            <strong>{familyHead[d.family.verdict]}</strong> {d.family.text}
+          </div>
+          {d.family.items.length > 0 && (
+            <ul class="fam-items">
+              {d.family.items.map((i) => (
+                <li><span class="fam-label">{i.label}</span><span class:list={['lvl', `lvl-${i.level}`]}>{i.text}</span></li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
+
+      {d.facts.length > 0 && (
+        <section class="section">
+          {d.facts.map((f) => (
+            <div class="factbox">
+              <h2>{f.heading}</h2>
+              <p>{f.text}</p>
             </div>
           ))}
-        </div>
+        </section>
       )}
-    </section>
-  )}
 
-  {hasBody && (
-    <article class="prose article"><Content /></article>
-  )}
+      {d.faqs.length > 0 && (
+        <section class="section">
+          <h2>সাধারণ প্রশ্ন</h2>
+          <div class="faqs">
+            {d.faqs.map((f, i) => (
+              <details open={i < 2}>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
-  <AdSlot label="বিজ্ঞাপন" />
+      <AdSlot label="বিজ্ঞাপন" />
 
-  {d.cast.length > 0 && (
-    <section class="section">
-      <h2>অভিনয়শিল্পী</h2>
-      <div class="grid cast">
-        {d.cast.map((c) => {
-          const href = personLink(c.id);
-          return href ? (
-            <a class="card person" href={href}>
-              <span style="font-weight: 600">{c.name}</span>
-              {c.role && <span class="small muted">{c.role}</span>}
-              <span class="small">সব কাজ দেখুন</span>
-            </a>
-          ) : (
-            <div class="card">
-              <div style="font-weight: 600">{c.name}</div>
-              {c.role && <div class="small muted">{c.role}</div>}
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  )}
+      {d.sources.length > 0 && (
+        <p class="sources">
+          তথ্যসূত্র: {d.sources.map((s, i) => <>{i > 0 && ', '}<a href={s.url} rel="noopener" target="_blank">{s.name}</a></>)}।
+          ওটিটিতে থাকা না থাকা সময়ের সাথে বদলায়। ভুল দেখলে <a href={link('/jogajog/')}>আমাদের জানান</a>।
+        </p>
+      )}
+    </div>
 
-  {d.crew.length > 0 && (
-    <section class="section">
-      <h2>নির্মাণে</h2>
-      <div class="grid cast">
-        {d.crew.map((c) => {
-          const href = personLink(c.id);
-          return (
-            <div class="card">
-              <div class="small muted">{jobLabel[c.job]}</div>
-              {href ? <a href={href} style="font-weight: 600">{c.name}</a> : <div style="font-weight: 600">{c.name}</div>}
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  )}
-
-  {d.facts.length > 0 && (
-    <section class="grid wide">
-      {d.facts.map((f) => (
-        <div class="card stack" style="gap: 6px">
-          <h2 style="font-size: 21px">{f.heading}</h2>
-          <p class="prose">{f.text}</p>
-        </div>
-      ))}
-    </section>
-  )}
-
-  {d.faqs.length > 0 && (
-    <section class="section">
-      <h2>সাধারণ প্রশ্ন</h2>
-      {d.faqs.map((f) => (
-        <div class="card">
-          <h3 style="font-size: 17px">{f.q}</h3>
-          <p class="prose">{f.a}</p>
-        </div>
-      ))}
-    </section>
-  )}
+    <aside class="t-side">
+      {d.cast.length > 0 && (
+        <section class="side-block">
+          <h2>অভিনয়শিল্পী</h2>
+          <ul class="people">
+            {d.cast.map((c) => {
+              const href = personLink(c.id);
+              return (
+                <li>
+                  {href ? <a href={href} class="p-name">{c.name}</a> : <span class="p-name">{c.name}</span>}
+                  {c.role && <span class="p-role">{c.role}</span>}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+      {d.crew.length > 0 && (
+        <section class="side-block">
+          <h2>নির্মাণে</h2>
+          <ul class="people">
+            {d.crew.map((c) => {
+              const href = personLink(c.id);
+              return (
+                <li>
+                  {href ? <a href={href} class="p-name">{c.name}</a> : <span class="p-name">{c.name}</span>}
+                  <span class="p-role">{jobLabel[c.job]}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+      {otherPlatforms.length > 0 && (
+        <section class="side-block">
+          <h2>বাংলাদেশের অন্যান্য ওটিটি</h2>
+          <p class="small muted">সাধারণ তালিকা, এখানে {d.title} আছে এমন দাবি নয়।</p>
+          <div class="others">
+            {otherPlatforms.map((p) => <a class="plat-badge" style={`--pc:${platformColor[p.id] ?? 'var(--accent)'}`} href={link(`/platform/${p.id}/`)}>{p.data.name}</a>)}
+          </div>
+        </section>
+      )}
+    </aside>
+  </div>
 
   {related.length > 0 && (
     <section class="section">
       <h2>আরও দেখুন</h2>
-      <div class="grid">{related.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="rail">{related.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
-  )}
-
-  {otherPlatforms.length > 0 && (
-    <section class="section">
-      <h2>বাংলাদেশের অন্যান্য ওটিটি</h2>
-      <p class="small muted">এটা সাধারণ তালিকা। এই প্ল্যাটফর্মগুলোতে {d.title} আছে, এমন দাবি নয়।</p>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px">
-        {otherPlatforms.map((p) => <a class="chip" href={link(`/platform/${p.id}/`)}>{p.data.name}</a>)}
-      </div>
-    </section>
-  )}
-
-  <AdSlot label="বিজ্ঞাপন" />
-
-  {d.sources.length > 0 && (
-    <p class="small muted">
-      তথ্যসূত্র: {d.sources.map((s, i) => <>{i > 0 && ', '}<a href={s.url} rel="noopener" target="_blank">{s.name}</a></>)}।
-      ওটিটিতে থাকা না থাকা সময়ের সাথে বদলায়। ভুল দেখলে <a href={link('/jogajog/')}>আমাদের জানান</a>।
-    </p>
   )}
 </Base>
 
 <style>
-  .crumbs a { color: var(--muted); }
-  .verify-pending { color: var(--warn); }
-  .answer { display: flex; flex-direction: column; gap: 6px; padding: 20px 22px; }
-  .answer-label { font-size: 13px; font-weight: 600; color: var(--accent); }
-  .answer p { font-size: 19px; }
-  .facts { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-  .fact { display: flex; flex-direction: column; }
-  .fact-value { font-size: 18px; font-weight: 600; }
-  .fact-value.warn { color: var(--bad); }
-  .platforms { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-  .platform { display: flex; flex-direction: column; gap: 10px; padding: 20px; }
-  .platform-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-  .platform-name { font-size: 22px; font-weight: 700; }
-  .family { font-size: 18px; }
+  .t-hero { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 36px; align-items: start; }
+  .t-poster { position: sticky; top: 16px; }
+  .t-head { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .t-kind { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-weight: 600; color: var(--soft); }
+  .t-answer { font-size: 19px; color: var(--soft); max-width: 62ch; }
+
+  .watch { margin-top: 6px; padding: 18px 20px; border-radius: var(--radius-lg); background: var(--surface); border: 1.5px solid var(--line-strong); display: flex; flex-direction: column; gap: 12px; }
+  .watch h2 { font-size: 20px; }
+  .watch-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .watch-list li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 12px 14px; border-radius: var(--radius); background: var(--surface-2); border-left: 5px solid var(--pc); }
+  .w-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .w-name { font-size: 19px; }
+  .w-name::before { display: none; }
+  .w-btn { background: var(--pc); color: #fff; }
+  .w-btn:hover { background: var(--pc); color: #fff; filter: brightness(0.92); }
+  .w-foot { display: flex; flex-direction: column; gap: 2px; font-size: 14px; color: var(--muted); }
+  .verify-pending { color: var(--warn); font-weight: 600; }
+
+  .facts { margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+  .fact { padding: 12px 16px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+  .fact dt { font-size: 13px; color: var(--muted); }
+  .fact dd { margin: 2px 0 0; font-weight: 700; font-size: 17px; line-height: 1.4; }
+  .fact dd.warn { color: var(--bad); }
+
+  .t-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 48px; align-items: start; }
+  .t-main { display: flex; flex-direction: column; gap: 36px; min-width: 0; }
+  .t-side { display: flex; flex-direction: column; gap: 28px; position: sticky; top: 16px; }
+
+  .article { display: flex; flex-direction: column; gap: 16px; max-width: 68ch; font-size: 18px; line-height: 1.85; color: var(--soft); }
+  .article :global(h2) { margin-top: 18px; color: var(--text); }
+  .article :global(h2:first-child) { margin-top: 0; }
+  .article :global(strong) { color: var(--text); }
+  .article :global(p) { margin: 0; }
+
+  .family { padding: 14px 18px; border-radius: var(--radius); font-size: 18px; background: var(--surface-2); border: 1px solid var(--line); }
   .family-no { background: var(--bad-bg); border-color: var(--bad-line); }
   .family-no strong { color: var(--bad); }
   .family-caution strong { color: var(--warn); }
   .family-yes strong { color: var(--ok); }
+  .fam-items { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px 20px; }
+  .fam-items li { display: flex; flex-direction: column; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .fam-label { font-weight: 700; }
   .lvl-high { color: var(--bad); }
   .lvl-mid { color: var(--warn); }
-  .lvl-low { color: #c9cdd4; }
-  .cast { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-  .person { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
-  .person:hover { border-color: var(--accent); color: var(--text); }
-  .wide { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-  .article { max-width: 760px; gap: 14px; font-size: 18px; line-height: 1.8; }
-  .article :global(h2) { font-size: 24px; color: var(--text); margin-top: 18px; }
-  .article :global(h3) { font-size: 20px; color: var(--text); margin-top: 8px; }
-  .article :global(p) { margin: 0; }
-  .article :global(ul) { margin: 0; padding-left: 22px; }
+  .lvl-low { color: var(--soft); }
+
+  .factbox { display: flex; flex-direction: column; gap: 6px; padding-left: 16px; border-left: 4px solid var(--marigold); }
+  .factbox h2 { font-size: 21px; }
+  .factbox p { color: var(--soft); }
+
+  .faqs { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+  .faqs details { border-bottom: 1px solid var(--line); }
+  .faqs summary { cursor: pointer; padding: 14px 0; font-weight: 700; font-size: 17px; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  .faqs summary::-webkit-details-marker { display: none; }
+  .faqs summary::after { content: '+'; font-size: 22px; line-height: 1; color: var(--accent); }
+  .faqs details[open] summary::after { content: '–'; }
+  .faqs details p { padding: 0 0 16px; color: var(--soft); max-width: 68ch; }
+
+  .sources { font-size: 14px; color: var(--muted); }
+
+  .side-block { display: flex; flex-direction: column; gap: 10px; }
+  .side-block h2 { font-size: 19px; }
+  .people { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .people li { display: flex; flex-direction: column; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .p-name { font-weight: 700; color: var(--text); }
+  a.p-name { color: var(--link); }
+  .p-role { font-size: 14px; color: var(--muted); }
+  .others { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 15px; }
+  .others :global(.plat-badge) { font-weight: 600; }
+
+  @media (max-width: 960px) {
+    .t-body { grid-template-columns: minmax(0, 1fr); }
+    .t-side { position: static; }
+  }
+  @media (max-width: 680px) {
+    .t-hero { grid-template-columns: 120px minmax(0, 1fr); gap: 16px; }
+    .t-poster { position: static; grid-row: 1 / span 2; grid-column: 1; }
+    .t-poster :global(.poster-lg .p-title) { font-size: 20px; }
+    .t-poster :global(.poster-lg) { padding: 12px 10px; }
+    .t-poster :global(.poster-lg .p-type) { font-size: 11px; }
+    .t-head h1 { font-size: 26px; }
+    .watch, .t-answer { grid-column: 1 / -1; }
+    .t-head { display: contents; }
+    .t-kind { grid-column: 2; grid-row: 1; align-self: end; }
+    .t-head h1 { grid-column: 2; grid-row: 2; align-self: start; }
+    .t-answer { font-size: 17px; }
+  }
 </style>

@@ -8,7 +8,7 @@ const titles = await getCollection('titles', ({ data }) => !data.draft);
 const lists = allLists(titles).map((l) => ({ ...l, n: titles.filter(l.match).length }));
 ---
 <Base title="তালিকা" description="বাংলা ডাবিং সিরিয়াল, বাংলাদেশি সিনেমা, কলকাতার সিনেমা, ফ্রিতে দেখার কনটেন্টসহ বিভিন্ন তালিকা।">
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › তালিকা</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> তালিকা</nav>
   <h1>তালিকা</h1>
   <div class="grid">
     {lists.map((l) => (

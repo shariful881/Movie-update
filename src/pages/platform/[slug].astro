@@ -18,7 +18,7 @@ const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name
 const titles = await getCollection('titles', ({ data }) => !data.draft && data.availability.some((a) => a.platform.id === entry.id));
 ---
 <Base title={`${d.name} (${d.nameEn}): কী দেখা যায়, দাম ও সাবস্ক্রিপশন`} description={`${d.name} ওটিটি প্ল্যাটফর্মে কী পাওয়া যায়, সাবস্ক্রিপশন লাগে কিনা, আর এখানে থাকা সিনেমা, নাটক ও সিরিজের তালিকা।`}>
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › <a href={link('/platform/')} style="color: var(--muted)">ওটিটি প্ল্যাটফর্ম</a> › {d.name}</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> <a href={link('/platform/')}>ওটিটি প্ল্যাটফর্ম</a> <span aria-hidden="true">/</span> {d.name}</nav>
   <div class="stack" style="gap: 8px">
     <h1>{d.name} ({d.nameEn})</h1>
     <p class="muted">{d.tagline}</p>
@@ -40,7 +40,7 @@ const titles = await getCollection('titles', ({ data }) => !data.draft && data.a
   <section class="section">
     <h2>{d.name}-এ যা দেখা যায়</h2>
     {titles.length ? (
-      <div class="grid">{titles.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="tiles">{titles.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     ) : (
       <p class="card muted">শিগগিরই তালিকা যোগ হবে।</p>
     )}

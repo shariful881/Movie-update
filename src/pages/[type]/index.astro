@@ -22,7 +22,7 @@ const noPlatform = titles.filter((t) => !t.data.availability.length);
 const indexable = titles.some((t) => t.data.lastVerified);
 ---
 <Base title={`${label} কোথায় দেখবেন`} description={`বাংলাদেশ থেকে কোন ${label} কোন ওটিটিতে দেখা যায়: ${bn(titles.length)}টির তালিকা।`} noindex={!indexable}>
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › {label}</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> {label}</nav>
   <div class="stack" style="gap: 6px">
     <h1>{label} কোথায় দেখবেন</h1>
     <p class="muted">মোট {bn(titles.length)}টি। প্ল্যাটফর্ম অনুযায়ী সাজানো।</p>
@@ -35,13 +35,13 @@ const indexable = titles.some((t) => t.data.lastVerified);
   {groups.map((g) => (
     <section class="section" id={g.p.id}>
       <h2>{g.p.data.name}</h2>
-      <div class="grid">{g.items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="tiles">{g.items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
   ))}
   {noPlatform.length > 0 && (
     <section class="section">
       <h2>প্ল্যাটফর্ম যাচাই চলছে</h2>
-      <div class="grid">{noPlatform.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="tiles">{noPlatform.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
   )}
   {!titles.length && <p class="card muted">এই বিভাগে শিগগিরই {label} যোগ হবে।</p>}

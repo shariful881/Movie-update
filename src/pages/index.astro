@@ -2,9 +2,10 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import TitleCard from '../components/TitleCard.astro';
+import Poster from '../components/Poster.astro';
 import AdSlot from '../components/AdSlot.astro';
 import { allLists } from '../lib/lists';
-import { accessLabel, bn, link, personUrl, typeLabel, typePath, type TitleType } from '../lib/format';
+import { accessLabel, bn, link, personUrl, platformColor, titleUrl, typeLabel, typePath, type TitleType } from '../lib/format';
 
 const titles = await getCollection('titles', ({ data }) => !data.draft);
 const platforms = (await getCollection('platforms')).sort((a, b) => a.data.order - b.data.order);
@@ -12,15 +13,17 @@ const platformNames = Object.fromEntries(platforms.map((p) => [p.id, p.data.name
 const people = await getCollection('people');
 
 const byDate = (t: (typeof titles)[number]) => (t.data.releaseDate ?? t.data.ottReleaseDate ?? (t.data.year ? new Date(`${t.data.year}-01-01`) : new Date(0))).getTime();
-const latestMovies = titles.filter((t) => t.data.type === 'movie').sort((a, b) => byDate(b) - byDate(a)).slice(0, 6);
-const dubbed = titles.filter((t) => t.data.dubbed).sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0)).slice(0, 6);
-const serials = titles.filter((t) => t.data.type === 'series' && !t.data.dubbed).sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0)).slice(0, 6);
-const natok = titles.filter((t) => t.data.type === 'natok').sort((a, b) => byDate(b) - byDate(a)).slice(0, 6);
+const guides = titles.filter((t) => !t.data.generated && t.body?.trim()).sort((a, b) => byDate(b) - byDate(a));
+const heroPicks = guides.slice(0, 3);
+const latestMovies = titles.filter((t) => t.data.type === 'movie').sort((a, b) => byDate(b) - byDate(a)).slice(0, 12);
+const dubbed = titles.filter((t) => t.data.dubbed).sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0)).slice(0, 12);
+const serials = titles.filter((t) => t.data.type === 'series' && !t.data.dubbed).sort((a, b) => (b.data.episodes ?? 0) - (a.data.episodes ?? 0)).slice(0, 12);
+const natok = titles.filter((t) => t.data.type === 'natok').sort((a, b) => byDate(b) - byDate(a)).slice(0, 12);
 
 const typeCounts = (Object.keys(typePath) as TitleType[]).map((t) => ({ t, n: titles.filter((x) => x.data.type === t).length })).filter((x) => x.n);
-const lists = allLists(titles).slice(0, 6);
+const lists = allLists(titles).slice(0, 8);
 const worksOf = (id: string) => titles.filter((t) => t.data.cast.some((c) => c.id === id) || t.data.crew.some((c) => c.id === id)).length;
-const stars = people.filter((p) => p.data.kind === 'person').map((p) => ({ p, n: worksOf(p.id) })).sort((a, b) => b.n - a.n).slice(0, 12);
+const stars = people.filter((p) => p.data.kind === 'person').map((p) => ({ p, n: worksOf(p.id) })).sort((a, b) => b.n - a.n).slice(0, 14);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -30,98 +33,133 @@ const jsonLd = {
   url: new URL(link('/'), Astro.site).toString(),
   inLanguage: 'bn',
 };
+const rows = [
+  { title: 'বাংলা ডাবিং সিরিয়াল', href: '/list/bangla-dubbing/', items: dubbed },
+  { title: 'সিনেমা', href: '/movie/', items: latestMovies },
+  { title: 'জনপ্রিয় ধারাবাহিক', href: '/series/', items: serials },
+  { title: 'নাটক ও টেলিফিল্ম', href: '/natok/', items: natok },
+].filter((r) => r.items.length);
 ---
 <Base title="সিনেখোঁজ: কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন" description="বাংলাদেশ থেকে কোন সিনেমা, নাটক আর ওয়েব সিরিজ কোন ওটিটিতে বৈধভাবে দেখা যায়, বাংলায় যাচাই করা তথ্য।" jsonLd={jsonLd}>
-  <section class="hero stack">
-    <h1>কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন?</h1>
-    <p class="muted">বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায়, সাবস্ক্রিপশন লাগে কিনা, কত পর্ব, কারা অভিনয় করেছেন, সব এক জায়গায়, বাংলায়।</p>
-    <nav aria-label="বিভাগ" class="types">
-      {typeCounts.map(({ t, n }) => <a class="chip" href={link(`/${typePath[t]}/`)}>{typeLabel[t]} <span class="muted">&nbsp;{bn(n)}</span></a>)}
-    </nav>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>কোন সিনেমা, নাটক, সিরিজ কোথায় দেখবেন</h1>
+      <p class="lead">বাংলাদেশ থেকে বৈধভাবে কোথায় দেখা যায়, ফ্রি নাকি সাবস্ক্রিপশন লাগে, কত পর্ব, কারা অভিনয় করেছেন। সব এক জায়গায়, বাংলায়।</p>
+      <nav aria-label="প্ল্যাটফর্ম" class="watchbar">
+        {platforms.map((p) => <a class="plat-badge wb" href={link(`/platform/${p.id}/`)} style={`--pc:${platformColor[p.id] ?? 'var(--accent)'}`}>{p.data.name}</a>)}
+      </nav>
+    </div>
+    {heroPicks.length === 3 && (
+      <div class="hero-fan" aria-hidden="true">
+        {heroPicks.map((t, i) => (
+          <a href={titleUrl(t)} tabindex="-1" class={`fan fan-${i}`}><Poster id={t.id} title={t.data.title} type={t.data.type} dubbed={t.data.dubbed} /></a>
+        ))}
+      </div>
+    )}
   </section>
 
-  {latestMovies.length > 0 && (
+  <nav aria-label="বিভাগ" class="types">
+    {typeCounts.map(({ t, n }) => <a class="chip" href={link(`/${typePath[t]}/`)}>{typeLabel[t]}<span class="count">{bn(n)}</span></a>)}
+  </nav>
+
+  {guides.length > 0 && (
     <section class="section">
-      <div class="head"><h2>সিনেমা</h2><a href={link('/movie/')}>সব দেখুন</a></div>
-      <div class="grid">{latestMovies.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="section-head">
+        <h2>পূর্ণাঙ্গ গাইড</h2>
+        <span class="muted small">কাহিনি, অভিনয়শিল্পী আর প্রশ্নোত্তরসহ</span>
+      </div>
+      <div class="rail">{guides.slice(0, 16).map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
   )}
 
-  {dubbed.length > 0 && (
+  {rows.slice(0, 2).map((r) => (
     <section class="section">
-      <div class="head"><h2>বাংলা ডাবিং সিরিয়াল</h2><a href={link('/list/bangla-dubbing/')}>সব দেখুন</a></div>
-      <div class="grid">{dubbed.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="section-head"><h2>{r.title}</h2><a href={link(r.href)}>সব দেখুন</a></div>
+      <div class="rail">{r.items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
-  )}
+  ))}
 
   <AdSlot label="বিজ্ঞাপন" />
 
-  {serials.length > 0 && (
+  {rows.slice(2).map((r) => (
     <section class="section">
-      <div class="head"><h2>জনপ্রিয় ধারাবাহিক</h2><a href={link('/series/')}>সব দেখুন</a></div>
-      <div class="grid">{serials.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
+      <div class="section-head"><h2>{r.title}</h2><a href={link(r.href)}>সব দেখুন</a></div>
+      <div class="rail">{r.items.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
     </section>
-  )}
-
-  {natok.length > 0 && (
-    <section class="section">
-      <div class="head"><h2>নাটক ও টেলিফিল্ম</h2><a href={link('/natok/')}>সব দেখুন</a></div>
-      <div class="grid">{natok.map((t) => <TitleCard entry={t} platformNames={platformNames} />)}</div>
-    </section>
-  )}
+  ))}
 
   {stars.length > 0 && (
     <section class="section">
-      <div class="head"><h2>তারকা ও নির্মাতা</h2><a href={link('/person/')}>সব দেখুন</a></div>
+      <div class="section-head"><h2>তারকা ও নির্মাতা</h2><a href={link('/person/')}>সব দেখুন</a></div>
       <div class="stars">
         {stars.map(({ p, n }) => (
-          <a class="card star" href={personUrl(p.id)}>
-            <span class="star-name">{p.data.name}</span>
-            <span class="small muted">{bn(n)}টি কাজ</span>
-          </a>
+          <a class="chip star" href={personUrl(p.id)}>{p.data.name}<span class="count">{bn(n)}</span></a>
         ))}
       </div>
     </section>
   )}
 
-  {lists.length > 0 && (
+  <div class="two-col">
+    {lists.length > 0 && (
+      <section class="section">
+        <div class="section-head"><h2>তালিকা</h2><a href={link('/list/')}>সব দেখুন</a></div>
+        <ul class="link-list">
+          {lists.map((l) => <li><a href={link(`/list/${l.slug}/`)}>{l.title}</a></li>)}
+        </ul>
+      </section>
+    )}
     <section class="section">
-      <div class="head"><h2>তালিকা</h2><a href={link('/list/')}>সব দেখুন</a></div>
-      <div class="grid">
-        {lists.map((l) => <a class="card plat" href={link(`/list/${l.slug}/`)}><span class="list-name">{l.title}</span></a>)}
-      </div>
+      <div class="section-head"><h2>ওটিটি প্ল্যাটফর্ম</h2><a href={link('/platform/')}>সব দেখুন</a></div>
+      <ul class="link-list">
+        {platforms.map((p) => (
+          <li>
+            <a class="plat-badge" href={link(`/platform/${p.id}/`)} style={`--pc:${platformColor[p.id] ?? 'var(--accent)'}`}>{p.data.name}</a>
+            <span class="muted small">{accessLabel[p.data.access]}</span>
+          </li>
+        ))}
+      </ul>
     </section>
-  )}
+  </div>
 
-  <section class="section">
-    <div class="head"><h2>ওটিটি প্ল্যাটফর্ম</h2><a href={link('/platform/')}>সব দেখুন</a></div>
-    <div class="grid">
-      {platforms.map((p) => (
-        <a class="card plat" href={link(`/platform/${p.id}/`)}>
-          <span class="plat-name">{p.data.name}</span>
-          <span class="small muted">{accessLabel[p.data.access]}</span>
-          <span class="small">{p.data.tagline}</span>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="card stack" style="gap: 8px">
-    <h2 style="font-size: 21px">আমাদের তথ্য কেন বিশ্বাস করবেন</h2>
-    <p class="muted">প্রতিটা টাইটেল আমরা প্ল্যাটফর্মের অ্যাপে নিজে খুঁজে যাচাই করি, আর পাতায় সর্বশেষ যাচাইয়ের তারিখ লিখে দিই। <a href={link('/kivabe-jachai-kori/')}>আমরা কীভাবে যাচাই করি</a></p>
+  <section class="trust">
+    <h2>আমাদের তথ্য কেন বিশ্বাস করবেন</h2>
+    <p>প্রতিটা টাইটেল আমরা প্ল্যাটফর্মের অ্যাপে নিজে খুঁজে যাচাই করি, আর পাতায় সর্বশেষ যাচাইয়ের তারিখ লিখে দিই। কাহিনি আর তথ্যের জন্য সূত্রের লিংক থাকে প্রতিটা পাতার নিচে।</p>
+    <a href={link('/kivabe-jachai-kori/')}>আমরা কীভাবে যাচাই করি</a>
   </section>
 </Base>
 
 <style>
-  .hero { padding: 16px 0 4px; gap: 12px; }
-  .types { display: flex; flex-wrap: wrap; gap: 10px; }
-  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-  .plat { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); }
-  .plat:hover { border-color: var(--accent); color: var(--text); }
-  .plat-name { font-size: 22px; font-weight: 700; }
-  .list-name { font-size: 18px; font-weight: 600; line-height: 1.4; }
-  .stars { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-  .star { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
-  .star:hover { border-color: var(--accent); color: var(--text); }
-  .star-name { font-weight: 600; }
+  .hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 32px; align-items: center; padding-top: 8px; }
+  .hero-text { display: flex; flex-direction: column; gap: 16px; }
+  .hero h1 { font-size: clamp(34px, 6vw, 60px); font-stretch: 80%; font-weight: 800; line-height: 1.1; max-width: 14ch; }
+  .lead { font-size: 18px; color: var(--soft); max-width: 52ch; }
+  .watchbar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .wb { min-height: 40px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface); font-size: 15px; }
+  .wb:hover { border-color: var(--pc); color: var(--text); }
+  .hero-fan { position: relative; height: 330px; }
+  .fan { position: absolute; width: 190px; top: 0; text-decoration: none; }
+  .fan :global(.poster) { box-shadow: 0 18px 40px rgb(20 20 40 / 0.22), inset 0 0 0 4px var(--tb), inset 0 0 0 6px color-mix(in srgb, var(--tf) 70%, transparent); }
+  .fan-0 { left: 4%; transform: rotate(-7deg); top: 26px; }
+  .fan-1 { left: 32%; z-index: 2; }
+  .fan-2 { left: 60%; transform: rotate(6deg); top: 30px; }
+  @media (max-width: 820px) {
+    .hero { grid-template-columns: minmax(0, 1fr); }
+    .hero-fan { display: none; }
+  }
+
+  .types { display: flex; flex-wrap: wrap; gap: 10px; margin-top: -12px; }
+  .count { font-size: 13px; color: var(--muted); font-weight: 600; }
+
+  .stars { display: flex; flex-wrap: wrap; gap: 10px; }
+  .star { font-weight: 600; }
+
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+  .link-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .link-list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .link-list li > a:not(.plat-badge) { font-weight: 600; text-decoration: none; color: var(--text); }
+  .link-list li > a:hover { color: var(--link); text-decoration: underline; }
+
+  .trust { display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: var(--radius-lg); background: var(--surface-2); border: 1px solid var(--line); max-width: 760px; }
+  .trust p { color: var(--soft); }
+  .trust a { font-weight: 600; }
 </style>

@@ -1,27 +1,32 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { bn, titleUrl, typeSingular } from '../lib/format';
+import Poster from './Poster.astro';
+import { bn, platformColor, titleUrl } from '../lib/format';
 interface Props { entry: CollectionEntry<'titles'>; platformNames: Record<string, string>; note?: string }
 const { entry, platformNames, note } = Astro.props;
 const d = entry.data;
-const where = d.availability.map((a) => platformNames[a.platform.id] ?? a.platform.id).join(', ');
-const meta = [typeSingular[d.type], d.year && bn(d.year), d.dubbed && 'বাংলা ডাবিং', d.episodes && d.type !== 'movie' && `${bn(d.episodes)} পর্ব`].filter(Boolean).join(' · ');
+const plats = d.availability.map((a) => a.platform.id);
+const meta = [d.year && bn(d.year), d.episodes && d.type !== 'movie' && `${bn(d.episodes)} পর্ব`].filter(Boolean);
 ---
-<a class="title-card" href={titleUrl(entry)}>
-  <span class="t-type">{meta}</span>
+<a class="tcard" href={titleUrl(entry)}>
+  <Poster id={entry.id} title={d.title} type={d.type} dubbed={d.dubbed} />
   <span class="t-name">{d.title}</span>
+  {meta.length > 0 && <span class="t-meta">{meta.map((m) => <span>{m}</span>)}</span>}
   {note && <span class="t-note">{note}</span>}
-  <span class="t-where">{where ? `দেখুন: ${where}` : 'প্রাপ্যতা যাচাই চলছে'}</span>
+  <span class="t-where">
+    {plats.length ? plats.map((p) => <span class="plat-badge" style={`--pc:${platformColor[p] ?? 'var(--accent)'}`}>{platformNames[p] ?? p}</span>) : <span class="t-none">প্ল্যাটফর্ম যাচাই চলছে</span>}
+  </span>
 </a>
 <style>
-  .title-card {
-    display: flex; flex-direction: column; gap: 4px;
-    background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 16px 18px; text-decoration: none; color: var(--text); min-height: 44px;
-  }
-  .title-card:hover { border-color: var(--accent); color: var(--text); }
-  .t-type { font-size: 13px; color: var(--muted); }
-  .t-name { font-size: 21px; font-weight: 700; line-height: 1.3; }
+  .tcard { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--text); min-width: 0; }
+  .tcard:hover .t-name { color: var(--link); text-decoration: underline; }
+  .tcard :global(.poster) { transition: transform 0.15s ease; }
+  .tcard:hover :global(.poster) { transform: translateY(-3px); }
+  .t-name { font-weight: 700; font-size: 16px; line-height: 1.35; margin-top: 4px; overflow-wrap: anywhere; }
+  .t-meta { display: flex; gap: 10px; font-size: 14px; color: var(--muted); }
   .t-note { font-size: 14px; color: var(--soft); }
-  .t-where { font-size: 15px; color: var(--accent); }
+  .t-where { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 13px; }
+  .t-where :global(.plat-badge) { font-weight: 600; color: var(--soft); }
+  .t-where :global(.plat-badge)::before { width: 9px; height: 9px; }
+  .t-none { color: var(--faint); }
 </style>

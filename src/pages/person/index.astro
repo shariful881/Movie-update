@@ -11,7 +11,7 @@ const persons = rows.filter((r) => r.p.data.kind === 'person');
 const companies = rows.filter((r) => r.p.data.kind === 'company');
 ---
 <Base title="তারকা ও নির্মাতা" description="বাংলা সিনেমা ও সিরিজের অভিনেতা, পরিচালক, প্রযোজক আর প্রযোজনা প্রতিষ্ঠান: কার কোন কাজ কোথায় দেখা যায়।">
-  <nav aria-label="অবস্থান" class="small muted"><a href={link('/')} style="color: var(--muted)">হোম</a> › তারকা ও নির্মাতা</nav>
+  <nav aria-label="অবস্থান" class="crumbs"><a href={link('/')}>হোম</a> <span aria-hidden="true">/</span> তারকা ও নির্মাতা</nav>
   <h1>তারকা ও নির্মাতা</h1>
   <section class="section">
     <h2>অভিনেতা, পরিচালক ও প্রযোজক ({bn(persons.length)})</h2>
