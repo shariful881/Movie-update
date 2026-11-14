@@ -2449,7 +2449,7 @@
   "kind": "ধারাবাহিক/সিরিজ",
   "title": "Ananta Bhalobasha",
   "release": "2026-08-14",
-  "seasons": 4,
+  "seasons": 5,
   "episodes": 78,
   "genres": "Series",
   "cast": "Burak Özçivit, Neslihan Atagül",
@@ -2494,6 +2494,16 @@
   "cast": "Ashfaque Nipun",
   "directors": "",
   "origin": "বাংলাদেশ"
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/ind-u19-vs-pak-u19-final",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "IND U19 Vs PAK U19 FINAL",
+  "release": "2026-11-14",
+  "access": "পেইড",
+  "origin": ""
  },
  {
   "platform": "iscreen",
@@ -12471,16 +12481,6 @@
   "kind": "গান",
   "og_type": "video.movie",
   "title": "O Maa Tui",
-  "release": "2024-04-25",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/khachay-bacha",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Khachay Bacha",
   "release": "2024-04-25",
   "access": "ফ্রি",
   "origin": ""
