@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T03:15:36.974Z",
+ "generated_at": "2026-11-17T05:16:12.750Z",
  "sources": {
   "iscreen": {
    "name": "আই স্ক্রিন",
@@ -18,8 +18,8 @@
   },
   "bongo": {
    "name": "বঙ্গ",
-   "status": "ok",
-   "count": 2123
+   "status": "error",
+   "error": "https://bongobd.com/sitemap.xml → HTTP 403"
   },
   "hoichoi": {
    "name": "হইচই",
