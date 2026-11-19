@@ -1,19 +1,6 @@
 [
  {
   "platform": "deeptoplay",
-  "url": "https://www.deeptoplay.com/series/sultan-suleiman",
-  "kind": "ধারাবাহিক/সিরিজ",
-  "title": "Sultan Suleiman",
-  "release": "2022-11-15",
-  "seasons": 16,
-  "episodes": 310,
-  "genres": "Drama",
-  "cast": "Halit Ergenç, Ekin Koç, Meryem Uzerli, Vahide Perçin, Okan Yalabık, Nebahat Çehre",
-  "directors": "Yagmur Taylan, Durul Taylan, Mert Baykal, Yağız Alp Akaydın, Zeynep Günay Tan,Deniz Koloş",
-  "origin": "তুরস্ক"
- },
- {
-  "platform": "deeptoplay",
   "url": "https://www.deeptoplay.com/series/maan-obhiman",
   "kind": "ধারাবাহিক/সিরিজ",
   "title": "Maan Obhiman",
@@ -32,7 +19,7 @@
   "title": "Bokulpur",
   "release": "2022-11-06",
   "seasons": 3,
-  "episodes": 1116,
+  "episodes": 1117,
   "genres": "Drama, Comedy",
   "cast": "Anisur Rahman Milon, Arfan Ahmed, Shyamal Mawla, Sushoma sarkar, Dipa Khondaker, Sharaf Ahmed Jibon, Saidur Rahman Pavel, Tahmina Sultana Mou",
   "directors": "Kaiser Ahmed, Hasan Rezaul",
@@ -1319,7 +1306,7 @@
   "title": "Deepto Krishi",
   "release": "2024-07-05",
   "seasons": 1,
-  "episodes": 368,
+  "episodes": 369,
   "genres": "Entertainment",
   "cast": "Ashfaque Nipun",
   "directors": "",
@@ -1904,7 +1891,7 @@
   "title": "Khusbu",
   "release": "2025-09-13",
   "seasons": 18,
-  "episodes": 353,
+  "episodes": 354,
   "genres": "Series",
   "cast": "Samira Khan Mahi, Intekhab Dinar, Nazia Haque Orsha, Misti Ghosh, Fazlur Rahman Babu",
   "directors": "Sazzad Shuman",
@@ -2450,7 +2437,7 @@
   "title": "Ananta Bhalobasha",
   "release": "2026-08-14",
   "seasons": 5,
-  "episodes": 82,
+  "episodes": 83,
   "genres": "Series",
   "cast": "Burak Özçivit, Neslihan Atagül",
   "directors": "Hilal Saral",
@@ -2494,6 +2481,16 @@
   "cast": "Ashfaque Nipun",
   "directors": "",
   "origin": "বাংলাদেশ"
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/cirkle-esports-test",
+  "kind": "সিনেমা",
+  "og_type": "video.movie",
+  "title": "PUBG MOBILE Flash Streaming",
+  "release": "2026-11-17",
+  "access": "ফ্রি",
+  "origin": ""
  },
  {
   "platform": "iscreen",
@@ -12472,16 +12469,6 @@
   "og_type": "video.movie",
   "title": "Protiti Shurur Ache Shesh",
   "release": "2024-04-25",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/paal-tule-de",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Paal Tule De",
-  "release": "2024-04-24",
   "access": "ফ্রি",
   "origin": ""
  }
