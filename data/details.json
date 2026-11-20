@@ -1,6 +1,19 @@
 [
  {
   "platform": "deeptoplay",
+  "url": "https://www.deeptoplay.com/series/sultan-suleiman",
+  "kind": "ধারাবাহিক/সিরিজ",
+  "title": "Sultan Suleiman",
+  "release": "2022-11-15",
+  "seasons": 16,
+  "episodes": 310,
+  "genres": "Drama",
+  "cast": "Halit Ergenç, Ekin Koç, Meryem Uzerli, Vahide Perçin, Okan Yalabık, Nebahat Çehre",
+  "directors": "Yagmur Taylan, Durul Taylan, Mert Baykal, Yağız Alp Akaydın, Zeynep Günay Tan,Deniz Koloş",
+  "origin": "তুরস্ক"
+ },
+ {
+  "platform": "deeptoplay",
   "url": "https://www.deeptoplay.com/series/maan-obhiman",
   "kind": "ধারাবাহিক/সিরিজ",
   "title": "Maan Obhiman",
@@ -19,7 +32,7 @@
   "title": "Bokulpur",
   "release": "2022-11-06",
   "seasons": 3,
-  "episodes": 1117,
+  "episodes": 1118,
   "genres": "Drama, Comedy",
   "cast": "Anisur Rahman Milon, Arfan Ahmed, Shyamal Mawla, Sushoma sarkar, Dipa Khondaker, Sharaf Ahmed Jibon, Saidur Rahman Pavel, Tahmina Sultana Mou",
   "directors": "Kaiser Ahmed, Hasan Rezaul",
@@ -1670,7 +1683,7 @@
   "title": "News Bulletin",
   "release": "2025-05-09",
   "seasons": 11,
-  "episodes": 1642,
+  "episodes": 1645,
   "genres": "News",
   "cast": "",
   "directors": "",
@@ -1891,7 +1904,7 @@
   "title": "Khusbu",
   "release": "2025-09-13",
   "seasons": 18,
-  "episodes": 354,
+  "episodes": 355,
   "genres": "Series",
   "cast": "Samira Khan Mahi, Intekhab Dinar, Nazia Haque Orsha, Misti Ghosh, Fazlur Rahman Babu",
   "directors": "Sazzad Shuman",
@@ -2437,7 +2450,7 @@
   "title": "Ananta Bhalobasha",
   "release": "2026-08-14",
   "seasons": 5,
-  "episodes": 83,
+  "episodes": 84,
   "genres": "Series",
   "cast": "Burak Özçivit, Neslihan Atagül",
   "directors": "Hilal Saral",
@@ -2481,6 +2494,56 @@
   "cast": "Ashfaque Nipun",
   "directors": "",
   "origin": "বাংলাদেশ"
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-4-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-3 Asia Cup Rising star 2026",
+  "release": "2026-11-20",
+  "access": "পেইড",
+  "origin": ""
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-3-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-4 Asia Cup Rising star 2026",
+  "release": "2026-11-20",
+  "access": "পেইড",
+  "origin": ""
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/justice-for-human",
+  "kind": "সিনেমা",
+  "og_type": "video.movie",
+  "title": "Justice For Human",
+  "release": "2026-11-19",
+  "access": "ফ্রি",
+  "origin": ""
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-2-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-2 Asia Cup Rising star 2026",
+  "release": "2026-11-19",
+  "access": "পেইড",
+  "origin": ""
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-1 Asia Cup Rising star 2026-",
+  "release": "2026-11-19",
+  "access": "পেইড",
+  "origin": ""
  },
  {
   "platform": "iscreen",
@@ -12418,56 +12481,6 @@
   "kind": "গান",
   "og_type": "video.movie",
   "title": "Shobta Jure Tumi",
-  "release": "2024-04-25",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/shimana-chere",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Shimana Chere",
-  "release": "2024-04-24",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/shara-raat-tumi",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Shara Raat Tumi",
-  "release": "2024-04-25",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/shadhinotar-gaan",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Shadhinotar Gaan",
-  "release": "2024-04-25",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/puran-dhakar-meye",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Puran Dhakar Meye",
-  "release": "2024-04-25",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/protiti-shurur-ache-shesh",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Protiti Shurur Ache Shesh",
   "release": "2024-04-25",
   "access": "ফ্রি",
   "origin": ""
