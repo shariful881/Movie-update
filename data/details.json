@@ -1319,7 +1319,7 @@
   "title": "Deepto Krishi",
   "release": "2024-07-05",
   "seasons": 1,
-  "episodes": 369,
+  "episodes": 370,
   "genres": "Entertainment",
   "cast": "Ashfaque Nipun",
   "directors": "",
@@ -1683,7 +1683,7 @@
   "title": "News Bulletin",
   "release": "2025-05-09",
   "seasons": 11,
-  "episodes": 1645,
+  "episodes": 1647,
   "genres": "News",
   "cast": "",
   "directors": "",
@@ -2494,6 +2494,26 @@
   "cast": "Ashfaque Nipun",
   "directors": "",
   "origin": "বাংলাদেশ"
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-6-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-6 Asia Cup Rising star 2026",
+  "release": "2026-11-21",
+  "access": "পেইড",
+  "origin": ""
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-5-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-5 Asia Cup Rising star 2026",
+  "release": "2026-11-21",
+  "access": "পেইড",
+  "origin": ""
  },
  {
   "platform": "iscreen",
@@ -12463,26 +12483,6 @@
   "title": "Shesh Oddhai",
   "release": "2024-05-01",
   "access": "পেইড",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/tomar-amar-shwapnogulo",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Tomar Amar Shwapnogulo",
-  "release": "2024-04-23",
-  "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/shobta-jure-tumi",
-  "kind": "গান",
-  "og_type": "video.movie",
-  "title": "Shobta Jure Tumi",
-  "release": "2024-04-25",
-  "access": "ফ্রি",
   "origin": ""
  }
 ]
