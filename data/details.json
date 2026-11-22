@@ -32,7 +32,7 @@
   "title": "Bokulpur",
   "release": "2022-11-06",
   "seasons": 3,
-  "episodes": 1118,
+  "episodes": 1119,
   "genres": "Drama, Comedy",
   "cast": "Anisur Rahman Milon, Arfan Ahmed, Shyamal Mawla, Sushoma sarkar, Dipa Khondaker, Sharaf Ahmed Jibon, Saidur Rahman Pavel, Tahmina Sultana Mou",
   "directors": "Kaiser Ahmed, Hasan Rezaul",
@@ -1683,7 +1683,7 @@
   "title": "News Bulletin",
   "release": "2025-05-09",
   "seasons": 11,
-  "episodes": 1647,
+  "episodes": 1650,
   "genres": "News",
   "cast": "",
   "directors": "",
@@ -1904,7 +1904,7 @@
   "title": "Khusbu",
   "release": "2025-09-13",
   "seasons": 18,
-  "episodes": 355,
+  "episodes": 356,
   "genres": "Series",
   "cast": "Samira Khan Mahi, Intekhab Dinar, Nazia Haque Orsha, Misti Ghosh, Fazlur Rahman Babu",
   "directors": "Sazzad Shuman",
@@ -2450,7 +2450,7 @@
   "title": "Ananta Bhalobasha",
   "release": "2026-08-14",
   "seasons": 5,
-  "episodes": 84,
+  "episodes": 85,
   "genres": "Series",
   "cast": "Burak Özçivit, Neslihan Atagül",
   "directors": "Hilal Saral",
@@ -2494,6 +2494,26 @@
   "cast": "Ashfaque Nipun",
   "directors": "",
   "origin": "বাংলাদেশ"
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-8-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-8 Asia Cup Rising star 2026",
+  "release": "2026-11-21",
+  "access": "পেইড",
+  "origin": ""
+ },
+ {
+  "platform": "iscreen",
+  "url": "https://iscreen.com.bd/content/details/video/acc-men-s-m-7-asia-cup-rising-star-2026",
+  "kind": "বাদ",
+  "og_type": "video.movie",
+  "title": "ACC Men's M-7 Asia Cup Rising star 2026",
+  "release": "2026-11-21",
+  "access": "পেইড",
+  "origin": ""
  },
  {
   "platform": "iscreen",
@@ -12463,26 +12483,6 @@
   "title": "Taroka Kothon: Shommo Jyoti - Dibbo Jyoti",
   "release": "2024-04-28",
   "access": "ফ্রি",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/series/tritiyo-matra",
-  "kind": "সিরিজ",
-  "og_type": "video.tv_show",
-  "title": "Tritiyo Matra",
-  "release": "2024-04-29",
-  "access": "",
-  "origin": ""
- },
- {
-  "platform": "iscreen",
-  "url": "https://iscreen.com.bd/content/details/video/shesh-oddhai",
-  "kind": "সিনেমা",
-  "og_type": "video.movie",
-  "title": "Shesh Oddhai",
-  "release": "2024-05-01",
-  "access": "পেইড",
   "origin": ""
  }
 ]
