@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-23T04:04:04.968Z",
+ "generated_at": "2026-11-24T07:08:12.130Z",
  "sources": {
   "iscreen": {
    "name": "আই স্ক্রিন",
    "status": "ok",
-   "count": 159
+   "count": 155
   },
   "deeptoplay": {
    "name": "দীপ্ত প্লে",
@@ -18,8 +18,8 @@
   },
   "bongo": {
    "name": "বঙ্গ",
-   "status": "error",
-   "error": "https://bongobd.com/sitemap.xml → HTTP 403"
+   "status": "ok",
+   "count": 2123
   },
   "hoichoi": {
    "name": "হইচই",
@@ -25331,16 +25331,6 @@
   {
    "platform": "iscreen",
    "kind": "natok",
-   "title": "Taroka Kothon:  Kusum Sikder",
-   "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-kusum-sikder",
-   "published": "2024-04-27",
-   "minutes": 26,
-   "access": "free",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "platform": "iscreen",
-   "kind": "natok",
    "title": "Taroka Kothon: Abm Sumon",
    "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-abm-sumon",
    "published": "2024-04-28",
@@ -25351,40 +25341,10 @@
   {
    "platform": "iscreen",
    "kind": "natok",
-   "title": "Taroka Kothon: Afzal Hossain - Shah Alam Kiron",
-   "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-afzal-hossain-shah-alam-kiron",
-   "published": "2024-04-28",
-   "minutes": 26,
-   "access": "free",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "platform": "iscreen",
-   "kind": "natok",
    "title": "Taroka Kothon: Ali Raj",
    "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-ali-raj",
    "published": "2024-12-31",
    "minutes": 25,
-   "access": "free",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "platform": "iscreen",
-   "kind": "natok",
-   "title": "Taroka Kothon: Apu Biswas",
-   "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-apu-biswas",
-   "published": "2024-04-28",
-   "minutes": 26,
-   "access": "free",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "platform": "iscreen",
-   "kind": "natok",
-   "title": "Taroka Kothon: Imran - Konal",
-   "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-imran-konal",
-   "published": "2024-04-28",
-   "minutes": 24,
    "access": "free",
    "first_seen": "2026-11-11"
   },
