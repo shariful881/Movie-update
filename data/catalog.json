@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-24T07:08:12.130Z",
+ "generated_at": "2026-11-25T05:42:48.845Z",
  "sources": {
   "iscreen": {
    "name": "আই স্ক্রিন",
    "status": "ok",
-   "count": 155
+   "count": 154
   },
   "deeptoplay": {
    "name": "দীপ্ত প্লে",
@@ -25395,16 +25395,6 @@
    "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-muza",
    "published": "2024-04-28",
    "minutes": 25,
-   "access": "free",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "platform": "iscreen",
-   "kind": "natok",
-   "title": "Taroka Kothon: Nusrat Imrose Tisha & Sariful Razz",
-   "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-nusrat-imrose-tisha-sariful-razz",
-   "published": "2024-04-28",
-   "minutes": 34,
    "access": "free",
    "first_seen": "2026-11-11"
   },
