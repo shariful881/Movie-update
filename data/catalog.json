@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26T05:30:22.427Z",
+ "generated_at": "2026-11-27T05:26:10.821Z",
  "sources": {
   "iscreen": {
    "name": "আই স্ক্রিন",
    "status": "ok",
-   "count": 152
+   "count": 151
   },
   "deeptoplay": {
    "name": "দীপ্ত প্লে",
@@ -25345,16 +25345,6 @@
    "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-kusum-sikder-nidra-neha",
    "published": "2024-09-30",
    "minutes": 36,
-   "access": "free",
-   "first_seen": "2026-11-11"
-  },
-  {
-   "platform": "iscreen",
-   "kind": "natok",
-   "title": "Taroka Kothon: Mahfuz - Bubly",
-   "url": "https://iscreen.com.bd/content/details/video/taroka-kothon-mahfuz-bubly",
-   "published": "2024-04-27",
-   "minutes": 32,
    "access": "free",
    "first_seen": "2026-11-11"
   },
