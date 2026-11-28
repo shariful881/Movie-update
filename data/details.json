@@ -1319,7 +1319,7 @@
   "title": "Deepto Krishi",
   "release": "2024-07-05",
   "seasons": 1,
-  "episodes": 373,
+  "episodes": 374,
   "genres": "Entertainment",
   "cast": "Ashfaque Nipun",
   "directors": "",
@@ -2492,6 +2492,19 @@
   "episodes": 3,
   "genres": "Entertainment",
   "cast": "Ashfaque Nipun",
+  "directors": "",
+  "origin": "বাংলাদেশ"
+ },
+ {
+  "platform": "deeptoplay",
+  "url": "https://www.deeptoplay.com/micro-drama/behula-lokkhindor",
+  "kind": "মাইক্রো ড্রামা",
+  "title": "Behula Lokkhindor",
+  "release": "2026-11-23",
+  "seasons": 1,
+  "episodes": 2,
+  "genres": "Entertainment",
+  "cast": "Abu Hurayra Tanvir, Tanzika Amin, Rukaiya Jahan Chamak, Irfan Sajjad",
   "directors": "",
   "origin": "বাংলাদেশ"
  },
