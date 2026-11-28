@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T05:26:10.821Z",
+ "generated_at": "2026-11-28T05:00:25.753Z",
  "sources": {
   "iscreen": {
    "name": "আই স্ক্রিন",
@@ -9,7 +9,7 @@
   "deeptoplay": {
    "name": "দীপ্ত প্লে",
    "status": "ok",
-   "count": 192
+   "count": 193
   },
   "addatimes": {
    "name": "অ্যাডাটাইমস",
@@ -22647,6 +22647,16 @@
    "minutes": "",
    "access": "",
    "first_seen": "2026-11-11"
+  },
+  {
+   "platform": "deeptoplay",
+   "kind": "micro-drama",
+   "title": "Behula Lokkhindor",
+   "url": "https://www.deeptoplay.com/micro-drama/behula-lokkhindor",
+   "published": "",
+   "minutes": "",
+   "access": "",
+   "first_seen": "2026-11-28"
   },
   {
    "platform": "deeptoplay",
